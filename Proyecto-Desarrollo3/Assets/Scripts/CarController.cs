@@ -4,50 +4,52 @@ using UnityEngine;
 
 public class CarController : MonoBehaviour
 {
-    [SerializeField] private Rigidbody sphereRb;
+    [SerializeField] private Rigidbody theRB;
 
-    [SerializeField] private float forwardAccel = 8f, reverseAccel = 4f, maxSpeed = 50f, turnStrength = 180f, gravityForce = 10f, dragOnground = 3f;
+    [SerializeField] private float forwardAccel = 8f, reverseAccel = 4f, maxSpeed = 50f, turnStrength = 180f, gravityForce = 10f, dragOnGround = 3f;
 
-    private float speedInput;
+    private float speedInput, turnInput;
 
     private bool grounded;
 
-    [SerializeField] private LayerMask whaIsGround;
-
-    [SerializeField] private float groundRayLength = 1f;
-
+    [SerializeField] private LayerMask whatIsGround;
+    [SerializeField] private float groundRayLength = 0.5f;
     [SerializeField] private Transform groundRayPoint;
 
-    private void Start()
-    {
-        sphereRb.transform.parent = null;
-    }
-    private void Update()
-    {
-        Debug.DrawRay(groundRayPoint.position, -transform.up, Color.red);
+    [SerializeField] private Transform leftFrontWheel, rightFrontWheel;
+    [SerializeField] private float maxWheelTurn = 25f;
 
-        float horizontalInput = Input.GetAxis("Horizontal");
-        float verticalInput = Input.GetAxis("Vertical");
+    // Start is called before the first frame update
+    void Start()
+    {
+        theRB.transform.parent = null;
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         speedInput = 0f;
-        if (verticalInput > 0)
+
+        if (Input.GetAxis("Vertical") > 0)
         {
-            speedInput = verticalInput * forwardAccel * 4000;
+            speedInput = Input.GetAxis("Vertical") * forwardAccel * 1000f;
         }
-        else
+        else if (Input.GetAxis("Vertical") < 0)
         {
-            if (verticalInput < 0)
-            {
-                speedInput = verticalInput * reverseAccel * 2000;
-            }
+            speedInput = Input.GetAxis("Vertical") * reverseAccel * 1000f;
         }
+
+        turnInput = Input.GetAxis("Horizontal");
 
         if (grounded)
         {
-            transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0, horizontalInput * turnStrength * Time.deltaTime * verticalInput, 0f));
+            transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, turnInput * turnStrength * Time.deltaTime * Input.GetAxis("Vertical"), 0f));
         }
 
+        leftFrontWheel.localRotation = Quaternion.Euler(leftFrontWheel.localRotation.eulerAngles.x, (turnInput * maxWheelTurn) - 180, leftFrontWheel.localRotation.eulerAngles.z);
+        rightFrontWheel.localRotation = Quaternion.Euler(rightFrontWheel.localRotation.eulerAngles.x, turnInput * maxWheelTurn, rightFrontWheel.localRotation.eulerAngles.z);
 
-        transform.position = sphereRb.transform.position;
+        transform.position = theRB.transform.position;
     }
 
     private void FixedUpdate()
@@ -55,26 +57,27 @@ public class CarController : MonoBehaviour
         grounded = false;
         RaycastHit hit;
 
-        if (Physics.Raycast(groundRayPoint.position, -transform.up, out hit, groundRayLength, whaIsGround))
+        if (Physics.Raycast(groundRayPoint.position, -transform.up, out hit, groundRayLength, whatIsGround))
         {
             grounded = true;
+
             transform.rotation = Quaternion.FromToRotation(transform.up, hit.normal) * transform.rotation;
         }
 
         if (grounded)
         {
-            sphereRb.drag = dragOnground;
+            theRB.drag = dragOnGround;
+
             if (Mathf.Abs(speedInput) > 0)
             {
-                sphereRb.AddForce(transform.forward * speedInput);
+                theRB.AddForce(transform.forward * speedInput);
             }
         }
         else
         {
-            //sphereRb.drag = 0.1f;
-            //sphereRb.AddForce(Vector3.up * -gravityForce * 100f);
+            theRB.drag = 0.1f;
+
+            theRB.AddForce(Vector3.up * -gravityForce * 100f);
         }
-
-
     }
 }
