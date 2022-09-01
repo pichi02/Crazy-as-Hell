@@ -8,7 +8,8 @@ public class Obstacle : MonoBehaviour
     {
         if (collision.transform.CompareTag("Chasis"))
         {
-            Destroy(collision.transform.parent.transform.parent.gameObject.GetComponent<CarController>());
+            
+            //collision.transform.parent.gameObject.SetActive(false);
             Debug.Log("choco");
         }
     }
