@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CarController : MonoBehaviour
 {
-    [SerializeField] private Rigidbody theRB;
+    [SerializeField] private Rigidbody motorRB;
 
     [SerializeField] private float forwardAccel = 8f, reverseAccel = 4f, maxSpeed = 50f, turnStrength = 180f, gravityForce = 10f, dragOnGround = 3f;
 
@@ -22,7 +22,8 @@ public class CarController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        theRB.transform.parent = null;
+
+        motorRB.transform.parent = null;
     }
 
     // Update is called once per frame
@@ -49,7 +50,10 @@ public class CarController : MonoBehaviour
         leftFrontWheel.localRotation = Quaternion.Euler(leftFrontWheel.localRotation.eulerAngles.x, (turnInput * maxWheelTurn) - 180, leftFrontWheel.localRotation.eulerAngles.z);
         rightFrontWheel.localRotation = Quaternion.Euler(rightFrontWheel.localRotation.eulerAngles.x, turnInput * maxWheelTurn, rightFrontWheel.localRotation.eulerAngles.z);
 
-        transform.position = theRB.transform.position;
+        Vector3 newPos = motorRB.transform.position - transform.forward * 1.5f;
+        newPos.y -= 0.7f;
+        transform.position = newPos;
+
     }
 
     private void FixedUpdate()
@@ -57,7 +61,7 @@ public class CarController : MonoBehaviour
         grounded = false;
         RaycastHit hit;
 
-        if (Physics.Raycast(groundRayPoint.position, -transform.up, out hit, groundRayLength, whatIsGround))
+        if (Physics.Raycast(groundRayPoint.position, Vector3.down, out hit, groundRayLength, whatIsGround))
         {
             grounded = true;
 
@@ -66,18 +70,18 @@ public class CarController : MonoBehaviour
 
         if (grounded)
         {
-            theRB.drag = dragOnGround;
+            motorRB.drag = dragOnGround;
 
             if (Mathf.Abs(speedInput) > 0)
             {
-                theRB.AddForce(transform.forward * speedInput);
+                motorRB.AddForce(transform.forward * speedInput);
             }
         }
         else
         {
-            theRB.drag = 0.1f;
+            motorRB.drag = 0.1f;
 
-            theRB.AddForce(Vector3.up * -gravityForce * 100f);
+            motorRB.AddForce(Vector3.up * -gravityForce * 100f);
         }
     }
 }
