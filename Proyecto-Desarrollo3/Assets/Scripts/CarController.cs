@@ -37,7 +37,7 @@ public class CarController : MonoBehaviour
         }
         else if (Input.GetAxis("Vertical") < 0)
         {
-            speedInput = Input.GetAxis("Vertical") * reverseAccel * 1000f;
+            //speedInput = Input.GetAxis("Vertical") * reverseAccel * 1000f;
         }
 
         turnInput = Input.GetAxis("Horizontal");
