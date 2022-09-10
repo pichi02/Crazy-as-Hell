@@ -8,7 +8,7 @@ public class CarController : MonoBehaviour
 
     [SerializeField] private float forwardAccel = 8f, reverseAccel = 4f, maxSpeed = 50f, turnStrength = 180f, gravityForce = 10f, dragOnGround = 3f;
 
-    private float speedInput, turnInput;
+    public float speedInput, turnInput;
 
     private bool grounded;
 
@@ -22,7 +22,6 @@ public class CarController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         motorRB.transform.parent = null;
     }
 

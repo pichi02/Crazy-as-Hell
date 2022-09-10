@@ -4,13 +4,16 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
+    public delegate void CarCollided();
+    public static CarCollided OnCarCollision;
+
+    [SerializeField] private CarLife CarLife;
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.transform.CompareTag("Chasis"))
         {
-            
-            //collision.transform.parent.gameObject.SetActive(false);
-            Debug.Log("choco");
+            OnCarCollision?.Invoke();
+            Destroy(gameObject);
         }
     }
 }
