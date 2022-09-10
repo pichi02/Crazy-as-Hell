@@ -8,5 +8,6 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         Obstacle.OnCarCollision += carLife.TakeDamage;
+        Obstacle.OnCarCollision += carLife.Dead;
     }
 }

@@ -13,26 +13,18 @@ public class CarLife : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
     }
 
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    if (collision.transform.CompareTag("Obstacle"))
-    //    {
-    //        TakeDamage(20);
-    //    }
-    //}
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            //TakeDamage(5);
-        }
-    }
-
     public void TakeDamage()
     {
         currentHealth -= 5;
 
         healthBar.SetHeath(currentHealth);
+    }
+
+    public void Dead()
+    {
+        if (currentHealth <= 0)
+        {
+            Debug.Log("Muerto");
+        }
     }
 }

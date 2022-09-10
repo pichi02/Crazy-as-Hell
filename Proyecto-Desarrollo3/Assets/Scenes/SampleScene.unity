@@ -1487,6 +1487,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 2094807910}
+    - target: {fileID: 962233621, guid: 7b367dccc659de64b8c4d882ca0505fc, type: 3}
+      propertyPath: maxHealth
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 1948821525999562, guid: 7b367dccc659de64b8c4d882ca0505fc, type: 3}
       propertyPath: m_Name
       value: Chev666
