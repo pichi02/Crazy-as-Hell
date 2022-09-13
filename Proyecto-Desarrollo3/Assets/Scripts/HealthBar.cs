@@ -4,15 +4,16 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
     [SerializeField] private Slider slider;
+    [SerializeField] private CarLife carLife;
 
-    public void SetMaxHealth(int health)
+    private void Start()
     {
-        slider.maxValue = health;
-        slider.value = health;
+        carLife.OnTakeDamage += SetHeath;
     }
 
-    public void SetHeath(int health)
+    public void SetHeath(int health, int maxHealth)
     {
+        slider.maxValue = maxHealth;
         slider.value = health;
     }
 }

@@ -18,8 +18,11 @@ public class Respawn : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        sphere.transform.position = respawnPoint.transform.position;
-        player.transform.rotation = initialRot;
-        carController.speedInput = 0;
+        if (other.transform.CompareTag("Chasis"))
+        {
+            sphere.transform.position = respawnPoint.transform.position;
+            player.transform.rotation = initialRot;
+            carController.speedInput = 0;
+        }
     }
 }

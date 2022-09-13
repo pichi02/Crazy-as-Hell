@@ -110,5 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93819dff8abbacf44b753a539891de83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sphere: {fileID: 0}
   player: {fileID: 0}
   respawnPoint: {fileID: 0}
+  carController: {fileID: 0}

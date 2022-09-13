@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class GoalLogic : MonoBehaviour
 {
-    [SerializeField] private GameManager gameManager;
-
+    public event System.Action OnGoalCollison;
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.CompareTag("Chasis"))
         {
             Debug.Log("Colisiona");
-            gameManager.index++;
+            OnGoalCollison?.Invoke();
         }
     }
 }
