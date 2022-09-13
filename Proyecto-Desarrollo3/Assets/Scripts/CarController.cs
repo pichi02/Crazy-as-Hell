@@ -1,5 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 using UnityEngine;
 
 public class CarController : MonoBehaviour
@@ -11,6 +15,8 @@ public class CarController : MonoBehaviour
     public float speedInput, turnInput;
 
     private bool grounded;
+
+    [SerializeField] private float safeZone = 20f;
 
     [SerializeField] private LayerMask whatIsGround;
     [SerializeField] private float groundRayLength = 0.5f;
@@ -83,4 +89,14 @@ public class CarController : MonoBehaviour
             motorRB.AddForce(Vector3.up * -gravityForce * 100f);
         }
     }
+    public float SafeZone => safeZone;
+
+#if UNITY_EDITOR
+    private void OnDrawGizmosSelected()
+    {
+        Handles.color = Color.red;
+
+        Handles.DrawWireDisc(transform.position, Vector3.up, safeZone);
+    }
+#endif
 }

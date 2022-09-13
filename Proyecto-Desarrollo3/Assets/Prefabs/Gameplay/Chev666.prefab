@@ -1299,7 +1299,7 @@ GameObject:
   - component: {fileID: 962233621}
   m_Layer: 0
   m_Name: Chev666
-  m_TagString: Untagged
+  m_TagString: Chasis
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1348,6 +1348,9 @@ MonoBehaviour:
   turnStrength: 140
   gravityForce: 10
   dragOnGround: 3
+  speedInput: 0
+  turnInput: 0
+  safeZone: 20
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
@@ -1368,8 +1371,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23098449c22b45b40b43bb27d6eb7657, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 30
   currentHealth: 0
+  healthBar: {fileID: 0}
 --- !u!1 &1967885208801384
 GameObject:
   m_ObjectHideFlags: 0
