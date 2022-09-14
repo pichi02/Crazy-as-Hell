@@ -10,7 +10,7 @@ public class CarController : MonoBehaviour
 {
     [SerializeField] private Rigidbody motorRB;
 
-    [SerializeField] private float forwardAccel = 8f, reverseAccel = 4f, maxSpeed = 50f, turnStrength = 180f, gravityForce = 10f, dragOnGround = 3f;
+    [SerializeField] private float forwardAccel = 8f, turnStrength = 180f, gravityForce = 10f, dragOnGround = 3f;
 
     public float speedInput, turnInput;
 

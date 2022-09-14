@@ -128,17 +128,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4019951310819650, guid: 7b367dccc659de64b8c4d882ca0505fc, type: 3}
   m_PrefabInstance: {fileID: 962233619}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &521985298 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5741187300843580772, guid: b20a36f52b02e3f4799e156c061ca5e1, type: 3}
-  m_PrefabInstance: {fileID: 5741187301191454549}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 527711649e28a444c821f8dd7b657fe9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &670628771
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,7 +335,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7758186, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -602,9 +591,8 @@ MonoBehaviour:
   obstacle: {fileID: 4446884271735823407, guid: 8ba264d1cdf29e243b4b2db958940334, type: 3}
   player2: {fileID: 1527637340}
   player1: {fileID: 962233622}
-  goalLogic: {fileID: 521985298}
-  index: 0
   vueltas: {fileID: 1580845956}
+  trackCheckpoint: {fileID: 1363572427}
 --- !u!4 &1320937491
 Transform:
   m_ObjectHideFlags: 0
@@ -620,6 +608,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1363572427 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9083601649743753896, guid: b20a36f52b02e3f4799e156c061ca5e1, type: 3}
+  m_PrefabInstance: {fileID: 5741187301191454549}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1b68341650e7bc409f91c0a66468d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1487897090
 GameObject:
   m_ObjectHideFlags: 3
@@ -849,6 +848,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1095033943058507563, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
+      propertyPath: trackCheckpoint
+      value: 
+      objectReference: {fileID: 1363572427}
     - target: {fileID: 3639942755635259958, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -941,6 +944,22 @@ PrefabInstance:
       propertyPath: carLife
       value: 
       objectReference: {fileID: 962233621}
+    - target: {fileID: 3639942756111722193, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3639942756111722193, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3639942756635098611, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
+      propertyPath: m_text
+      value: 'Vuelta: 0'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3639942756635098611, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
+      propertyPath: m_fontSize
+      value: 44.65
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
 --- !u!1001 &5024523137392071497
@@ -1023,6 +1042,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4702090750457146740, guid: b20a36f52b02e3f4799e156c061ca5e1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5741187301467766528, guid: b20a36f52b02e3f4799e156c061ca5e1, type: 3}
+      propertyPath: m_Name
+      value: Roads
+      objectReference: {fileID: 0}
+    - target: {fileID: 5741187302045446757, guid: b20a36f52b02e3f4799e156c061ca5e1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5741187302334612120, guid: b20a36f52b02e3f4799e156c061ca5e1, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -1069,7 +1100,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5741187302334612121, guid: b20a36f52b02e3f4799e156c061ca5e1, type: 3}
       propertyPath: m_Name
-      value: Speedway
+      value: Track
+      objectReference: {fileID: 0}
+    - target: {fileID: 6945104585199934526, guid: b20a36f52b02e3f4799e156c061ca5e1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b20a36f52b02e3f4799e156c061ca5e1, type: 3}

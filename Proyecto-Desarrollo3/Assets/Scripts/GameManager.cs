@@ -7,24 +7,17 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Obstacle obstacle;
     [SerializeField] private ObstacleSpawner player2;
     [SerializeField] private CarController player1;
-    [SerializeField] private GoalLogic goalLogic;
-
-    public int index;
 
     [SerializeField] private TextMeshProUGUI vueltas;
 
-    private void Awake()
-    {
-        index = 0;
-    }
+    [SerializeField] private TrackCheckpoint trackCheckpoint;
 
     private void Start()
     {
         Obstacle.OnCarCollision += carLife.TakeDamage;
         Obstacle.OnCarCollision += carLife.Dead;
         player2.OnSpawnObject += OnSpawnObject;
-        goalLogic.OnGoalCollison += AddGoalIndex;
-
+        trackCheckpoint.OnLapFinish += LapText;
     }
 
     private void OnSpawnObject(Vector3 pos)
@@ -39,10 +32,6 @@ public class GameManager : MonoBehaviour
 
     }
 
-    private void Update()
-    {
-        vueltas.text = "Vueltas " + index;
-    }
     private void OnDestroy()
     {
         Obstacle.OnCarCollision -= carLife.TakeDamage;
@@ -50,8 +39,8 @@ public class GameManager : MonoBehaviour
         player2.OnSpawnObject -= OnSpawnObject;
     }
 
-    private void AddGoalIndex()
+    private void LapText()
     {
-        index++;
+        vueltas.text = "Vuelta: " + trackCheckpoint.index;
     }
 }
