@@ -11,19 +11,39 @@ public class ObstacleSpawner : MonoBehaviour
 
     public event System.Action<Vector3> OnSpawnObject;
 
+    private float timer = 0;
+
+    bool waitingCooldown;
+
     private void Update()
     {
+
         if (Input.GetMouseButtonDown(0))
         {
+
             RaycastHit hitInfo = new RaycastHit();
             bool hit = Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo);
 
             if (hit)
             {
-                OnSpawnObject?.Invoke(hitInfo.point);
+                if (!waitingCooldown)
+                {
+                    OnSpawnObject?.Invoke(hitInfo.point);
+                    waitingCooldown = true;
+                }
 
             }
         }
+        if (waitingCooldown)
+        {
+            timer += Time.deltaTime;
+        }
+        if (timer > 10)
+        {
+            waitingCooldown = false;
+            timer = 0;
+        }
+        Debug.Log(timer);
     }
     public void SpawnObstacle(Vector3 pos)
     {
