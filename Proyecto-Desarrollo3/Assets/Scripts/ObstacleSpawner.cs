@@ -15,7 +15,7 @@ public class ObstacleSpawner : MonoBehaviour
 
     bool inCooldown;
 
-    const int cooldownTime = 10;
+    const int cooldownTime = 0;
 
     private bool isObstacleSpawned;
 
