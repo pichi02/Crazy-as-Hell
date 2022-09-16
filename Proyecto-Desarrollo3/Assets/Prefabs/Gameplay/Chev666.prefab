@@ -1342,9 +1342,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motorRB: {fileID: 461231853}
-  forwardAccel: 15
-  reverseAccel: 4
-  maxSpeed: 50
+  forwardAccel: 20
   turnStrength: 140
   gravityForce: 10
   dragOnGround: 3

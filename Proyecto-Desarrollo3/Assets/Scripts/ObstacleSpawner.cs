@@ -24,7 +24,7 @@ public class ObstacleSpawner : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-
+            isObstacleSpawned = false;
             RaycastHit hitInfo = new RaycastHit();
             bool hit = Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo);
 
