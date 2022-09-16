@@ -13,7 +13,11 @@ public class ObstacleSpawner : MonoBehaviour
 
     private float timer = 0;
 
-    bool waitingCooldown;
+    bool inCooldown;
+
+    const int cooldownTime = 10;
+
+    private bool isObstacleSpawned;
 
     private void Update()
     {
@@ -26,31 +30,39 @@ public class ObstacleSpawner : MonoBehaviour
 
             if (hit)
             {
-                if (!waitingCooldown)
+                if (!inCooldown)
                 {
                     OnSpawnObject?.Invoke(hitInfo.point);
-                    waitingCooldown = true;
+                    if (isObstacleSpawned)
+                    {
+                        inCooldown = true;
+
+                    }
                 }
 
             }
         }
-        if (waitingCooldown)
+        if (inCooldown)
         {
             timer += Time.deltaTime;
         }
-        if (timer > 10)
+        if (timer > cooldownTime)
         {
-            waitingCooldown = false;
+            inCooldown = false;
             timer = 0;
         }
         Debug.Log(timer);
     }
     public void SpawnObstacle(Vector3 pos)
     {
+        isObstacleSpawned = true;
         int random = Random.Range(0, obstacles.Count);
 
         GameObject bojeInstance = Instantiate(obstacles[random], pos, Quaternion.identity);
     }
+
+
+
 
 
 }

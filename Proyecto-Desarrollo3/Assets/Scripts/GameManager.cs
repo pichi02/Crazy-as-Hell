@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI vueltas;
 
+
     [SerializeField] private TrackCheckpoint trackCheckpoint;
 
     private void Start()
@@ -22,6 +23,7 @@ public class GameManager : MonoBehaviour
 
     private void OnSpawnObject(Vector3 pos)
     {
+
         if (!Utils.IsPointerOverUIObject(Input.mousePosition))
         {
             if (Vector3.Distance(pos, player1.transform.position) > player1.SafeZone)
