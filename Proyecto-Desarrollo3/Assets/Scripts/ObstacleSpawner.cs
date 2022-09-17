@@ -15,7 +15,7 @@ public class ObstacleSpawner : MonoBehaviour
 
     bool inCooldown;
 
-    const int cooldownTime = 0;
+    const int cooldownTime = 10;
 
     private bool isObstacleSpawned;
 
@@ -24,7 +24,7 @@ public class ObstacleSpawner : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            isObstacleSpawned = false;
+
             RaycastHit hitInfo = new RaycastHit();
             bool hit = Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo);
 
@@ -60,9 +60,4 @@ public class ObstacleSpawner : MonoBehaviour
 
         GameObject bojeInstance = Instantiate(obstacles[random], pos, Quaternion.identity);
     }
-
-
-
-
-
 }
