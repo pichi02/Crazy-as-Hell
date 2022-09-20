@@ -14,6 +14,9 @@ public class TrackCheckpoint : MonoBehaviour
 
     public int index;
 
+    public Vector3 vectorPoint;
+    public Vector3 directionPoint;
+
     private void Awake()
     {
         Transform checkpointsTransform = transform.Find("Checkpoints");
@@ -43,6 +46,8 @@ public class TrackCheckpoint : MonoBehaviour
                 OnLapFinish?.Invoke();
             }
             Debug.Log("Correct");
+            vectorPoint = checkpointSingle.transform.position;
+            directionPoint = checkpointSingle.transform.forward;
             nextCheckpointSingleIndex = (nextCheckpointSingleIndex + 1) % checkpointSingleList.Count;
             OnPlayerCorrectCheckpoint?.Invoke(this, EventArgs.Empty);
         }

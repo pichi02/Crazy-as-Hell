@@ -16,7 +16,6 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         Obstacle.OnCarCollision += carLife.TakeDamage;
-        Obstacle.OnCarCollision += carLife.Dead;
         player2.OnSpawnObject += OnSpawnObject;
         trackCheckpoint.OnLapFinish += LapText;
     }
@@ -26,18 +25,19 @@ public class GameManager : MonoBehaviour
 
         if (!Utils.IsPointerOverUIObject(Input.mousePosition))
         {
-            if (Vector3.Distance(pos, player1.transform.position) > player1.SafeZone)
+            if (player1)
             {
-                player2.SpawnObstacle(pos);
+                if (Vector3.Distance(pos, player1.transform.position) > player1.SafeZone)
+                {
+                    player2.SpawnObstacle(pos);
+                }
             }
         }
-
     }
 
     private void OnDestroy()
     {
         Obstacle.OnCarCollision -= carLife.TakeDamage;
-        Obstacle.OnCarCollision -= carLife.Dead;
         player2.OnSpawnObject -= OnSpawnObject;
     }
 

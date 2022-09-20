@@ -4,6 +4,7 @@ using UnityEditor;
 #endif
 using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
 
 public class ObstacleSpawner : MonoBehaviour
 {
@@ -11,48 +12,42 @@ public class ObstacleSpawner : MonoBehaviour
 
     public event System.Action<Vector3> OnSpawnObject;
 
-    private float timer = 0;
-
     bool inCooldown;
 
     const int cooldownTime = 10;
 
     private bool isObstacleSpawned;
 
+    [SerializeField] private LayerMask layer;
+
     private void Update()
     {
-
         if (Input.GetMouseButtonDown(0))
         {
+            RaycastHit[] hits = Physics.RaycastAll(Camera.main.ScreenPointToRay(Input.mousePosition), 100, layer);
 
-            RaycastHit hitInfo = new RaycastHit();
-            bool hit = Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo);
-
-            if (hit)
+            if (hits != null && hits.Length > 0)
             {
                 if (!inCooldown)
                 {
-                    OnSpawnObject?.Invoke(hitInfo.point);
+                    OnSpawnObject?.Invoke(hits[0].point);
                     if (isObstacleSpawned)
                     {
-                        inCooldown = true;
-
+                        Debug.Log(hits[0].transform.gameObject.layer);
+                        StartCoroutine(DisableCooldown());
                     }
                 }
-
             }
         }
-        if (inCooldown)
-        {
-            timer += Time.deltaTime;
-        }
-        if (timer > cooldownTime)
-        {
-            inCooldown = false;
-            timer = 0;
-        }
-        Debug.Log(timer);
     }
+
+    public IEnumerator DisableCooldown()
+    {
+        inCooldown = true;
+        yield return new WaitForSeconds(cooldownTime);
+        inCooldown = false;
+    }
+
     public void SpawnObstacle(Vector3 pos)
     {
         isObstacleSpawned = true;

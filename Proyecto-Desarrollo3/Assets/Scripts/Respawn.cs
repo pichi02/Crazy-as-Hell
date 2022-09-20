@@ -8,6 +8,7 @@ public class Respawn : MonoBehaviour
     [SerializeField] private Transform player;
     [SerializeField] private Transform respawnPoint;
     [SerializeField] private CarController carController;
+    [SerializeField] private TrackCheckpoint trackCheckpoint;
 
     private Quaternion initialRot;
 
@@ -20,8 +21,8 @@ public class Respawn : MonoBehaviour
     {
         if (other.transform.CompareTag("Chasis"))
         {
-            sphere.transform.position = respawnPoint.transform.position;
-            player.transform.rotation = initialRot;
+            sphere.transform.position = trackCheckpoint.vectorPoint;
+            player.transform.forward = trackCheckpoint.directionPoint;
             carController.speedInput = 0;
         }
     }

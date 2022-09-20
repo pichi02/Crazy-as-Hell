@@ -46,3 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacles:
   - {fileID: 3494392086824626260, guid: 8ba264d1cdf29e243b4b2db958940334, type: 3}
+  layer:
+    serializedVersion: 2
+    m_Bits: 8

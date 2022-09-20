@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 
 public class CarLife : MonoBehaviour
 {
@@ -8,7 +9,8 @@ public class CarLife : MonoBehaviour
 
     [SerializeField] private ParticleSystem explosion;
 
-    public event System.Action<int, int> OnTakeDamage;
+    public event Action<int, int> OnTakeDamage;
+    public event Action OnDead;
 
     private void Start()
     {
@@ -19,15 +21,18 @@ public class CarLife : MonoBehaviour
     {
         currentHealth -= 5;
         OnTakeDamage?.Invoke(currentHealth, maxHealth);
+
+        if (currentHealth <= 0)
+        {
+            Dead();
+        }
     }
 
     public void Dead()
     {
-        if (currentHealth <= 0)
-        {
-            Debug.Log("Muerto");
-            explosion.Play();
-            Destroy(gameObject);
-        }
+        OnDead?.Invoke();
+        Debug.Log("Muerto");
+        explosion.Play();
+        Destroy(gameObject);
     }
 }
