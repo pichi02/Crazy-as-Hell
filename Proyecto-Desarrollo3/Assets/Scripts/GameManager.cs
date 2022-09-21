@@ -10,19 +10,20 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI vueltas;
 
-
     [SerializeField] private TrackCheckpoint trackCheckpoint;
+    [SerializeField] private SpeedWay speedWay;
 
     private void Start()
     {
         Obstacle.OnCarCollision += carLife.TakeDamage;
         player2.OnSpawnObject += OnSpawnObject;
         trackCheckpoint.OnLapFinish += LapText;
+        trackCheckpoint.OnLapFinish += CheckLapsToWin;
+        speedWay.OnWin += player1.DisableCarMovement;
     }
 
     private void OnSpawnObject(Vector3 pos)
     {
-
         if (!Utils.IsPointerOverUIObject(Input.mousePosition))
         {
             if (player1)
@@ -44,5 +45,10 @@ public class GameManager : MonoBehaviour
     private void LapText()
     {
         vueltas.text = "Vuelta: " + trackCheckpoint.index;
+    }
+
+    private void CheckLapsToWin()
+    {
+        speedWay.LapsToWin(trackCheckpoint.index);
     }
 }

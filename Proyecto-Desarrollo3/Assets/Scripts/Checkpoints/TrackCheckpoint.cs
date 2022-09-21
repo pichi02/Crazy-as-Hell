@@ -6,7 +6,7 @@ public class TrackCheckpoint : MonoBehaviour
 {
     public event EventHandler OnPlayerCorrectCheckpoint;
     public event EventHandler OnPlayerWrongCheckpoint;
-    public event System.Action OnLapFinish;
+    public event Action OnLapFinish;
 
     private List<CheckpointSingle> checkpointSingleList;
 

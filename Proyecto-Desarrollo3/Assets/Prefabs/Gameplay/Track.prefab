@@ -132,6 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5741187302334612120}
   - component: {fileID: 9083601649743753896}
+  - component: {fileID: 7599601078822158491}
   m_Layer: 0
   m_Name: Track
   m_TagString: Untagged
@@ -169,6 +170,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
+  vectorPoint: {x: 0, y: 0, z: 0}
+  directionPoint: {x: 0, y: 0, z: 0}
+--- !u!114 &7599601078822158491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5741187302334612121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 170908d59aaf27a438f9ae510a5eaaf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxLaps: 0
 --- !u!1001 &896975263489725506
 PrefabInstance:
   m_ObjectHideFlags: 0

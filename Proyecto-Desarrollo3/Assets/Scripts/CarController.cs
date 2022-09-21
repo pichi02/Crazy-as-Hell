@@ -25,6 +25,14 @@ public class CarController : MonoBehaviour
     [SerializeField] private Transform leftFrontWheel, rightFrontWheel;
     [SerializeField] private float maxWheelTurn = 25f;
 
+    private bool _canMove = true;
+
+    public bool CanMove
+    {
+        get => _canMove;
+        set => _canMove = value;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +41,32 @@ public class CarController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+    {
+        if (CanMove)
+        {
+            CarUpdate();
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (CanMove)
+        {
+            MovementRB();
+        }
+    }
+    public float SafeZone => safeZone;
+
+#if UNITY_EDITOR
+    private void OnDrawGizmosSelected()
+    {
+        Handles.color = Color.red;
+
+        Handles.DrawWireDisc(transform.position, Vector3.up, safeZone);
+    }
+#endif
+
+    private void CarInput()
     {
         speedInput = 0f;
 
@@ -46,7 +80,10 @@ public class CarController : MonoBehaviour
         }
 
         turnInput = Input.GetAxis("Horizontal");
+    }
 
+    private void SetCarRotationWithGround()
+    {
         if (grounded)
         {
             transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, turnInput * turnStrength * Time.deltaTime * Input.GetAxis("Vertical"), 0f));
@@ -58,10 +95,9 @@ public class CarController : MonoBehaviour
         Vector3 newPos = motorRB.transform.position - transform.forward * 1.5f;
         newPos.y -= 0.7f;
         transform.position = newPos;
-
     }
 
-    private void FixedUpdate()
+    private void MovementRB()
     {
         grounded = false;
         RaycastHit hit;
@@ -89,14 +125,16 @@ public class CarController : MonoBehaviour
             motorRB.AddForce(Vector3.up * -gravityForce * 100f);
         }
     }
-    public float SafeZone => safeZone;
 
-#if UNITY_EDITOR
-    private void OnDrawGizmosSelected()
+    private void CarUpdate()
     {
-        Handles.color = Color.red;
+        CarInput();
 
-        Handles.DrawWireDisc(transform.position, Vector3.up, safeZone);
+        SetCarRotationWithGround();
     }
-#endif
+
+    public void DisableCarMovement()
+    {
+        CanMove = false;
+    }
 }

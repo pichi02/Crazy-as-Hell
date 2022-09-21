@@ -128,6 +128,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4019951310819650, guid: 7b367dccc659de64b8c4d882ca0505fc, type: 3}
   m_PrefabInstance: {fileID: 962233619}
   m_PrefabAsset: {fileID: 0}
+--- !u!225 &505731513 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 5680270825020557355, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
+  m_PrefabInstance: {fileID: 3639942755993810551}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &670628771
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,6 +602,7 @@ MonoBehaviour:
   player1: {fileID: 962233622}
   vueltas: {fileID: 1580845956}
   trackCheckpoint: {fileID: 1363572427}
+  speedWay: {fileID: 5741187301191454550}
 --- !u!4 &1320937491
 Transform:
   m_ObjectHideFlags: 0
@@ -856,6 +862,14 @@ PrefabInstance:
       propertyPath: carLife
       value: 
       objectReference: {fileID: 962233621}
+    - target: {fileID: 2008866256, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
+      propertyPath: panelWin
+      value: 
+      objectReference: {fileID: 505731513}
+    - target: {fileID: 2008866256, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
+      propertyPath: speedWay
+      value: 
+      objectReference: {fileID: 5741187301191454550}
     - target: {fileID: 1095033943058507563, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
       propertyPath: trackCheckpoint
       value: 
@@ -1110,8 +1124,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: Track
       objectReference: {fileID: 0}
+    - target: {fileID: 7599601078822158491, guid: b20a36f52b02e3f4799e156c061ca5e1, type: 3}
+      propertyPath: maxLaps
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b20a36f52b02e3f4799e156c061ca5e1, type: 3}
+--- !u!114 &5741187301191454550 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7599601078822158491, guid: b20a36f52b02e3f4799e156c061ca5e1, type: 3}
+  m_PrefabInstance: {fileID: 5741187301191454549}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 170908d59aaf27a438f9ae510a5eaaf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8460906582614663842
 PrefabInstance:
   m_ObjectHideFlags: 0
