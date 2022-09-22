@@ -9,11 +9,17 @@ public class HealthBar : MonoBehaviour
     private void Start()
     {
         carLife.OnTakeDamage += SetHeath;
+        carLife.OnIncreaseLife += SetHeath;
     }
 
     public void SetHeath(int health, int maxHealth)
     {
         slider.maxValue = maxHealth;
         slider.value = health;
+    }
+    private void OnDestroy()
+    {
+        carLife.OnTakeDamage -= SetHeath;
+        carLife.OnIncreaseLife -= SetHeath;
     }
 }

@@ -15,11 +15,14 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        PowerUp.OnIncreaseLifePowerUpPick += carLife.IncreaseLife;
+        PowerUp.OnDecreaseLifePowerUpPick += carLife.TakeDamage;
         Obstacle.OnCarCollision += carLife.TakeDamage;
         player2.OnSpawnObject += OnSpawnObject;
         trackCheckpoint.OnLapFinish += LapText;
         trackCheckpoint.OnLapFinish += CheckLapsToWin;
         speedWay.OnWin += player1.DisableCarMovement;
+
     }
 
     private void OnSpawnObject(Vector3 pos)
@@ -40,6 +43,11 @@ public class GameManager : MonoBehaviour
     {
         Obstacle.OnCarCollision -= carLife.TakeDamage;
         player2.OnSpawnObject -= OnSpawnObject;
+        trackCheckpoint.OnLapFinish -= LapText;
+        trackCheckpoint.OnLapFinish -= CheckLapsToWin;
+        speedWay.OnWin -= player1.DisableCarMovement;
+        PowerUp.OnIncreaseLifePowerUpPick -= carLife.IncreaseLife;
+        PowerUp.OnDecreaseLifePowerUpPick -= carLife.TakeDamage;
     }
 
     private void LapText()
