@@ -10,11 +10,15 @@ public class CarController : MonoBehaviour
 {
     [SerializeField] private Rigidbody motorRB;
 
-    [SerializeField] private float forwardAccel = 8f, turnStrength = 180f, gravityForce = 10f, dragOnGround = 3f;
+    [SerializeField] private float speed = 1000f, forwardAccel = 8f, turnStrength = 180f, gravityForce = 10f, dragOnGround = 3f, powerUpTimer;
 
     public float speedInput, turnInput;
 
     private bool grounded;
+
+    private bool increaseSpeed;
+
+    private bool decreaseSpeed;
 
     [SerializeField] private float safeZone = 20f;
 
@@ -72,12 +76,12 @@ public class CarController : MonoBehaviour
 
         if (Input.GetAxis("Vertical") > 0)
         {
-            speedInput = Input.GetAxis("Vertical") * forwardAccel * 1000f;
+            speedInput = Input.GetAxis("Vertical") * forwardAccel * speed;
         }
-        else if (Input.GetAxis("Vertical") < 0)
-        {
-            //speedInput = Input.GetAxis("Vertical") * reverseAccel * 1000f;
-        }
+        //else if (Input.GetAxis("Vertical") < 0)
+        //{
+        //    //speedInput = Input.GetAxis("Vertical") * reverseAccel * 1000f;
+        //}
 
         turnInput = Input.GetAxis("Horizontal");
     }
@@ -131,10 +135,46 @@ public class CarController : MonoBehaviour
         CarInput();
 
         SetCarRotationWithGround();
+
+        CheckPowerUps();
     }
 
     public void DisableCarMovement()
     {
         CanMove = false;
+    }
+
+    public void IncreaseSpeed()
+    {
+        increaseSpeed = true;
+        speed *= 2;
+    }
+    public void DecreaseSpeed()
+    {
+        decreaseSpeed = true;
+        speed /= 2;
+    }
+
+    private void CheckPowerUps()
+    {
+        if (increaseSpeed || decreaseSpeed)
+        {
+            powerUpTimer += Time.deltaTime;
+
+            if (powerUpTimer > 10)
+            {
+                if (decreaseSpeed)
+                {
+                    speed *= 2;
+                    decreaseSpeed = false;
+                }
+                else if (increaseSpeed)
+                {
+                    speed /= 2;
+                    increaseSpeed = false;
+                }
+                powerUpTimer = 0f;
+            }
+        }
     }
 }

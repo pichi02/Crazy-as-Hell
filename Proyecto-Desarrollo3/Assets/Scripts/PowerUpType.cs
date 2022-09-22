@@ -3,9 +3,8 @@
 public enum TYPE
 {
     INCREASE_LIFE,
-    DECREASE_LIFE
-    //    ,
-    //INCREASE_SPEED,
-    //DECREASE_SPEED
+    DECREASE_LIFE,
+    INCREASE_SPEED,
+    DECREASE_SPEED
 };
 

@@ -17,6 +17,10 @@ public class GameManager : MonoBehaviour
     {
         PowerUp.OnIncreaseLifePowerUpPick += carLife.IncreaseLife;
         PowerUp.OnDecreaseLifePowerUpPick += carLife.TakeDamage;
+        PowerUp.OnIncreaseSpeedPowerUpPick += player1.IncreaseSpeed;
+        PowerUp.OnDecreaseSpeedPowerUpPick += player1.DecreaseSpeed;
+        //PowerUp.OnDisableIncreaseSpeedPowerUp += player1.DecreaseSpeed;
+        //PowerUp.OnDisableDecreaseSpeedPowerUp += player1.IncreaseSpeed;
         Obstacle.OnCarCollision += carLife.TakeDamage;
         player2.OnSpawnObject += OnSpawnObject;
         trackCheckpoint.OnLapFinish += LapText;
@@ -48,6 +52,8 @@ public class GameManager : MonoBehaviour
         speedWay.OnWin -= player1.DisableCarMovement;
         PowerUp.OnIncreaseLifePowerUpPick -= carLife.IncreaseLife;
         PowerUp.OnDecreaseLifePowerUpPick -= carLife.TakeDamage;
+        PowerUp.OnIncreaseSpeedPowerUpPick -= player1.IncreaseSpeed;
+        PowerUp.OnDecreaseSpeedPowerUpPick -= player1.DecreaseSpeed;
     }
 
     private void LapText()
