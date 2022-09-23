@@ -149,6 +149,8 @@ public class CarController : MonoBehaviour
 
     public void IncreaseSpeed()
     {
+        Debug.Log("increase speed");
+
         if (canPickPowerUp)
         {
             increaseSpeed = true;
@@ -159,6 +161,7 @@ public class CarController : MonoBehaviour
     }
     public void DecreaseSpeed()
     {
+        Debug.Log("decrease speed");
         if (canPickPowerUp)
         {
             decreaseSpeed = true;

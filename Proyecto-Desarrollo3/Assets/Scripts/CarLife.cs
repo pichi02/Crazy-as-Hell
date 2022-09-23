@@ -20,6 +20,8 @@ public class CarLife : MonoBehaviour
     }
     public void TakeDamage()
     {
+        Debug.Log("decrease life");
+
         currentHealth -= 5;
         OnTakeDamage?.Invoke(currentHealth, maxHealth);
 
