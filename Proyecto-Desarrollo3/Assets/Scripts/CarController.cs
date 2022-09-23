@@ -20,6 +20,8 @@ public class CarController : MonoBehaviour
 
     private bool decreaseSpeed;
 
+    private bool canPickPowerUp;
+
     [SerializeField] private float safeZone = 20f;
 
     [SerializeField] private LayerMask whatIsGround;
@@ -41,6 +43,7 @@ public class CarController : MonoBehaviour
     void Start()
     {
         motorRB.transform.parent = null;
+        canPickPowerUp = true;
     }
 
     // Update is called once per frame
@@ -146,13 +149,22 @@ public class CarController : MonoBehaviour
 
     public void IncreaseSpeed()
     {
-        increaseSpeed = true;
-        speed *= 2;
+        if (canPickPowerUp)
+        {
+            increaseSpeed = true;
+            speed *= 1.3f;
+        }
+        canPickPowerUp = false;
+
     }
     public void DecreaseSpeed()
     {
-        decreaseSpeed = true;
-        speed /= 2;
+        if (canPickPowerUp)
+        {
+            decreaseSpeed = true;
+            speed /= 1.3f;
+        }
+        canPickPowerUp = false;
     }
 
     private void CheckPowerUps()
@@ -165,15 +177,16 @@ public class CarController : MonoBehaviour
             {
                 if (decreaseSpeed)
                 {
-                    speed *= 2;
+                    speed *= 1.3f;
                     decreaseSpeed = false;
                 }
                 else if (increaseSpeed)
                 {
-                    speed /= 2;
+                    speed /= 1.3f;
                     increaseSpeed = false;
                 }
                 powerUpTimer = 0f;
+                canPickPowerUp = true;
             }
         }
     }
