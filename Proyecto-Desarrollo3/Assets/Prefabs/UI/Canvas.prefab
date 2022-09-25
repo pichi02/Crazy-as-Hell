@@ -1836,7 +1836,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textVersion: {fileID: 1681922375}
   panelLose: {fileID: 1464365625}
+  panelWin: {fileID: 5680270825020557355}
   carLife: {fileID: 0}
+  speedWay: {fileID: 0}
 --- !u!1 &3639942755977701296
 GameObject:
   m_ObjectHideFlags: 0

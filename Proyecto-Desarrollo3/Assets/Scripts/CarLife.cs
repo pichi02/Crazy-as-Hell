@@ -5,7 +5,6 @@ public class CarLife : MonoBehaviour
 {
     [SerializeField] private int maxHealth = 100;
     [SerializeField] private int currentHealth;
-    [SerializeField] private MeshRenderer meshRenderer;
 
     [SerializeField] private ParticleSystem explosion;
 
@@ -16,7 +15,6 @@ public class CarLife : MonoBehaviour
     private void Start()
     {
         currentHealth = maxHealth;
-        explosion.Pause();
     }
     public void TakeDamage()
     {
