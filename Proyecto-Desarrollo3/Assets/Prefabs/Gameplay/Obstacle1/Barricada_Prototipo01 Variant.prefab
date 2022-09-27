@@ -625,7 +625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0480e68d6c6e724d83a8b42b6353bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTime: 7
+  maxTime: 4
 --- !u!1 &3918790966620985659 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8192506447163554613, guid: 8c02a9f2488280a4ab97bebb269c77d5, type: 3}

@@ -7,7 +7,7 @@ public class Obstacle : MonoBehaviour
     public delegate void CarCollided();
     public static CarCollided OnCarCollision;
     private float timer = 0;
-    [SerializeField] private float maxTime = 7;
+    [SerializeField] private float maxTime = 3;
 
     private void OnCollisionEnter(Collision collision)
     {

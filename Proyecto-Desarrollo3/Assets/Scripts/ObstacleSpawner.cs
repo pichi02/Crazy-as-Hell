@@ -5,16 +5,19 @@ using UnityEditor;
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+using System;
 
 public class ObstacleSpawner : MonoBehaviour
 {
     [SerializeField] private List<GameObject> obstacles;
 
-    public event System.Action<Vector3> OnSpawnObject;
+    public event Action<Vector3> OnSpawnObject;
+    public event Action<float> OnSetCooldown;
 
     bool inCooldown;
 
-    const int cooldownTime = 10;
+    const int cooldownTime = 5;
+    private float cooldown = 5;
 
     private bool isObstacleSpawned;
 
@@ -35,8 +38,20 @@ public class ObstacleSpawner : MonoBehaviour
                     {
                         Debug.Log(hits[0].transform.gameObject.layer);
                         StartCoroutine(DisableCooldown());
+                        
                     }
                 }
+            }
+        }
+
+        if (inCooldown)
+        {
+            cooldown -= Time.deltaTime;
+            OnSetCooldown?.Invoke(cooldown);
+
+            if (cooldown <= 0)
+            {
+                cooldown = 5;
             }
         }
     }
@@ -51,8 +66,8 @@ public class ObstacleSpawner : MonoBehaviour
     public void SpawnObstacle(Vector3 pos)
     {
         isObstacleSpawned = true;
-        int random = Random.Range(0, obstacles.Count);
-
+        int random = UnityEngine.Random.Range(0, obstacles.Count);
+        
         GameObject bojeInstance = Instantiate(obstacles[random], pos, Quaternion.identity);
     }
 }
