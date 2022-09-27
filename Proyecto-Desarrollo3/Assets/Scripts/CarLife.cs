@@ -18,6 +18,10 @@ public class CarLife : MonoBehaviour
     }
     public void TakeDamage()
     {
+        if (currentHealth <= 0)
+        {
+            return;
+        }
         Debug.Log("decrease life");
 
         currentHealth -= 5;
