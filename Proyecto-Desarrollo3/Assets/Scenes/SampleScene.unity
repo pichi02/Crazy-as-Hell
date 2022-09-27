@@ -380,7 +380,7 @@ GameObject:
   m_Component:
   - component: {fileID: 340397265}
   m_Layer: 0
-  m_Name: ====SCENE====
+  m_Name: =======SCENE=======
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -394,7 +394,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 340397264}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.0940595, y: 3.026305, z: -216.01598}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -541,6 +541,11 @@ MeshCollider:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e61ec3335d2311d43965bf8643cc5826, type: 3}
   m_PrefabInstance: {fileID: 441786193}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &599378964 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7171724621844953194, guid: a6bf705bf71cc5e4588610f1553644eb, type: 3}
+  m_PrefabInstance: {fileID: 3949237816426327191}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &670628771
 GameObject:
@@ -1655,7 +1660,7 @@ PrefabInstance:
     - target: {fileID: 1549036519, guid: fb06eefa00499f349b0a68d6db3efd55, type: 3}
       propertyPath: sphere
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 599378964}
     - target: {fileID: 1549036519, guid: fb06eefa00499f349b0a68d6db3efd55, type: 3}
       propertyPath: respawnPoint
       value: 

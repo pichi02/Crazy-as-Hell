@@ -193,4 +193,10 @@ public class CarController : MonoBehaviour
             }
         }
     }
+
+    public void ResetSpeed()
+    {
+        speedInput = 0;
+        motorRB.velocity = Vector3.zero;
+    }
 }
