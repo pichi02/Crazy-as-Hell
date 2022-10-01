@@ -27,7 +27,7 @@ public class ObstacleSpawner : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            RaycastHit[] hits = Physics.RaycastAll(Camera.main.ScreenPointToRay(Input.mousePosition), 100, layer);
+            RaycastHit[] hits = Physics.RaycastAll(Camera.main.ScreenPointToRay(Input.mousePosition), 500, layer);
 
             if (hits != null && hits.Length > 0)
             {
@@ -38,7 +38,7 @@ public class ObstacleSpawner : MonoBehaviour
                     {
                         Debug.Log(hits[0].transform.gameObject.layer);
                         StartCoroutine(DisableCooldown());
-                        
+
                     }
                 }
             }
@@ -67,7 +67,46 @@ public class ObstacleSpawner : MonoBehaviour
     {
         isObstacleSpawned = true;
         int random = UnityEngine.Random.Range(0, obstacles.Count);
-        
+
+        List<RaycastHit> hits = new List<RaycastHit>();
+
+        RaycastHit hit;
+
+        if (Physics.Raycast(pos, Vector3.forward * 100, out hit))
+        {
+            hits.Add(hit);
+            Debug.DrawLine(pos, hit.point, Color.green, 10);
+        }
+        if (Physics.Raycast(pos, Vector3.right * 100, out hit))
+        {
+            hits.Add(hit);
+            Debug.DrawLine(pos, hit.point, Color.blue, 10);
+        }
+        if (Physics.Raycast(pos, Vector3.back * 100, out hit))
+        {
+            hits.Add(hit);
+            Debug.DrawLine(pos, hit.point, Color.black, 10);
+        }
+        if (Physics.Raycast(pos, Vector3.left * 100, out hit))
+        {
+            hits.Add(hit);
+            Debug.DrawLine(pos, hit.point, Color.red, 10);
+        }
+
+        float minDistance = float.MaxValue;
+        int indexNear = 0;
+        for (int i = 0; i < hits.Count; i++)
+        {
+            float currentDistance = Vector3.Distance(hits[i].point, pos);
+            if (currentDistance < minDistance)
+            {
+                minDistance = currentDistance;
+                indexNear = i;
+            }
+        }
+        Vector3 direction = hits[indexNear].point - pos;
+
         GameObject bojeInstance = Instantiate(obstacles[random], pos, Quaternion.identity);
+        bojeInstance.transform.forward =  hits[indexNear].normal.normalized;
     }
 }
