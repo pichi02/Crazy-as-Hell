@@ -63,7 +63,7 @@ public class ObstacleSpawner : MonoBehaviour
         inCooldown = false;
     }
 
-    public void SpawnObstacle(Vector3 pos)
+    public void SpawnObstacle(Vector3 pos, Vector3 lookAt)
     {
         isObstacleSpawned = true;
         int random = UnityEngine.Random.Range(0, obstacles.Count);
@@ -107,6 +107,7 @@ public class ObstacleSpawner : MonoBehaviour
         Vector3 direction = hits[indexNear].point - pos;
 
         GameObject bojeInstance = Instantiate(obstacles[random], pos, Quaternion.identity);
-        bojeInstance.transform.forward =  hits[indexNear].normal.normalized;
+        bojeInstance.transform.forward = hits[indexNear].normal;
+        bojeInstance.transform.LookAt(lookAt);
     }
 }

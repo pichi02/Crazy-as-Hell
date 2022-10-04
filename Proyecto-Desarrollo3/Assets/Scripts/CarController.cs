@@ -199,4 +199,9 @@ public class CarController : MonoBehaviour
         speedInput = 0;
         motorRB.velocity = Vector3.zero;
     }
+
+    public Vector3 GetPosition()
+    {
+        return transform.position;
+    }
 }

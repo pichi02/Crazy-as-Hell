@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
             {
                 if (Vector3.Distance(pos, player1.transform.position) > player1.SafeZone)
                 {
-                    player2.SpawnObstacle(pos);
+                    player2.SpawnObstacle(pos, player1.GetPosition());
                 }
             }
         }
