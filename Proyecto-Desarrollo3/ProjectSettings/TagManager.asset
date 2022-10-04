@@ -8,6 +8,7 @@ TagManager:
   - Chasis
   - Obstacle
   - PowerUp
+  - PowerUpText
   layers:
   - Default
   - TransparentFX

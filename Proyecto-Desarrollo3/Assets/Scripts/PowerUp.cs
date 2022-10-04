@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 
 public class PowerUp : MonoBehaviour
@@ -9,13 +10,12 @@ public class PowerUp : MonoBehaviour
     private System.Random randGen = new System.Random();
     private int random;
 
-    public static event System.Action OnIncreaseLifePowerUpPick;
+    public static event Action OnIncreaseLifePowerUpPick;
+    public static event Action OnDecreaseLifePowerUpPick;
+    public static event Action OnIncreaseSpeedPowerUpPick;
+    public static event Action OnDecreaseSpeedPowerUpPick;
+    public static event Action<TYPE> OnPowerUpPick;
 
-    public static event System.Action OnDecreaseLifePowerUpPick;
-
-    public static event System.Action OnIncreaseSpeedPowerUpPick;
-
-    public static event System.Action OnDecreaseSpeedPowerUpPick;
 
     private void Start()
     {
@@ -25,10 +25,13 @@ public class PowerUp : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+
+
         if (collision.transform.CompareTag("Chasis"))
         {
-
+            OnPowerUpPick?.Invoke(type);
             Debug.Log("choco");
+
             switch (type)
             {
                 case TYPE.INCREASE_LIFE:
