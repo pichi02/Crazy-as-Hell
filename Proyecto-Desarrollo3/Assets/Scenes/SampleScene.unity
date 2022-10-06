@@ -754,7 +754,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1.7794486, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1822,6 +1822,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player2
       objectReference: {fileID: 0}
+    - target: {fileID: 8460906583251667718, guid: 7899515cac293b749a05c2892f3c6cf3, type: 3}
+      propertyPath: obstacles.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8460906583251667718, guid: 7899515cac293b749a05c2892f3c6cf3, type: 3}
+      propertyPath: obstacles.Array.data[0]
+      value: 
+      objectReference: {fileID: 3813810580490363041, guid: 0ecaef183289a6146bcd68706d7be62f, type: 3}
+    - target: {fileID: 8460906583251667718, guid: 7899515cac293b749a05c2892f3c6cf3, type: 3}
+      propertyPath: obstacles.Array.data[1]
+      value: 
+      objectReference: {fileID: 1448193708885607158, guid: 505f83a42cd71254f85801a7efc69245, type: 3}
+    - target: {fileID: 8460906583251667718, guid: 7899515cac293b749a05c2892f3c6cf3, type: 3}
+      propertyPath: obstacles.Array.data[2]
+      value: 
+      objectReference: {fileID: 4375349159159322731, guid: 373685a093954f54587f77f4c60c254d, type: 3}
     - target: {fileID: 8460906583251667719, guid: 7899515cac293b749a05c2892f3c6cf3, type: 3}
       propertyPath: m_RootOrder
       value: 9
