@@ -9,7 +9,9 @@ using System;
 
 public class ObstacleSpawner : MonoBehaviour
 {
+
     [SerializeField] private List<GameObject> obstacles;
+    [SerializeField] private CardsDeck deck;
 
     public event Action<Vector3> OnSpawnObject;
     public event Action<float> OnSetCooldown;
@@ -66,7 +68,7 @@ public class ObstacleSpawner : MonoBehaviour
     public void SpawnObstacle(Vector3 pos, Vector3 lookAt)
     {
         isObstacleSpawned = true;
-        int random = UnityEngine.Random.Range(0, obstacles.Count);
+        //int random = UnityEngine.Random.Range(0, obstacles.Count);
 
         List<RaycastHit> hits = new List<RaycastHit>();
 
@@ -105,9 +107,25 @@ public class ObstacleSpawner : MonoBehaviour
             }
         }
         Vector3 direction = hits[indexNear].point - pos;
+        GameObject bojeInstance = null;
+        for (int i = 0; i < deck.GetDeck().Count; i++)
+        {
+            if (deck.GetDeck()[i].GetIsClicked())
+            {
+                Vector3 aux = deck.GetDeck()[i].transform.position;
+                deck.GetDeck()[i].transform.position = deck.GetNextCards()[0].transform.position;
+                deck.GetNextCards()[0].transform.position = aux;
 
-        GameObject bojeInstance = Instantiate(obstacles[random], pos, Quaternion.identity);
-        bojeInstance.transform.forward = hits[indexNear].normal;
-        bojeInstance.transform.LookAt(lookAt);
+                bojeInstance = Instantiate(deck.GetDeck()[i].GetPrefab(), pos, Quaternion.identity);
+                deck.GetNextCards().Add(deck.GetDeck()[i]);
+                deck.GetDeck().Remove(deck.GetDeck()[i]);
+                deck.GetDeck().Add(deck.GetNextCards()[0]);
+                deck.GetNextCards().Remove(deck.GetNextCards()[0]);
+
+               
+            }
+        }
+        //bojeInstance.transform.forward = hits[indexNear].normal;
+        //bojeInstance.transform.LookAt(lookAt);
     }
 }
