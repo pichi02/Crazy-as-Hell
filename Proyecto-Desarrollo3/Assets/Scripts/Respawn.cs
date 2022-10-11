@@ -10,8 +10,6 @@ public class Respawn : MonoBehaviour
     [SerializeField] private CarController carController;
     [SerializeField] private TrackCheckpoint trackCheckpoint;
 
-    private float respawnTime = 1;
-
     private Quaternion initialRot;
 
     private void Awake()
@@ -19,20 +17,13 @@ public class Respawn : MonoBehaviour
         initialRot = player.transform.rotation;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (other.transform.CompareTag("Chasis"))
+        if (collision.transform.CompareTag("Chasis"))
         {
-            sphere.transform.position = new Vector3(trackCheckpoint.vectorPoint.x, 4f, trackCheckpoint.vectorPoint.z);
+            sphere.transform.position = new Vector3(trackCheckpoint.vectorPoint.x, trackCheckpoint.vectorPoint.y - 3f, trackCheckpoint.vectorPoint.z);
             player.transform.forward = trackCheckpoint.directionPoint;
             carController.ResetSpeed();
         }
     }
-
-    //private IEnumerator RespawnInCheckpoint()
-    //{
-    //    carController.CanMove = false;
-    //    yield return new WaitForSeconds(respawnTime);
-    //    carController.CanMove = true;
-    //}
 }
