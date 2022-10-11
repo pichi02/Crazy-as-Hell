@@ -1,7 +1,6 @@
 using UnityEngine;
 using TMPro;
 using System.Collections;
-using System.Globalization;
 public class UIGameplayManager : MonoBehaviour
 {
     [SerializeField] private TMP_Text textVersion;
@@ -14,17 +13,25 @@ public class UIGameplayManager : MonoBehaviour
     [SerializeField] private PowerUp powerUp;
 
     [SerializeField] private TextMeshProUGUI powerUpTypeText;
+    [SerializeField] private TextMeshProUGUI trackText;
+
+    [SerializeField] private TrackCheckpoint trackCheckpoint;
+
     private CanvasGroup powerUpTypeCanvasGroup;
+    private CanvasGroup trackTextCanvasGroup;
 
     private IEnumerator activePanelPowerUp;
     void Start()
     {
+        trackTextCanvasGroup = trackText.GetComponent<CanvasGroup>();
         powerUpTypeCanvasGroup = powerUpTypeText.GetComponent<CanvasGroup>();
         textVersion.text = Application.version;
         carLife.OnDead += ActiveLosePanel;
         speedWay.OnWin += ActiveWinPanel;
         PowerUp.OnPowerUpPick += UpdatePowerUpType;
         powerUpTypeText.gameObject.SetActive(false);
+        trackText.gameObject.SetActive(false);
+        trackCheckpoint.OnLapFinish += ShowTrackText;
     }
 
     private void ActiveLosePanel()
@@ -55,6 +62,10 @@ public class UIGameplayManager : MonoBehaviour
         {
             panel.gameObject.SetActive(false);
         }
+        if (panel.transform.CompareTag("LapsText"))
+        {
+            panel.gameObject.SetActive(false);
+        }
         ActivePanel(panel, true);
     }
 
@@ -76,8 +87,13 @@ public class UIGameplayManager : MonoBehaviour
         }
         activePanelPowerUp = CoroutineActivePanel(powerUpTypeCanvasGroup);
         StartCoroutine(activePanelPowerUp);
+    }
+
+    private void ShowTrackText()
+    {
+        trackText.gameObject.SetActive(true);
+        StartCoroutine(CoroutineActivePanel(trackTextCanvasGroup));
         Debug.Log("entro");
-        //powerUpTypeText.gameObject.SetActive(false);
 
     }
     private void OnDestroy()

@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private ObstacleSpawner player2;
     [SerializeField] private CarController player1;
 
-    [SerializeField] private TextMeshProUGUI vueltas;
+    [SerializeField] private TextMeshProUGUI laps;
 
     [SerializeField] private TrackCheckpoint trackCheckpoint;
     [SerializeField] private SpeedWay speedWay;
@@ -19,8 +19,6 @@ public class GameManager : MonoBehaviour
         PowerUp.OnDecreaseLifePowerUpPick += carLife.TakeDamage;
         PowerUp.OnIncreaseSpeedPowerUpPick += player1.IncreaseSpeed;
         PowerUp.OnDecreaseSpeedPowerUpPick += player1.DecreaseSpeed;
-        //PowerUp.OnDisableIncreaseSpeedPowerUp += player1.DecreaseSpeed;
-        //PowerUp.OnDisableDecreaseSpeedPowerUp += player1.IncreaseSpeed;
         Obstacle.OnCarCollision += carLife.TakeDamage;
         player2.OnSpawnObject += OnSpawnObject;
         trackCheckpoint.OnLapFinish += LapText;
@@ -58,7 +56,7 @@ public class GameManager : MonoBehaviour
 
     private void LapText()
     {
-        vueltas.text = "Vuelta: " + trackCheckpoint.index;
+        laps.text = "Vuelta: " + trackCheckpoint.index + " / " + speedWay.maxLaps;
     }
 
     private void CheckLapsToWin()

@@ -475,7 +475,7 @@ Transform:
   - {fileID: 329689801}
   - {fileID: 310549121}
   m_Father: {fileID: 3639942755635259958}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1012332425
 GameObject:
@@ -512,11 +512,11 @@ RectTransform:
   m_Father: {fileID: 1745443626689807065}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 40, y: -120}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -50, y: -50}
   m_SizeDelta: {x: 320, y: 50}
-  m_Pivot: {x: 0, y: 1}
+  m_Pivot: {x: 1, y: 1}
 --- !u!114 &1012332427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2709,7 +2709,6 @@ RectTransform:
   - {fileID: 3639942756372702351}
   - {fileID: 7712975644973676640}
   - {fileID: 2763995141771779208}
-  - {fileID: 415195831105454571}
   - {fileID: 920277237}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -3160,6 +3159,7 @@ GameObject:
   - component: {fileID: 3639942756635098612}
   - component: {fileID: 3639942756635098610}
   - component: {fileID: 3639942756635098611}
+  - component: {fileID: 8229472745014393487}
   m_Layer: 5
   m_Name: Vueltas
   m_TagString: Untagged
@@ -3184,7 +3184,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -50, y: -50}
+  m_AnchoredPosition: {x: -50, y: -150}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 1, y: 1}
 --- !u!222 &3639942756635098610
@@ -3284,6 +3284,18 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!225 &8229472745014393487
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3639942756635098613}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &3639942756784270383
 GameObject:
   m_ObjectHideFlags: 0
@@ -4246,12 +4258,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4770488291761783205}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 3639942755635259958}
+  m_Father: {fileID: 1745443626689807065}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
@@ -4552,6 +4564,7 @@ RectTransform:
   - {fileID: 3639942756635098612}
   - {fileID: 1681922374}
   - {fileID: 1012332426}
+  - {fileID: 415195831105454571}
   m_Father: {fileID: 3639942755635259958}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

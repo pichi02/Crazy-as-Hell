@@ -4,7 +4,7 @@ using UnityEngine;
 public class SpeedWay : MonoBehaviour
 {
     public event Action OnWin;
-    [SerializeField] private int maxLaps;
+    public int maxLaps;
 
     public void LapsToWin(int currentLaps)
     {

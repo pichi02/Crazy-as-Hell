@@ -9,6 +9,7 @@ TagManager:
   - Obstacle
   - PowerUp
   - PowerUpText
+  - LapsText
   layers:
   - Default
   - TransparentFX
