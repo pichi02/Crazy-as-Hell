@@ -826,7 +826,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.6, y: 1}
+    m_SensorSize: {x: 1.6009175, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1684,6 +1684,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 53397958}
     - target: {fileID: 2008866256, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
+      propertyPath: lapsText
+      value: 
+      objectReference: {fileID: 1580845956}
+    - target: {fileID: 2008866256, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
       propertyPath: speedWay
       value: 
       objectReference: {fileID: 4553331848192897590}
@@ -1795,9 +1799,33 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3639942756635098611, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
+      propertyPath: m_fontSize
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 3639942756635098611, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3639942756635098612, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 526.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 3639942756635098612, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 166.543
+      objectReference: {fileID: 0}
+    - target: {fileID: 3639942756635098612, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -647.84
+      objectReference: {fileID: 0}
     - target: {fileID: 3639942756635098612, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -150
+      value: -440
+      objectReference: {fileID: 0}
+    - target: {fileID: 3639942756635098613, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3639942756635098613, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
       propertyPath: m_TagString
@@ -1913,6 +1941,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4553331848192897591, guid: ac37be2b0a31b4f4cb83c4c5664ca9c4, type: 3}
       propertyPath: vectorPoint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4553331848192897592, guid: ac37be2b0a31b4f4cb83c4c5664ca9c4, type: 3}
+      propertyPath: m_Convex
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7367714413076655729, guid: ac37be2b0a31b4f4cb83c4c5664ca9c4, type: 3}

@@ -8,8 +8,9 @@ public class SceneLoader : MonoBehaviour
 {
     public static SceneLoader sceneLoader;
 
-    [SerializeField] private GameObject canvasLoader;
-    private Image progressBar;
+    [SerializeField] private GameObject loaderCanvas;
+    [SerializeField] private Image progressBar;
+
     private void Awake()
     {
         if (sceneLoader == null)
@@ -29,7 +30,7 @@ public class SceneLoader : MonoBehaviour
         var scene = SceneManager.LoadSceneAsync(sceneName);
         scene.allowSceneActivation = false;
 
-        canvasLoader.SetActive(true);
+        loaderCanvas.SetActive(true);
 
         do
         {
@@ -39,6 +40,6 @@ public class SceneLoader : MonoBehaviour
         } while (scene.progress < 0.9f);
 
         scene.allowSceneActivation = true;
-        canvasLoader.SetActive(false);
+        loaderCanvas.SetActive(false);
     }
 }
