@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class ChangeSceneButton : MonoBehaviour
 {
-
-    public void ChangeScene(string sceneName)
+    public void ChangeScene()
     {
-        SceneLoader.sceneLoader.LoadScene(sceneName);
+        StartCoroutine(SceneLoader.sceneLoader.Load());
     }
 }

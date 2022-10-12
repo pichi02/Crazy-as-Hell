@@ -34,16 +34,16 @@ public class PauseMenu : MonoBehaviour
 
     public void Retry()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Gameplay");
     }
 
     public void LoadMenu()
     {
-        Debug.Log("Load Menu...");
+        SceneManager.LoadScene("Menu");
     }
 
     public void QuitGame()
     {
-        Debug.Log("Quit Game...");
+        Application.Quit();
     }
 }
