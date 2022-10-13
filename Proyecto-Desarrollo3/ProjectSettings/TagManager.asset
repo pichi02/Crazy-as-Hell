@@ -10,6 +10,9 @@ TagManager:
   - PowerUp
   - PowerUpText
   - LapsText
+  - LoaderCanvas
+  - TextProgress
+  - ProgressBar
   layers:
   - Default
   - TransparentFX

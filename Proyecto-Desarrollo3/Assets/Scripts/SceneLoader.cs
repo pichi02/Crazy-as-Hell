@@ -5,17 +5,21 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using TMPro;
 
+
 public class SceneLoader : MonoBehaviour
 {
     public static SceneLoader sceneLoader;
 
     [SerializeField] private GameObject loaderCanvas;
 
+    [SerializeField] private GameObject panel;
+
     [SerializeField] private TextMeshProUGUI textProgress;
     [SerializeField] private Image progressBar;
 
     private void Awake()
     {
+        Time.timeScale = 1f;
         if (sceneLoader == null)
         {
             sceneLoader = this;
@@ -28,11 +32,13 @@ public class SceneLoader : MonoBehaviour
 
     }
 
-    public IEnumerator Load()
+    public IEnumerator Load(string name)
     {
+
+        textProgress = GetComponent<TextMeshProUGUI>();
         yield return null;
 
-        AsyncOperation loadOperation = SceneManager.LoadSceneAsync("Gameplay");
+        AsyncOperation loadOperation = SceneManager.LoadSceneAsync(name);
 
         loadOperation.allowSceneActivation = false;
 
@@ -61,21 +67,16 @@ public class SceneLoader : MonoBehaviour
         }
     }
 
-    //public async void LoadScene(string sceneName)
-    //{
-    //    var scene = SceneManager.LoadSceneAsync(sceneName);
-    //    scene.allowSceneActivation = false;
+    public void LoadScene(string scene)
+    {
 
-    //    loaderCanvas.SetActive(true);
+        SceneManager.LoadScene(scene);
 
-    //    do
-    //    {
-    //        await System.Threading.Tasks.Task.Delay(100);
-    //        progressBar.fillAmount = scene.progress;
+    }
 
-    //    } while (scene.progress < 0.9f);
+    public void Quit()
+    {
+        Application.Quit();
+    }
 
-    //    scene.allowSceneActivation = true;
-    //    loaderCanvas.SetActive(false);
-    //}
 }
