@@ -13,7 +13,7 @@ public class UIGameplayManager : MonoBehaviour
     [SerializeField] private PowerUp powerUp;
 
     [SerializeField] private TextMeshProUGUI powerUpTypeText;
-    [SerializeField] private TextMeshProUGUI trackText;
+    [SerializeField] private TextMeshProUGUI lapsText;
 
     [SerializeField] private TrackCheckpoint trackCheckpoint;
 
@@ -23,14 +23,14 @@ public class UIGameplayManager : MonoBehaviour
     private IEnumerator activePanelPowerUp;
     void Start()
     {
-        trackTextCanvasGroup = trackText.GetComponent<CanvasGroup>();
+        trackTextCanvasGroup = lapsText.GetComponent<CanvasGroup>();
         powerUpTypeCanvasGroup = powerUpTypeText.GetComponent<CanvasGroup>();
         textVersion.text = Application.version;
         carLife.OnDead += ActiveLosePanel;
         speedWay.OnWin += ActiveWinPanel;
         PowerUp.OnPowerUpPick += UpdatePowerUpType;
         powerUpTypeText.gameObject.SetActive(false);
-        trackText.gameObject.SetActive(false);
+        lapsText.gameObject.SetActive(false);
         trackCheckpoint.OnLapFinish += ShowTrackText;
     }
 
@@ -88,10 +88,14 @@ public class UIGameplayManager : MonoBehaviour
         activePanelPowerUp = CoroutineActivePanel(powerUpTypeCanvasGroup);
         StartCoroutine(activePanelPowerUp);
     }
-
+    private void UpdateLapsText()
+    {
+        lapsText.text = "Vuelta: " + trackCheckpoint.index + " / " + speedWay.maxLaps;
+    }
     private void ShowTrackText()
     {
-        trackText.gameObject.SetActive(true);
+        UpdateLapsText();
+        lapsText.gameObject.SetActive(true);
         StartCoroutine(CoroutineActivePanel(trackTextCanvasGroup));
         Debug.Log("entro");
 

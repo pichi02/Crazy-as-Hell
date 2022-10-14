@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
         PowerUp.OnDecreaseSpeedPowerUpPick += player1.DecreaseSpeed;
         Obstacle.OnCarCollision += carLife.TakeDamage;
         player2.OnSpawnObject += OnSpawnObject;
-        trackCheckpoint.OnLapFinish += LapText;
+        //trackCheckpoint.OnLapFinish += LapText;
         trackCheckpoint.OnLapFinish += CheckLapsToWin;
         speedWay.OnWin += player1.DisableCarMovement;
 
@@ -45,7 +45,7 @@ public class GameManager : MonoBehaviour
     {
         Obstacle.OnCarCollision -= carLife.TakeDamage;
         player2.OnSpawnObject -= OnSpawnObject;
-        trackCheckpoint.OnLapFinish -= LapText;
+        //trackCheckpoint.OnLapFinish -= LapText;
         trackCheckpoint.OnLapFinish -= CheckLapsToWin;
         speedWay.OnWin -= player1.DisableCarMovement;
         PowerUp.OnIncreaseLifePowerUpPick -= carLife.IncreaseLife;
@@ -54,10 +54,10 @@ public class GameManager : MonoBehaviour
         PowerUp.OnDecreaseSpeedPowerUpPick -= player1.DecreaseSpeed;
     }
 
-    private void LapText()
-    {
-        laps.text = "Vuelta: " + trackCheckpoint.index + " / " + speedWay.maxLaps;
-    }
+    //private void LapText()
+    //{
+    //    laps.text = "Vuelta: " + trackCheckpoint.index + " / " + speedWay.maxLaps;
+    //}
 
     private void CheckLapsToWin()
     {
