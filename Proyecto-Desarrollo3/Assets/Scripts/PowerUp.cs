@@ -11,7 +11,7 @@ public class PowerUp : MonoBehaviour
     private int random;
 
     public static event Action OnIncreaseLifePowerUpPick;
-    public static event Action OnDecreaseLifePowerUpPick;
+    public static event Action<int> OnDecreaseLifePowerUpPick;
     public static event Action OnIncreaseSpeedPowerUpPick;
     public static event Action OnDecreaseSpeedPowerUpPick;
     public static event Action<TYPE> OnPowerUpPick;
@@ -38,7 +38,7 @@ public class PowerUp : MonoBehaviour
                     OnIncreaseLifePowerUpPick?.Invoke();
                     break;
                 case TYPE.DECREASE_LIFE:
-                    OnDecreaseLifePowerUpPick?.Invoke();
+                    OnDecreaseLifePowerUpPick?.Invoke(5);
                     break;
                 case TYPE.INCREASE_SPEED:
                     OnIncreaseSpeedPowerUpPick?.Invoke();

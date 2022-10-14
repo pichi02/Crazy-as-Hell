@@ -626,6 +626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxTime: 4
+  damage: 10
 --- !u!1 &3918790966620985659 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8192506447163554613, guid: 8c02a9f2488280a4ab97bebb269c77d5, type: 3}

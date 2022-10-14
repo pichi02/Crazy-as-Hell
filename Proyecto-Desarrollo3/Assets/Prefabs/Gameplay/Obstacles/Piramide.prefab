@@ -445,6 +445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxTime: 4
+  damage: 5
 --- !u!54 &3726437290622852926
 Rigidbody:
   m_ObjectHideFlags: 0

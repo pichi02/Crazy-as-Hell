@@ -98,6 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxTime: 4
+  damage: 50
 --- !u!64 &4097664220992415494
 MeshCollider:
   m_ObjectHideFlags: 0
