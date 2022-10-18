@@ -22,6 +22,8 @@ public class CarController : MonoBehaviour
 
     private bool canPickPowerUp;
 
+    private const int stunTime = 5;
+
     [SerializeField] private float safeZone = 20f;
 
     [SerializeField] private LayerMask whatIsGround;
@@ -204,4 +206,19 @@ public class CarController : MonoBehaviour
     {
         return transform.position;
     }
+
+    public IEnumerator Stun()
+    {
+        ResetSpeed();
+        CanMove = false;
+        yield return new WaitForSeconds(5);
+        CanMove = true;
+
+    }
+    public void StartStun()
+    {
+        StartCoroutine(Stun());
+    }
+
+
 }

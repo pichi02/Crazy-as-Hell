@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
         PowerUp.OnIncreaseSpeedPowerUpPick += player1.IncreaseSpeed;
         PowerUp.OnDecreaseSpeedPowerUpPick += player1.DecreaseSpeed;
         Obstacle.OnCarCollision += carLife.TakeDamage;
+        Obstacle.OnStun += player1.StartStun;
         trackCheckpoint.OnLapFinish += CheckLapsToWin;
         speedWay.OnWin += player1.DisableCarMovement;
 
@@ -33,6 +34,7 @@ public class GameManager : MonoBehaviour
         PowerUp.OnDecreaseLifePowerUpPick -= carLife.TakeDamage;
         PowerUp.OnIncreaseSpeedPowerUpPick -= player1.IncreaseSpeed;
         PowerUp.OnDecreaseSpeedPowerUpPick -= player1.DecreaseSpeed;
+        Obstacle.OnStun -= player1.StartStun;
     }
 
     private void CheckLapsToWin()

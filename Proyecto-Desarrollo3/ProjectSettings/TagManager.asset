@@ -13,6 +13,7 @@ TagManager:
   - LoaderCanvas
   - TextProgress
   - ProgressBar
+  - BearTrap
   layers:
   - Default
   - TransparentFX
