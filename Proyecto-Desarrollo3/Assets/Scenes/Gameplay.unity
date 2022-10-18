@@ -1186,7 +1186,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carLife: {fileID: 1820090108790662173}
   obstacle: {fileID: 4446884271735823407, guid: 8ba264d1cdf29e243b4b2db958940334, type: 3}
-  player2: {fileID: 1527637340}
   player1: {fileID: 1820090108790662174}
   laps: {fileID: 0}
   trackCheckpoint: {fileID: 4553331848192897591}
@@ -2527,6 +2526,14 @@ PrefabInstance:
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1783454068294182940, guid: a6bf705bf71cc5e4588610f1553644eb, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783454068294182940, guid: a6bf705bf71cc5e4588610f1553644eb, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2650104762841322033, guid: a6bf705bf71cc5e4588610f1553644eb, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -2833,6 +2840,10 @@ PrefabInstance:
       propertyPath: deck
       value: 
       objectReference: {fileID: 665578600}
+    - target: {fileID: 8460906583251667718, guid: 7899515cac293b749a05c2892f3c6cf3, type: 3}
+      propertyPath: player1
+      value: 
+      objectReference: {fileID: 1820090108790662174}
     - target: {fileID: 8460906583251667718, guid: 7899515cac293b749a05c2892f3c6cf3, type: 3}
       propertyPath: obstacles.Array.size
       value: 3

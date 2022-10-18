@@ -13,7 +13,8 @@ public class ObstacleSpawner : MonoBehaviour
     [SerializeField] private List<GameObject> obstacles;
     [SerializeField] private CardsDeck deck;
 
-    public event Action<Vector3> OnSpawnObject;
+    [SerializeField] private CarController player1;
+
     public event Action<float> OnSetCooldown;
 
     bool inCooldown;
@@ -22,6 +23,7 @@ public class ObstacleSpawner : MonoBehaviour
     private float cooldown = 5;
 
     private bool isObstacleSpawned;
+    private bool isObstacleSelected;
 
     [SerializeField] private LayerMask layer;
 
@@ -29,18 +31,28 @@ public class ObstacleSpawner : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            RaycastHit[] hits = Physics.RaycastAll(Camera.main.ScreenPointToRay(Input.mousePosition), 500, layer);
-
-            if (hits != null && hits.Length > 0)
+            if (!Utils.IsPointerOverUIObject(Input.mousePosition))
             {
-                if (!inCooldown)
+                if (deck.GetSelectedCard() != null)
                 {
-                    OnSpawnObject?.Invoke(hits[0].point);
-                    if (isObstacleSpawned)
-                    {
-                        Debug.Log(hits[0].transform.gameObject.layer);
-                        StartCoroutine(DisableCooldown());
+                    RaycastHit[] hits = Physics.RaycastAll(Camera.main.ScreenPointToRay(Input.mousePosition), 500, layer);
 
+                    if (hits != null && hits.Length > 0)
+                    {
+                        if (!inCooldown)
+                        {
+                            if (CanSpawnInPoint(hits[0].point))
+                            {
+                                SpawnObject(hits[0].point);
+
+                                if (isObstacleSpawned)
+                                {
+                                    Debug.Log(hits[0].transform.gameObject.layer);
+                                    StartCoroutine(DisableCooldown());
+
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -68,7 +80,6 @@ public class ObstacleSpawner : MonoBehaviour
     public void SpawnObstacle(Vector3 pos, Vector3 lookAt)
     {
         isObstacleSpawned = true;
-        //int random = UnityEngine.Random.Range(0, obstacles.Count);
 
         List<RaycastHit> hits = new List<RaycastHit>();
 
@@ -97,17 +108,21 @@ public class ObstacleSpawner : MonoBehaviour
 
         float minDistance = float.MaxValue;
         int indexNear = 0;
+
         for (int i = 0; i < hits.Count; i++)
         {
             float currentDistance = Vector3.Distance(hits[i].point, pos);
+
             if (currentDistance < minDistance)
             {
                 minDistance = currentDistance;
                 indexNear = i;
             }
         }
+
         Vector3 direction = hits[indexNear].point - pos;
         GameObject bojeInstance = null;
+
         for (int i = 0; i < deck.GetDeck().Count; i++)
         {
             if (deck.GetDeck()[i].GetIsClicked())
@@ -121,11 +136,20 @@ public class ObstacleSpawner : MonoBehaviour
                 deck.GetDeck().Remove(deck.GetDeck()[i]);
                 deck.GetDeck().Add(deck.GetNextCards()[0]);
                 deck.GetNextCards().Remove(deck.GetNextCards()[0]);
-
-               
             }
         }
-        //bojeInstance.transform.forward = hits[indexNear].normal;
-        //bojeInstance.transform.LookAt(lookAt);
+    }
+
+    public bool CanSpawnInPoint(Vector3 pos)
+    {
+        return Vector3.Distance(pos, player1.transform.position) > player1.SafeZone;
+    }
+
+    private void SpawnObject(Vector3 pos)
+    {
+        if (player1)
+        {
+            SpawnObstacle(pos, player1.GetPosition());
+        }
     }
 }

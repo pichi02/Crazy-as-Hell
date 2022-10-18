@@ -20,4 +20,15 @@ public class CardsDeck : MonoBehaviour
     {
         return nextCards;
     }
+    public ObstacleCard GetSelectedCard()
+    {
+        for (int i = 0; i < cards.Count; i++)
+        {
+            if (cards[i].GetIsClicked())
+            {
+                return cards[i];
+            }
+        }
+        return null;
+    }
 }

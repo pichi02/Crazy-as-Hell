@@ -13,5 +13,4 @@ public class Utils
         EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
         return results.Count > 0;
     }
-
 }
