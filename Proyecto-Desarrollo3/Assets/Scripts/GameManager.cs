@@ -11,7 +11,12 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private TrackCheckpoint trackCheckpoint;
     [SerializeField] private SpeedWay speedWay;
+    private RaceTime raceTime;
 
+    private void Awake()
+    {
+        raceTime = GetComponent<RaceTime>();
+    }
     private void Start()
     {
         PowerUp.OnIncreaseLifePowerUpPick += carLife.IncreaseLife;
@@ -22,6 +27,7 @@ public class GameManager : MonoBehaviour
         Obstacle.OnStun += player1.StartStun;
         trackCheckpoint.OnLapFinish += CheckLapsToWin;
         speedWay.OnWin += player1.DisableCarMovement;
+        raceTime.OnTimeFinish += DisableCanMove;
 
     }
 
@@ -40,5 +46,10 @@ public class GameManager : MonoBehaviour
     private void CheckLapsToWin()
     {
         speedWay.LapsToWin(trackCheckpoint.index);
+    }
+
+    private void DisableCanMove()
+    {
+        player1.CanMove = false;
     }
 }

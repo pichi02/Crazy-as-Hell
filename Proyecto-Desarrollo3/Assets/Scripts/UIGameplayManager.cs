@@ -17,6 +17,10 @@ public class UIGameplayManager : MonoBehaviour
 
     [SerializeField] private TrackCheckpoint trackCheckpoint;
 
+    [SerializeField] private TextMeshProUGUI raceTimeText;
+
+    [SerializeField] private RaceTime raceTime;
+
     private CanvasGroup powerUpTypeCanvasGroup;
     private CanvasGroup trackTextCanvasGroup;
 
@@ -32,6 +36,8 @@ public class UIGameplayManager : MonoBehaviour
         powerUpTypeText.gameObject.SetActive(false);
         lapsText.gameObject.SetActive(false);
         trackCheckpoint.OnLapFinish += ShowTrackText;
+        raceTime.OnTimeChange += ChangeRaceTimeText;
+        raceTime.OnTimeFinish += ActiveLosePanel;
     }
 
     private void ActiveLosePanel()
@@ -105,5 +111,10 @@ public class UIGameplayManager : MonoBehaviour
         carLife.OnDead -= ActiveLosePanel;
         speedWay.OnWin -= ActiveWinPanel;
         PowerUp.OnPowerUpPick -= UpdatePowerUpType;
+    }
+
+    private void ChangeRaceTimeText(float time)
+    {
+        raceTimeText.text = time.ToString("0.00");
     }
 }
