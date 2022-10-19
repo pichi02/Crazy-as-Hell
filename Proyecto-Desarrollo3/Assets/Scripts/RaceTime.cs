@@ -10,18 +10,19 @@ public class RaceTime : MonoBehaviour
     public event System.Action OnTimeFinish;
     public event System.Action<float> OnTimeChange;
 
-    private void Awake()
-    {
-        enabled = true;
-    }
     private void Start()
     {
-        currentTime = totalTime;
+        InitTime();
     }
 
     private void Update()
     {
         UpdateTime();
+    }
+    private void InitTime()
+    {
+        enabled = true;
+        currentTime = totalTime;
     }
     private void UpdateTime()
     {
