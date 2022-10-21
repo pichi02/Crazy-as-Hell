@@ -23,7 +23,6 @@ public class ObstacleSpawner : MonoBehaviour
     private float cooldown = 5;
 
     private bool isObstacleSpawned;
-    private bool isObstacleSelected;
 
     [SerializeField] private LayerMask layer;
 

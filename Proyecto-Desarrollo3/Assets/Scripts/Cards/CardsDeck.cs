@@ -4,13 +4,8 @@ using UnityEngine;
 
 public class CardsDeck : MonoBehaviour
 {
-
     [SerializeField] private List<ObstacleCard> cards;
     [SerializeField] private List<ObstacleCard> nextCards;
-    void Start()
-    {
-
-    }
 
     public List<ObstacleCard> GetDeck()
     {
