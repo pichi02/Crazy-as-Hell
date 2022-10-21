@@ -22,7 +22,7 @@ public class CarController : MonoBehaviour
 
     private bool canPickPowerUp;
 
-    private const int stunTime = 5;
+    [SerializeField] private int stunTime = 3;
 
     [SerializeField] private float safeZone = 20f;
 
@@ -211,7 +211,7 @@ public class CarController : MonoBehaviour
     {
         ResetSpeed();
         CanMove = false;
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(stunTime);
         CanMove = true;
 
     }

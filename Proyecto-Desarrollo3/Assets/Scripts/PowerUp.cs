@@ -23,11 +23,9 @@ public class PowerUp : MonoBehaviour
         type = (TYPE)random;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-
-
-        if (collision.transform.CompareTag("Chasis"))
+        if (other.transform.CompareTag("Chasis"))
         {
             OnPowerUpPick?.Invoke(type);
             Debug.Log("choco");
@@ -50,8 +48,6 @@ public class PowerUp : MonoBehaviour
                     break;
             }
             Destroy(gameObject);
-
         }
     }
-
 }
