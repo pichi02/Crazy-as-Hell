@@ -11,12 +11,13 @@ public class ObstacleCard : MonoBehaviour
     private bool isSelected;
     private Button button;
 
+
     private void Start()
     {
         isSelected = false;
         button = GetComponent<Button>();
     }
-
+    
     public void SetIsClickedInTrue()
     {
         isSelected = true;
@@ -33,5 +34,6 @@ public class ObstacleCard : MonoBehaviour
     {
         return isSelected;
     }
+   
    
 }

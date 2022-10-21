@@ -548,7 +548,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1.6005089, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1793,6 +1793,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 336853896, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336853896, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 431241138, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1941,6 +1949,14 @@ PrefabInstance:
       propertyPath: carLife
       value: 
       objectReference: {fileID: 1820090108790662173}
+    - target: {fileID: 3639942756111722193, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3639942756111722193, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5094795316853032924, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
