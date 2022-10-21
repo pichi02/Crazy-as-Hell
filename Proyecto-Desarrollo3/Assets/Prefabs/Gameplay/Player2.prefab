@@ -46,6 +46,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacles:
   - {fileID: 3813810580490363041, guid: 0ecaef183289a6146bcd68706d7be62f, type: 3}
+  - {fileID: 1448193708885607158, guid: 505f83a42cd71254f85801a7efc69245, type: 3}
+  - {fileID: 4375349159159322731, guid: 373685a093954f54587f77f4c60c254d, type: 3}
+  deck: {fileID: 0}
+  player1: {fileID: 0}
   layer:
     serializedVersion: 2
     m_Bits: 8
