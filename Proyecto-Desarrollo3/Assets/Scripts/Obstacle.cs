@@ -11,7 +11,6 @@ public class Obstacle : MonoBehaviour
     private float timer = 0;
     [SerializeField] private float maxTime = 3;
     [SerializeField] private int damage;
-    private CarController carController;
     private void OnCollisionEnter(Collision collision)
     {
 

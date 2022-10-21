@@ -21,6 +21,12 @@ public class UIGameplayManager : MonoBehaviour
 
     [SerializeField] private RaceTime raceTime;
 
+    [SerializeField] private HealthBar healthBar;
+
+    [SerializeField] private CardsDeck deck;
+
+    [SerializeField] private CooldownBar cooldownBar;
+
     private CanvasGroup powerUpTypeCanvasGroup;
     private CanvasGroup trackTextCanvasGroup;
 
@@ -32,6 +38,7 @@ public class UIGameplayManager : MonoBehaviour
         textVersion.text = Application.version;
         carLife.OnDead += ActiveLosePanel;
         speedWay.OnWin += ActiveWinPanel;
+
         PowerUp.OnPowerUpPick += UpdatePowerUpType;
         powerUpTypeText.gameObject.SetActive(false);
         lapsText.gameObject.SetActive(false);
@@ -42,12 +49,14 @@ public class UIGameplayManager : MonoBehaviour
 
     private void ActiveLosePanel()
     {
+        DisableUI();
         StartCoroutine(CoroutineActivePanel(panelLose));
 
     }
 
     private void ActiveWinPanel()
     {
+        DisableUI();
         StartCoroutine(CoroutineActivePanel(panelWin));
     }
 
@@ -116,5 +125,17 @@ public class UIGameplayManager : MonoBehaviour
     private void ChangeRaceTimeText(float time)
     {
         raceTimeText.text = time.ToString("0.00");
+    }
+
+    private void DisableUI()
+    {
+        healthBar.gameObject.SetActive(false);
+        raceTimeText.gameObject.SetActive(false);
+        for (int i = 0; i < deck.GetDeck().Count; i++)
+        {
+            deck.GetDeck()[i].gameObject.SetActive(false);
+        }
+        cooldownBar.gameObject.SetActive(false);
+
     }
 }
