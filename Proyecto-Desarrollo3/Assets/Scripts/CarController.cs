@@ -22,6 +22,8 @@ public class CarController : MonoBehaviour
 
     private bool canPickPowerUp;
 
+    private bool isInputInverted = false;
+
     [SerializeField] private int stunTime = 3;
 
     [SerializeField] private float safeZone = 20f;
@@ -87,8 +89,14 @@ public class CarController : MonoBehaviour
         //{
         //    //speedInput = Input.GetAxis("Vertical") * reverseAccel * 1000f;
         //}
-
-        turnInput = Input.GetAxis("Horizontal");
+        if (isInputInverted)
+        {
+            turnInput = Input.GetAxis("Horizontal") * -1;
+        }
+        else
+        {
+            turnInput = Input.GetAxis("Horizontal");
+        }
     }
 
     private void SetCarRotationWithGround()
@@ -220,5 +228,16 @@ public class CarController : MonoBehaviour
         StartCoroutine(Stun());
     }
 
+    private IEnumerator InvertInput()
+    {
+        isInputInverted = true;
+        yield return new WaitForSeconds(10);
+        isInputInverted = false;
+    }
+
+    public void StartInvertInput()
+    {
+        StartCoroutine(InvertInput());
+    }
 
 }

@@ -14,12 +14,13 @@ public class PowerUp : MonoBehaviour
     public static event Action<int> OnDecreaseLifePowerUpPick;
     public static event Action OnIncreaseSpeedPowerUpPick;
     public static event Action OnDecreaseSpeedPowerUpPick;
+    public static event Action OnInvertInputPowerUpPick;
     public static event Action<TYPE> OnPowerUpPick;
 
 
     private void Start()
     {
-        random = randGen.Next(0, 4);
+        random = randGen.Next(0, 5);
         type = (TYPE)random;
     }
 
@@ -43,6 +44,9 @@ public class PowerUp : MonoBehaviour
                     break;
                 case TYPE.DECREASE_SPEED:
                     OnDecreaseSpeedPowerUpPick?.Invoke();
+                    break;
+                case TYPE.INVERT_INPUT:
+                    OnInvertInputPowerUpPick?.Invoke();
                     break;
                 default:
                     break;

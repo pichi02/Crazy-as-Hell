@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
         PowerUp.OnDecreaseLifePowerUpPick += carLife.TakeDamage;
         PowerUp.OnIncreaseSpeedPowerUpPick += player1.IncreaseSpeed;
         PowerUp.OnDecreaseSpeedPowerUpPick += player1.DecreaseSpeed;
+        PowerUp.OnInvertInputPowerUpPick += player1.StartInvertInput;
         Obstacle.OnCarCollision += carLife.TakeDamage;
         Obstacle.OnStun += player1.StartStun;
         trackCheckpoint.OnLapFinish += CheckLapsToWin;
