@@ -811,6 +811,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8802663723126361042, guid: 5d4c12fb33f868647912a5f7fa04ed4d, type: 3}
   m_PrefabInstance: {fileID: 1062035393}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1089242706 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6212369112889442586, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
+  m_PrefabInstance: {fileID: 3639942755993810551}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74eedca314f60cc46a91fdc25f213ef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1162205094 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1162205094, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
@@ -1180,6 +1191,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 94c29b292879aba4fa560fa3d488f395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1552356308 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3639942756049636625, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
+  m_PrefabInstance: {fileID: 3639942755993810551}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0ccb8cc08d1b5a45a43e0cb80eb2a21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1717151846
@@ -1853,6 +1875,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1412209060}
     - target: {fileID: 2008866256, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
+      propertyPath: deck
+      value: 
+      objectReference: {fileID: 665578600}
+    - target: {fileID: 2008866256, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
       propertyPath: carLife
       value: 
       objectReference: {fileID: 1820090108790662173}
@@ -1868,6 +1894,14 @@ PrefabInstance:
       propertyPath: speedWay
       value: 
       objectReference: {fileID: 4553331848192897590}
+    - target: {fileID: 2008866256, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1552356308}
+    - target: {fileID: 2008866256, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
+      propertyPath: cooldownBar
+      value: 
+      objectReference: {fileID: 1089242706}
     - target: {fileID: 2008866256, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
       propertyPath: trackCheckpoint
       value: 
