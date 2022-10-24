@@ -34,6 +34,7 @@ public class ObstacleCard : MonoBehaviour
     {
         return isSelected;
     }
+
    
    
 }

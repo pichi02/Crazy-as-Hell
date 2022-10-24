@@ -21,7 +21,7 @@ public class PowerUp : MonoBehaviour
     private void Start()
     {
         random = randGen.Next(0, 5);
-        type = (TYPE)random;
+        type = TYPE.INVERT_INPUT/*(TYPE)random*/;
     }
 
     private void OnTriggerEnter(Collider other)
