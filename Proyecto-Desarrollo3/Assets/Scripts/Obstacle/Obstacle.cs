@@ -14,6 +14,10 @@ public class Obstacle : MonoBehaviour
     [SerializeField] private float maxTime = 3;
     [SerializeField] private int damage;
 
+    private void Start()
+    {
+        Destroy(gameObject, maxTime);
+    }
     private void OnCollisionEnter(Collision collision)
     {
 
@@ -26,14 +30,6 @@ public class Obstacle : MonoBehaviour
         {
             OnStun?.Invoke();
         }
-    }
-
-    private void Update()
-    {
-        timer += Time.deltaTime;
-
-        if (timer > maxTime)
-            Destroy(gameObject);
     }
 
   
