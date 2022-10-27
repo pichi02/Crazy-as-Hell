@@ -9,6 +9,9 @@ public class PowerUp : MonoBehaviour
     TYPE type;
     private System.Random randGen = new System.Random();
     private int random;
+    private float timer = 0;
+    [SerializeField] private float speed = 5f;
+    [SerializeField] private float changeDirectionTime = 5f;
 
     public static event Action OnIncreaseLifePowerUpPick;
     public static event Action<int> OnDecreaseLifePowerUpPick;
@@ -24,6 +27,16 @@ public class PowerUp : MonoBehaviour
         type = (TYPE)random;
     }
 
+    private void Update()
+    {
+        timer += Time.deltaTime;
+        if (timer >= changeDirectionTime)
+        {
+            speed *= -1;
+            timer = 0f;
+        }
+        transform.Translate(new Vector3(speed, 0, 0) * Time.deltaTime);
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.transform.CompareTag("Chasis"))
