@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TrackCheckpoint trackCheckpoint;
     [SerializeField] private SpeedWay speedWay;
     private RaceTime raceTime;
+
 
     private void Awake()
     {
