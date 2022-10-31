@@ -43,14 +43,12 @@ public class CarController : MonoBehaviour
         set => _canMove = value;
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         motorRB.transform.parent = null;
         canPickPowerUp = true;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (CanMove)

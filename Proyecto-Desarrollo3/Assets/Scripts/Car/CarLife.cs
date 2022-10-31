@@ -16,6 +16,7 @@ public class CarLife : MonoBehaviour
     {
         currentHealth = maxHealth;
     }
+
     public void TakeDamage(int damage)
     {
         if (currentHealth <= 0)
