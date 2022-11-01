@@ -1966,8 +1966,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dd69ce53052390439e380cb9fb31298, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickedTexture: {fileID: 2800000, guid: 681e3547f0d679d4b98af285d676176e, type: 3}
-  normalTexture: {fileID: 2800000, guid: 650dfc064159c5c43b5a73cebfe3d314, type: 3}
+  clickedTexture: {fileID: 2800000, guid: 83fd2c142f8ff824e93684e602fe2b29, type: 3}
+  normalTexture: {fileID: 2800000, guid: 451ab3a708f455b4997e9a9d8d714f86, type: 3}
   cursorHotSpot: {x: 0, y: 0}
   cardsDeck: {fileID: 665578600}
 --- !u!1 &1412209059
