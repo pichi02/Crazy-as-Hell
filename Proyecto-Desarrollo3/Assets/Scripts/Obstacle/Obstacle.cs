@@ -13,9 +13,11 @@ public class Obstacle : MonoBehaviour
 
     [SerializeField] private float maxTime = 3;
     [SerializeField] private int damage;
+    [SerializeField] private ParticleSystem particle;
 
     private void Start()
     {
+        particle.Play();
         Destroy(gameObject, maxTime);
     }
     private void OnCollisionEnter(Collision collision)
@@ -32,5 +34,5 @@ public class Obstacle : MonoBehaviour
         }
     }
 
-  
+
 }
