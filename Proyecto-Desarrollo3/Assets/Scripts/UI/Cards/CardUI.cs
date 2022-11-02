@@ -1,13 +1,24 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class Test : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
+public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
     Image cardImage;
     private bool isSelected = false;
+    public event Action<int> OnSelectCard;
+
+    [SerializeField] private GameObject prefab;
+
+    private int id;
+    public int ID
+    {
+        get => id;
+        set => id = value;
+    }
 
     private void Awake()
     {
@@ -15,10 +26,7 @@ public class Test : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
     }
     public void OnPointerClick(PointerEventData eventData)
     {
-        cardImage.color = Color.green;
-        isSelected = true;
-        transform.localScale *= 2f;
-        Debug.Log("click");
+        OnSelectCard?.Invoke(ID);
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -41,4 +49,29 @@ public class Test : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IP
         transform.localScale = Vector3.one;
         isSelected = false;
     }
+    public void SetCardSelected()
+    {
+        cardImage.color = Color.green;
+        isSelected = true;
+        transform.localScale *= 1.4f;
+        Debug.Log("click");
+    }
+
+    public GameObject GetPrefab()
+    {
+        return prefab;
+    }
+    public bool GetIsSelected()
+    {
+        return isSelected;
+    }
+
+
 }
+
+
+
+
+
+
+

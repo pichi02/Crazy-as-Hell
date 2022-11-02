@@ -11,7 +11,7 @@ public class CursorType : MonoBehaviour
 
     private void Update()
     {
-        ObstacleCard selectedCard = cardsDeck.GetSelectedCard();
+        CardUI selectedCard = cardsDeck.GetSelectedCard();
 
         if (selectedCard != null)
         {

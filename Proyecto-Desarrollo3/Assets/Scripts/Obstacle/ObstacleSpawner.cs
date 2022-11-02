@@ -122,21 +122,17 @@ public class ObstacleSpawner : MonoBehaviour
         Vector3 direction = hits[indexNear].point - pos;
         GameObject bojeInstance = null;
 
-        for (int i = 0; i < deck.GetDeck().Count; i++)
-        {
-            if (deck.GetDeck()[i].GetIsClicked())
-            {
-                Vector3 aux = deck.GetDeck()[i].transform.position;
-                deck.GetDeck()[i].transform.position = deck.GetNextCards()[0].transform.position;
-                deck.GetNextCards()[0].transform.position = aux;
+        CardUI selectedCard = deck.GetSelectedCard();
+        CardUI inactiveCard = deck.GetInactiveCard();
 
-                bojeInstance = Instantiate(deck.GetDeck()[i].GetPrefab(), pos, Quaternion.identity);
-                deck.GetNextCards().Add(deck.GetDeck()[i]);
-                deck.GetDeck().Remove(deck.GetDeck()[i]);
-                deck.GetDeck().Add(deck.GetNextCards()[0]);
-                deck.GetNextCards().Remove(deck.GetNextCards()[0]);
-            }
-        }
+        bojeInstance = Instantiate(selectedCard.GetPrefab(), pos, Quaternion.identity);
+
+        inactiveCard.gameObject.SetActive(true);
+        inactiveCard.transform.SetSiblingIndex(selectedCard.transform.GetSiblingIndex());
+
+        selectedCard.gameObject.SetActive(false);
+        selectedCard.transform.SetAsLastSibling();
+
     }
 
     public bool CanSpawnInPoint(Vector3 pos)
