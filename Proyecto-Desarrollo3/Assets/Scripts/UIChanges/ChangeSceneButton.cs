@@ -1,12 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ChangeSceneButton : MonoBehaviour
 {
-    public void ChangeSceneWithLoadingBar(string name)
+    [SerializeField] private GameObject chargeScene;
+
+    public void ChargeScene()
     {
-        StartCoroutine(SceneLoader.sceneLoader.Load(name));
+        chargeScene.SetActive(true);
     }
     public void ChangeScene(string name)
     {
