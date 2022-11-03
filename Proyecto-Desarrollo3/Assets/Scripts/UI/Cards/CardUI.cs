@@ -31,8 +31,8 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        cardImage.color = Color.blue;
-        transform.localScale = Vector3.one * 1.2f;
+        cardImage.color = Color.grey;
+        transform.localScale = Vector3.one * 1.1f;
     }
 
     public void OnPointerExit(PointerEventData eventData)
@@ -51,9 +51,8 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
     }
     public void SetCardSelected()
     {
-        cardImage.color = Color.green;
         isSelected = true;
-        transform.localScale *= 1.4f;
+        transform.localScale *= 1.2f;
         Debug.Log("click");
     }
 
