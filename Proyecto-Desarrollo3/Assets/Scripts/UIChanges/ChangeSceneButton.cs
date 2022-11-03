@@ -12,5 +12,8 @@ public class ChangeSceneButton : MonoBehaviour
     {
         SceneLoader.sceneLoader.LoadScene(name);
     }
-
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }
