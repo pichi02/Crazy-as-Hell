@@ -1,6 +1,5 @@
 using UnityEngine;
 using TMPro;
-using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
@@ -18,6 +17,7 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         raceTime = GetComponent<RaceTime>();
+        Time.timeScale = 1.0f;
     }
     private void Start()
     {

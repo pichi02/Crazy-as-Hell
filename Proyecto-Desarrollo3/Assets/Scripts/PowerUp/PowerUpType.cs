@@ -1,5 +1,3 @@
-
-
 public enum TYPE
 {
     INCREASE_LIFE,
