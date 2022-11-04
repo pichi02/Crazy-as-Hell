@@ -20,7 +20,7 @@ public class CardsDeck : MonoBehaviour
     {
         for (int i = 0; i < cards.Count; i++)
         {
-            cards[i].SetCardDefautlt();
+            cards[i].SetCardDefault();
         }
         cards[id].SetCardSelected();
         lastSelectedCard = id;

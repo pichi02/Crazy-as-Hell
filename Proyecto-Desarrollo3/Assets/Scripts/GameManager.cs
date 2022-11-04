@@ -1,14 +1,9 @@
 using UnityEngine;
-using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private CarLife carLife;
-    [SerializeField] private Obstacle obstacle;
     [SerializeField] private CarController player1;
-
-    [SerializeField] private TextMeshProUGUI laps;
-
     [SerializeField] private TrackCheckpoint trackCheckpoint;
     [SerializeField] private SpeedWay speedWay;
     [SerializeField] private ObstacleSpawner player2;

@@ -1425,12 +1425,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carLife: {fileID: 1820090108790662173}
-  obstacle: {fileID: 4446884271735823407, guid: 8ba264d1cdf29e243b4b2db958940334, type: 3}
   player1: {fileID: 1820090108790662174}
-  laps: {fileID: 0}
   trackCheckpoint: {fileID: 4553331848192897591}
   speedWay: {fileID: 4553331848192897590}
-  player2: {fileID: 0}
+  player2: {fileID: 1527637340}
 --- !u!4 &1320937491
 Transform:
   m_ObjectHideFlags: 0

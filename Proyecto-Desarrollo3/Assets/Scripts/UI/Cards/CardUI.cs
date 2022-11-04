@@ -21,6 +21,7 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
     private void Awake()
     {
         cardImage = GetComponent<Image>();
+        SetCardDefault();
     }
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -37,11 +38,11 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
     {
         if (!isSelected)
         {
-            SetCardDefautlt();
+            SetCardDefault();
         }
     }
 
-    public void SetCardDefautlt()
+    public void SetCardDefault()
     {
         cardImage.color = Color.white;
         transform.localScale = Vector3.one;
