@@ -3,8 +3,6 @@ using TMPro;
 using System.Collections;
 public class UIGameplayManager : MonoBehaviour
 {
-    [SerializeField] private TMP_Text textVersion;
-
     [SerializeField] private CanvasGroup panelLose;
     [SerializeField] private CanvasGroup panelWin;
 
@@ -35,7 +33,6 @@ public class UIGameplayManager : MonoBehaviour
     {
         trackTextCanvasGroup = lapsText.GetComponent<CanvasGroup>();
         powerUpTypeCanvasGroup = powerUpTypeText.GetComponent<CanvasGroup>();
-        textVersion.text = Application.version;
         carLife.OnDead += ActiveLosePanel;
         speedWay.OnWin += ActiveWinPanel;
 
