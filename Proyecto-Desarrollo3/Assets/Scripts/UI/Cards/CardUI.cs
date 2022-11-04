@@ -63,7 +63,6 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
         return isSelected;
     }
 
-
 }
 
 

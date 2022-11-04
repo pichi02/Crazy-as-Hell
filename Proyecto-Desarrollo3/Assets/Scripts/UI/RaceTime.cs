@@ -9,7 +9,7 @@ public class RaceTime : MonoBehaviour
     private float currentTime;
     public event System.Action OnTimeFinish;
     public event System.Action<float> OnTimeChange;
-
+    private bool updatingTime = true;
     private void Start()
     {
         InitTime();
@@ -17,7 +17,10 @@ public class RaceTime : MonoBehaviour
 
     private void Update()
     {
-        UpdateTime();
+        if (updatingTime)
+        {
+            UpdateTime();
+        }
     }
     private void InitTime()
     {
@@ -35,4 +38,9 @@ public class RaceTime : MonoBehaviour
             OnTimeFinish?.Invoke();
         }
     }
+    public void DisableUpdatingTime()
+    {
+        updatingTime = false;
+    }
+
 }

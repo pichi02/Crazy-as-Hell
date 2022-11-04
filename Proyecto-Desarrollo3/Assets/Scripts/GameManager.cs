@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
         speedWay.OnWin += player1.DisableCarMovement;
         raceTime.OnTimeFinish += DisableCanMove;
         Obstacle.OnStun += player1.StartStun;
+        speedWay.OnWin += raceTime.DisableUpdatingTime;
 
     }
 
