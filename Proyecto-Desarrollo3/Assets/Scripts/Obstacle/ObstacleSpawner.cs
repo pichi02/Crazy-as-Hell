@@ -24,6 +24,8 @@ public class ObstacleSpawner : MonoBehaviour
 
     private bool isObstacleSpawned;
 
+    private bool canSpawnObstacle = true;
+
     [SerializeField] private LayerMask layer;
 
     private void Update()
@@ -42,7 +44,10 @@ public class ObstacleSpawner : MonoBehaviour
                         {
                             if (CanSpawnInPoint(hits[0].point))
                             {
-                                SpawnObject(hits[0].point);
+                                if (canSpawnObstacle)
+                                {
+                                    SpawnObject(hits[0].point);
+                                }
 
                                 if (isObstacleSpawned)
                                 {
@@ -146,5 +151,10 @@ public class ObstacleSpawner : MonoBehaviour
         {
             SpawnObstacle(pos, player1.GetPosition());
         }
+    }
+
+    public void DisableCanSpawnObstacle()
+    {
+        canSpawnObstacle = false;
     }
 }

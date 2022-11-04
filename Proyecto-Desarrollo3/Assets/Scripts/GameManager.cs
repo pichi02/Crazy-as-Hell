@@ -11,7 +11,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private TrackCheckpoint trackCheckpoint;
     [SerializeField] private SpeedWay speedWay;
+    [SerializeField] private ObstacleSpawner player2;
     private RaceTime raceTime;
+
 
 
     private void Awake()
@@ -32,7 +34,9 @@ public class GameManager : MonoBehaviour
         raceTime.OnTimeFinish += DisableCanMove;
         Obstacle.OnStun += player1.StartStun;
         speedWay.OnWin += raceTime.DisableUpdatingTime;
-
+        speedWay.OnWin += player2.DisableCanSpawnObstacle;
+        raceTime.OnTimeFinish += player2.DisableCanSpawnObstacle;
+        carLife.OnDead += player2.DisableCanSpawnObstacle;
     }
 
     private void OnDestroy()
@@ -47,6 +51,10 @@ public class GameManager : MonoBehaviour
         PowerUp.OnInvertInputPowerUpPick -= player1.StartInvertInput;
         Obstacle.OnStun -= player1.StartStun;
         raceTime.OnTimeFinish -= DisableCanMove;
+        speedWay.OnWin -= raceTime.DisableUpdatingTime;
+        speedWay.OnWin -= player2.DisableCanSpawnObstacle;
+        raceTime.OnTimeFinish -= player2.DisableCanSpawnObstacle;
+        carLife.OnDead -= player2.DisableCanSpawnObstacle;
     }
 
     private void CheckLapsToWin()
