@@ -996,6 +996,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3261817536698463034, guid: d1992cab186e5cb488b4ce4dbad82b4c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 59f68267daa17ef418af117d328f81c5, type: 2}
     - target: {fileID: 3910445766264656623, guid: d1992cab186e5cb488b4ce4dbad82b4c, type: 3}
       propertyPath: m_Name
       value: Arco de Piedra
@@ -1003,6 +1007,18 @@ PrefabInstance:
     - target: {fileID: 4399842117226252373, guid: d1992cab186e5cb488b4ce4dbad82b4c, type: 3}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399842117226252373, guid: d1992cab186e5cb488b4ce4dbad82b4c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399842117226252373, guid: d1992cab186e5cb488b4ce4dbad82b4c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399842117226252373, guid: d1992cab186e5cb488b4ce4dbad82b4c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4399842117226252373, guid: d1992cab186e5cb488b4ce4dbad82b4c, type: 3}
       propertyPath: m_LocalPosition.x
