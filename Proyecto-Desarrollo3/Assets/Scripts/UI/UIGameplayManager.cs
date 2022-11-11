@@ -25,6 +25,8 @@ public class UIGameplayManager : MonoBehaviour
 
     [SerializeField] private CooldownBar cooldownBar;
 
+    [SerializeField] private TextMeshProUGUI finalTimeTextWin;
+
     private CanvasGroup powerUpTypeCanvasGroup;
     private CanvasGroup trackTextCanvasGroup;
 
@@ -55,6 +57,7 @@ public class UIGameplayManager : MonoBehaviour
     {
         DisableUI();
         StartCoroutine(CoroutineActivePanel(panelWin));
+        finalTimeTextWin.text = raceTime.GetFinalTime().ToString("Time: 0.00");
     }
 
     private IEnumerator CoroutineActivePanel(CanvasGroup panel)
@@ -110,8 +113,8 @@ public class UIGameplayManager : MonoBehaviour
         lapsText.gameObject.SetActive(true);
         StartCoroutine(CoroutineActivePanel(trackTextCanvasGroup));
         Debug.Log("entro");
-
     }
+
     private void OnDestroy()
     {
         carLife.OnDead -= ActiveLosePanel;
