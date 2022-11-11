@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour
         speedWay.OnWin += player2.DisableCanSpawnObstacle;
         raceTime.OnTimeFinish += player2.DisableCanSpawnObstacle;
         carLife.OnDead += player2.DisableCanSpawnObstacle;
+        raceTime.OnTimeFinish += player1.ResetSpeed;
     }
 
     private void OnDestroy()
@@ -50,6 +51,7 @@ public class GameManager : MonoBehaviour
         speedWay.OnWin -= player2.DisableCanSpawnObstacle;
         raceTime.OnTimeFinish -= player2.DisableCanSpawnObstacle;
         carLife.OnDead -= player2.DisableCanSpawnObstacle;
+        raceTime.OnTimeFinish -= player1.ResetSpeed;
     }
 
     private void CheckLapsToWin()
