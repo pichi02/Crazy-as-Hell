@@ -7,6 +7,8 @@ public class RaceTime : MonoBehaviour
     [SerializeField] private float totalTime;
 
     private float currentTime;
+    private float finalTime;
+
     public event System.Action OnTimeFinish;
     public event System.Action<float> OnTimeChange;
     private bool updatingTime = true;
@@ -41,6 +43,7 @@ public class RaceTime : MonoBehaviour
     public void DisableUpdatingTime()
     {
         updatingTime = false;
+        finalTime = totalTime - currentTime;
     }
 
 }
