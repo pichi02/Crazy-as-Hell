@@ -127,7 +127,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1351298037176361376, guid: be50d3b71f358f245a349234cb1ef58f, type: 3}
+  - {fileID: 2100000, guid: 9d319168916c7204b8ab1198055230ee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -277,7 +277,7 @@ GameObject:
   - component: {fileID: 6502438403864568430}
   - component: {fileID: 8252210134950057823}
   - component: {fileID: 9030749749798546737}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: borde
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -327,7 +327,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 721659169355579542, guid: be50d3b71f358f245a349234cb1ef58f, type: 3}
+  - {fileID: 2100000, guid: f9b62908fca6f7440bbf2025a3cb3413, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
