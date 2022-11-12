@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: a7566320cac6324db08fa10e6957a80f
     GuidInternal: 
-    m_lastTime: -8585333264955375064
-    List: []
+    m_lastTime: -8585333191624097211
+    List:
+    - name: main
+      guid: 2bcead1c92e8514f819cdb8f059ad644
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: a7566320cac6324db08fa10e6957a80f
+      - ElementName: main
+        ObjectType: 7
+        guid: 2bcead1c92e8514f819cdb8f059ad644
+      Path: SoundBanks\Default Work Unit\main
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +94,42 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: be8a32c2bde39e46ba08ba2dd58fd0b6
     GuidInternal: 
-    m_lastTime: -8585333264955461195
-    List: []
+    m_lastTime: -8585333191624010367
+    List:
+    - name: Play_menu
+      guid: 039499af523b684582b1b91a0e7553bd
+      id: 1278378707
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: be8a32c2bde39e46ba08ba2dd58fd0b6
+      - ElementName: Play_menu
+        ObjectType: 3
+        guid: 039499af523b684582b1b91a0e7553bd
+      Path: Events\Default Work Unit\Play_menu
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_menu
+      guid: d5e8ce0b32e348498a1fd8a334e1c4b5
+      id: 2914981333
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: be8a32c2bde39e46ba08ba2dd58fd0b6
+      - ElementName: Stop_menu
+        ObjectType: 3
+        guid: d5e8ce0b32e348498a1fd8a334e1c4b5
+      Path: Events\Default Work Unit\Stop_menu
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -139,7 +187,7 @@ MonoBehaviour:
     m_lastTime: -8585333264955345042
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 06000000070000000c0000000d000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
