@@ -24,7 +24,7 @@ public class ObstacleSpawner : MonoBehaviour
 
     private bool isObstacleSpawned;
 
-    private bool canSpawnObstacle = true;
+    private bool canSpawnObstacle = false;
 
     [SerializeField] private LayerMask layer;
 
@@ -53,7 +53,6 @@ public class ObstacleSpawner : MonoBehaviour
                                 {
                                     Debug.Log(hits[0].transform.gameObject.layer);
                                     StartCoroutine(DisableCooldown());
-
                                 }
                             }
                         }
@@ -156,5 +155,10 @@ public class ObstacleSpawner : MonoBehaviour
     public void DisableCanSpawnObstacle()
     {
         canSpawnObstacle = false;
+    }
+
+    public void EnableCanSpawnObstacle()
+    {
+        canSpawnObstacle = true;
     }
 }

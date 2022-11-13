@@ -1462,6 +1462,7 @@ GameObject:
   - component: {fileID: 1320937490}
   - component: {fileID: 1320937492}
   - component: {fileID: 1320937493}
+  - component: {fileID: 1320937494}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1530,6 +1531,23 @@ MonoBehaviour:
   normalTexture: {fileID: 2800000, guid: 451ab3a708f455b4997e9a9d8d714f86, type: 3}
   cursorHotSpot: {x: 0, y: 0}
   cardsDeck: {fileID: 2102257448}
+--- !u!114 &1320937494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320937489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a328b22fc7b584143ada7fae3ab70e9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countdownTime: 3
+  countdownDisplay: {fileID: 1588935202}
+  carController: {fileID: 1820090108790662174}
+  obstacleSpawner: {fileID: 1527637340}
+  raceTime: {fileID: 1320937492}
 --- !u!1 &1412209059
 GameObject:
   m_ObjectHideFlags: 0
@@ -1874,6 +1892,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d4c12fb33f868647912a5f7fa04ed4d, type: 3}
+--- !u!114 &1588935202 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1588935202, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
+  m_PrefabInstance: {fileID: 3639942755993810551}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1607813602 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8802663723126361042, guid: 5d4c12fb33f868647912a5f7fa04ed4d, type: 3}
