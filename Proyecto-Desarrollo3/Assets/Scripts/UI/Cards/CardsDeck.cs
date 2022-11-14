@@ -12,8 +12,9 @@ public class CardsDeck : MonoBehaviour
         {
             cards[i].OnSelectCard += CardsDeck_OnSelectCard;
             cards[i].ID = i;
+            cards[i].gameObject.SetActive(false);
         }
-        cards[0].gameObject.SetActive(false);
+
     }
 
     private void CardsDeck_OnSelectCard(int id)
@@ -56,5 +57,21 @@ public class CardsDeck : MonoBehaviour
             }
         }
         return null;
+    }
+
+    public void EnableCards()
+    {
+        for (int i = 0; i < cards.Count; i++)
+        {
+            cards[i].gameObject.SetActive(true);
+        }
+        cards[0].gameObject.SetActive(false);
+    }
+    public void DisableCards()
+    {
+        for (int i = 0; i < cards.Count; i++)
+        {
+            cards[i].gameObject.SetActive(false);
+        }
     }
 }

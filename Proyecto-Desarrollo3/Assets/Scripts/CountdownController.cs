@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class CountdownController : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class CountdownController : MonoBehaviour
     [SerializeField] private CarController carController;
     [SerializeField] private ObstacleSpawner obstacleSpawner;
     [SerializeField] private RaceTime raceTime;
+
+    public event Action OnFinishCountdown;
 
     private void Start()
     {
@@ -29,7 +32,7 @@ public class CountdownController : MonoBehaviour
         }
 
         countdownDisplay.text = "GO!";
-
+        OnFinishCountdown?.Invoke();
         carController.CanMove = true;
         obstacleSpawner.EnableCanSpawnObstacle();
         raceTime.EnableUpdatingTime();

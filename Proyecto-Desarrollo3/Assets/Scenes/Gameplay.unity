@@ -886,7 +886,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1.5992142, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2864,6 +2864,10 @@ PrefabInstance:
       propertyPath: speedWay
       value: 
       objectReference: {fileID: 919132148834311896}
+    - target: {fileID: 2008866256, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
+      propertyPath: countdown
+      value: 
+      objectReference: {fileID: 1320937494}
     - target: {fileID: 2008866256, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
       propertyPath: trackCheckpoint
       value: 
