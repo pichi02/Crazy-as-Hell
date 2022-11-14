@@ -47,6 +47,8 @@ public class UIGameplayManager : MonoBehaviour
         raceTime.OnTimeChange += ChangeRaceTimeText;
         raceTime.OnTimeFinish += ActiveLosePanel;
         countdown.OnFinishCountdown += deck.EnableCards;
+        PauseScene.OnPause += deck.DisableCards;
+        PauseScene.OnResume += deck.EnableCards;
     }
     private void OnDestroy()
     {
@@ -57,6 +59,8 @@ public class UIGameplayManager : MonoBehaviour
         raceTime.OnTimeChange -= ChangeRaceTimeText;
         raceTime.OnTimeFinish -= ActiveLosePanel;
         countdown.OnFinishCountdown -= deck.EnableCards;
+        PauseScene.OnPause -= deck.DisableCards;
+        PauseScene.OnResume -= deck.EnableCards;
     }
 
     private void ActiveLosePanel()

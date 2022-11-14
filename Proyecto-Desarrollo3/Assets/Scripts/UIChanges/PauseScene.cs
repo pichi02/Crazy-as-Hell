@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,6 +9,8 @@ public class PauseScene : MonoBehaviour
 
     [SerializeField] private GameObject pauseMenuUI;
 
+    public static event Action OnPause;
+    public static event Action OnResume;
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -21,6 +24,7 @@ public class PauseScene : MonoBehaviour
 
     public void Resume()
     {
+        OnResume?.Invoke();
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
@@ -28,6 +32,7 @@ public class PauseScene : MonoBehaviour
 
     public void Pause()
     {
+        OnPause?.Invoke();
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
