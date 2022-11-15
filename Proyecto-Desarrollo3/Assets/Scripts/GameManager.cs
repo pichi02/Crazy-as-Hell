@@ -9,8 +9,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] private ObstacleSpawner player2;
     private RaceTime raceTime;
 
-
-
     private void Awake()
     {
         raceTime = GetComponent<RaceTime>();

@@ -10,6 +10,7 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
     public event Action<int> OnSelectCard;
 
     [SerializeField] private GameObject prefab;
+    [SerializeField] private GameObject preVisualize;
 
     private int id;
     public int ID
@@ -58,6 +59,10 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
     public GameObject GetPrefab()
     {
         return prefab;
+    }
+    public GameObject GetPreVisualize()
+    {
+        return preVisualize;
     }
     public bool GetIsSelected()
     {

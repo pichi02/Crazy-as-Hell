@@ -6,14 +6,18 @@ public class CardsDeck : MonoBehaviour
     [SerializeField] private List<CardUI> cards;
     [SerializeField] private List<CardUI> nextCards;
     public int lastSelectedCard;
+    CardUI inactiveCard;
     private void Start()
     {
+        
         for (int i = 0; i < cards.Count; i++)
         {
             cards[i].OnSelectCard += CardsDeck_OnSelectCard;
             cards[i].ID = i;
+            cards[i].gameObject.SetActive(false);
         }
-        cards[0].gameObject.SetActive(false);
+        inactiveCard = GetInactiveCard();
+
     }
 
     private void CardsDeck_OnSelectCard(int id)
@@ -56,5 +60,25 @@ public class CardsDeck : MonoBehaviour
             }
         }
         return null;
+    }
+
+    public void EnableCards()
+    {
+        for (int i = 0; i < cards.Count; i++)
+        {
+            cards[i].gameObject.SetActive(true);
+        }
+        if (inactiveCard != null)
+        {
+            inactiveCard.gameObject.SetActive(false);
+        }
+    }
+    public void DisableCards()
+    {
+        inactiveCard = GetInactiveCard();
+        for (int i = 0; i < cards.Count; i++)
+        {
+            cards[i].gameObject.SetActive(false);
+        }
     }
 }

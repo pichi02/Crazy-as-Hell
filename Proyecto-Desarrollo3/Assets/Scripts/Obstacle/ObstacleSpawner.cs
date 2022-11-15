@@ -23,20 +23,38 @@ public class ObstacleSpawner : MonoBehaviour
     private float cooldown = 5;
 
     private bool isObstacleSpawned;
+    private bool isPrevisualizeInstantiated = false;
 
-    private bool canSpawnObstacle = true;
+    private bool canSpawnObstacle = false;
 
     [SerializeField] private LayerMask layer;
+    GameObject preVisualize = null;
 
     private void Update()
     {
+        RaycastHit[] hits = Physics.RaycastAll(Camera.main.ScreenPointToRay(Input.mousePosition), 500, layer);
+
+        if (hits.Length > 0)
+        {
+            if (deck.GetSelectedCard() != null && !isPrevisualizeInstantiated)
+            {
+                preVisualize = Instantiate(deck.GetSelectedCard().GetPreVisualize(), hits[0].point, Quaternion.identity);
+                isPrevisualizeInstantiated = true;
+            }
+            if (preVisualize != null)
+            {
+
+                preVisualize.transform.position = hits[0].point;
+
+            }
+        }
         if (Input.GetMouseButtonDown(0))
         {
+
             if (!Utils.IsPointerOverUIObject(Input.mousePosition))
             {
                 if (deck.GetSelectedCard() != null)
                 {
-                    RaycastHit[] hits = Physics.RaycastAll(Camera.main.ScreenPointToRay(Input.mousePosition), 500, layer);
 
                     if (hits != null && hits.Length > 0)
                     {
@@ -47,13 +65,14 @@ public class ObstacleSpawner : MonoBehaviour
                                 if (canSpawnObstacle)
                                 {
                                     SpawnObject(hits[0].point);
+                                    Destroy(preVisualize);
+                                    isPrevisualizeInstantiated = false;
                                 }
 
                                 if (isObstacleSpawned)
                                 {
                                     Debug.Log(hits[0].transform.gameObject.layer);
                                     StartCoroutine(DisableCooldown());
-
                                 }
                             }
                         }
@@ -132,12 +151,13 @@ public class ObstacleSpawner : MonoBehaviour
 
         bojeInstance = Instantiate(selectedCard.GetPrefab(), pos, Quaternion.identity);
 
+
         inactiveCard.gameObject.SetActive(true);
         inactiveCard.transform.SetSiblingIndex(selectedCard.transform.GetSiblingIndex());
 
         selectedCard.gameObject.SetActive(false);
         selectedCard.transform.SetAsLastSibling();
-
+        deck.GetSelectedCard().SetCardDefault();
     }
 
     public bool CanSpawnInPoint(Vector3 pos)
@@ -156,5 +176,10 @@ public class ObstacleSpawner : MonoBehaviour
     public void DisableCanSpawnObstacle()
     {
         canSpawnObstacle = false;
+    }
+
+    public void EnableCanSpawnObstacle()
+    {
+        canSpawnObstacle = true;
     }
 }

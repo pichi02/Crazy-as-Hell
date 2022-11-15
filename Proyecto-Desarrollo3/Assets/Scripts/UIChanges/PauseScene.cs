@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,19 +9,26 @@ public class PauseScene : MonoBehaviour
 
     [SerializeField] private GameObject pauseMenuUI;
 
+    public static event Action OnPause;
+    public static event Action OnResume;
+    private static bool canPause = false;
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (canPause)
         {
-            if (GameIsPaused)
-                Resume();
-            else
-                Pause();
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                if (GameIsPaused)
+                    Resume();
+                else
+                    Pause();
+            }
         }
     }
 
     public void Resume()
     {
+        OnResume?.Invoke();
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
@@ -28,6 +36,7 @@ public class PauseScene : MonoBehaviour
 
     public void Pause()
     {
+        OnPause?.Invoke();
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
@@ -46,5 +55,10 @@ public class PauseScene : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public static void EnableCanPause()
+    {
+        canPause = true;
     }
 }

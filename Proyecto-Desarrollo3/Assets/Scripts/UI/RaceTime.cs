@@ -11,7 +11,8 @@ public class RaceTime : MonoBehaviour
 
     public event System.Action OnTimeFinish;
     public event System.Action<float> OnTimeChange;
-    private bool updatingTime = true;
+    private bool updatingTime = false;
+
     private void Start()
     {
         InitTime();
@@ -44,6 +45,11 @@ public class RaceTime : MonoBehaviour
     {
         updatingTime = false;
         
+    }
+
+    public void EnableUpdatingTime()
+    {
+        updatingTime = true;
     }
 
     public float GetFinalTime()
