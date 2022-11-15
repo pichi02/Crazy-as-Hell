@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -8,6 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private SpeedWay speedWay;
     [SerializeField] private ObstacleSpawner player2;
     private RaceTime raceTime;
+    [SerializeField] private List<ObstaclePreVisualize> preVisualizes;
 
     private void Awake()
     {
@@ -31,7 +33,13 @@ public class GameManager : MonoBehaviour
         raceTime.OnTimeFinish += player2.DisableCanSpawnObstacle;
         carLife.OnDead += player2.DisableCanSpawnObstacle;
         raceTime.OnTimeFinish += player1.ResetSpeed;
+        for (int i = 0; i < preVisualizes.Count; i++)
+        {
+            player2.OnCantSpawnObstacle += preVisualizes[i].ChangeColorToRed;
+            player2.OnCanSpawnObstacle += preVisualizes[i].ChangeColorToGreen;
+        }
     }
+
 
     private void OnDestroy()
     {
@@ -50,6 +58,11 @@ public class GameManager : MonoBehaviour
         raceTime.OnTimeFinish -= player2.DisableCanSpawnObstacle;
         carLife.OnDead -= player2.DisableCanSpawnObstacle;
         raceTime.OnTimeFinish -= player1.ResetSpeed;
+        for (int i = 0; i < preVisualizes.Count; i++)
+        {
+            player2.OnCantSpawnObstacle -= preVisualizes[i].ChangeColorToRed;
+            player2.OnCanSpawnObstacle -= preVisualizes[i].ChangeColorToGreen;
+        }
     }
 
     private void CheckLapsToWin()

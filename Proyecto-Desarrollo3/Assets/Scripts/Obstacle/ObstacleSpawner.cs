@@ -16,7 +16,8 @@ public class ObstacleSpawner : MonoBehaviour
     [SerializeField] private CarController player1;
 
     public event Action<float> OnSetCooldown;
-
+    public event Action OnCantSpawnObstacle;
+    public event Action OnCanSpawnObstacle;
     bool inCooldown;
 
     const int cooldownTime = 5;
@@ -24,11 +25,13 @@ public class ObstacleSpawner : MonoBehaviour
 
     private bool isObstacleSpawned;
     private bool isPrevisualizeInstantiated = false;
-
+    private bool isPreVisualizeRed = false;
     private bool canSpawnObstacle = false;
 
     [SerializeField] private LayerMask layer;
     GameObject preVisualize = null;
+
+
 
     private void Update()
     {
@@ -45,6 +48,19 @@ public class ObstacleSpawner : MonoBehaviour
             {
 
                 preVisualize.transform.position = hits[0].point;
+
+                if (!CanSpawnInPoint(hits[0].point) && !isPreVisualizeRed)
+                {
+                    Debug.Log("ROJOOOOO");
+                    OnCantSpawnObstacle?.Invoke();
+                    isPreVisualizeRed = true;
+                }
+                else if (CanSpawnInPoint(hits[0].point) && isPreVisualizeRed)
+                {
+                    Debug.Log("VERDEEE");
+                    OnCanSpawnObstacle?.Invoke();
+                    isPreVisualizeRed = false;
+                }
 
             }
         }

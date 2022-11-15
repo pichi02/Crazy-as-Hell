@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 577744289838971621}
+  - component: {fileID: 316931090}
   m_Layer: 0
   m_Name: hacha_trampa 1
   m_TagString: Obstacle
@@ -35,6 +36,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &316931090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238514799408635999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3674f3f86a7720f42876224b53edb275, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6231780159733104547
 GameObject:
   m_ObjectHideFlags: 0
@@ -48,7 +61,7 @@ GameObject:
   - component: {fileID: 6161438290931878716}
   m_Layer: 0
   m_Name: mango
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131,7 +144,7 @@ GameObject:
   - component: {fileID: 3560834423235436548}
   m_Layer: 0
   m_Name: base
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -212,10 +225,9 @@ GameObject:
   - component: {fileID: 818525663033498553}
   - component: {fileID: 8851959815305655931}
   - component: {fileID: 3754128400080364723}
-  - component: {fileID: 1647776287}
   m_Layer: 0
   m_Name: polySurface3
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -285,20 +297,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &1647776287
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8789149937229550361}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4164511204261677510, guid: 6a636deb918a1d74fae8a10e36d924db, type: 3}
 --- !u!1001 &8395638639629049681
 PrefabInstance:
   m_ObjectHideFlags: 0

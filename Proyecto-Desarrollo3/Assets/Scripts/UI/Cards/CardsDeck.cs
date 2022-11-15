@@ -4,7 +4,6 @@ using UnityEngine;
 public class CardsDeck : MonoBehaviour
 {
     [SerializeField] private List<CardUI> cards;
-    [SerializeField] private List<CardUI> nextCards;
     public int lastSelectedCard;
     CardUI inactiveCard;
     private void Start()
@@ -33,10 +32,6 @@ public class CardsDeck : MonoBehaviour
     public List<CardUI> GetDeck()
     {
         return cards;
-    }
-    public List<CardUI> GetNextCards()
-    {
-        return nextCards;
     }
     public CardUI GetSelectedCard()
     {

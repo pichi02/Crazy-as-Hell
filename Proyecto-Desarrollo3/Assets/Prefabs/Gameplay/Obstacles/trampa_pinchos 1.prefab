@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2257099657209796684}
   - component: {fileID: 2953534216738592745}
   - component: {fileID: 1088174500412564259}
+  - component: {fileID: 1462080060282943782}
   m_Layer: 0
   m_Name: trampa_pinchos 1
   m_TagString: BearTrap
@@ -84,6 +85,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &1462080060282943782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448193708885607158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3674f3f86a7720f42876224b53edb275, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1658634211473093225
 PrefabInstance:
   m_ObjectHideFlags: 0
