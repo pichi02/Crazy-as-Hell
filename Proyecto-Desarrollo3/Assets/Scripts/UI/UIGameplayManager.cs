@@ -49,6 +49,7 @@ public class UIGameplayManager : MonoBehaviour
         countdown.OnFinishCountdown += deck.EnableCards;
         PauseScene.OnPause += deck.DisableCards;
         PauseScene.OnResume += deck.EnableCards;
+        countdown.OnFinishCountdown += PauseScene.EnableCanPause;
     }
     private void OnDestroy()
     {

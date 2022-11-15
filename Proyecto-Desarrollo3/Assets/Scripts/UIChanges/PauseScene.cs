@@ -11,14 +11,18 @@ public class PauseScene : MonoBehaviour
 
     public static event Action OnPause;
     public static event Action OnResume;
+    private static bool canPause = false;
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (canPause)
         {
-            if (GameIsPaused)
-                Resume();
-            else
-                Pause();
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                if (GameIsPaused)
+                    Resume();
+                else
+                    Pause();
+            }
         }
     }
 
@@ -51,5 +55,10 @@ public class PauseScene : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public static void EnableCanPause()
+    {
+        canPause = true;
     }
 }
