@@ -1,8 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1278378707	Play_menu			\Default Work Unit\Play_menu	
-	1699343283	Play_music_menu			\Default Work Unit\Play_music_menu	
+	2245059084	Stop_gameplay			\Default Work Unit\Stop_gameplay	
 	2914981333	Stop_menu			\Default Work Unit\Stop_menu	
+	3737014274	Play_gameplay			\Default Work Unit\Play_gameplay	
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	628797688	music_gameplay	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\music_gameplay_D79FB2B7.wem	628797688.wem	\Interactive Music Hierarchy\Default Work Unit\gameplay\gameplay\music_gameplay	
 	878407389	music_menu	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\music_menu_D79FB2B7.wem	878407389.wem	\Interactive Music Hierarchy\Default Work Unit\menu\music_menu\music_menu	
 

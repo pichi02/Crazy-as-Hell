@@ -28,12 +28,26 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_music_menu" ID="{98058B10-87BA-490C-9D98-65A4654E33BF}">
+				<Event Name="Play_gameplay" ID="{2870513B-16CF-4B40-BCA9-6E925B5BD3BE}">
 					<ChildrenList>
-						<Action Name="" ID="{788368F4-6901-4B47-A586-FD14255C2131}" ShortID="134157596">
+						<Action Name="" ID="{936826CC-5943-40AC-B093-B228849DD0AA}" ShortID="647167441">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="music_menu" ID="{F56FC1EC-0E32-4F73-8F82-5C7388743E89}" WorkUnitID="{D37D3E6D-87EE-48D5-9CFA-BDE16E1B2892}"/>
+									<ObjectRef Name="gameplay" ID="{56026B64-A38B-42CD-A409-FFBDC1A6C3F6}" WorkUnitID="{D37D3E6D-87EE-48D5-9CFA-BDE16E1B2892}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_gameplay" ID="{F932EE9A-2B4A-4163-9BD1-96A179E86982}">
+					<ChildrenList>
+						<Action Name="" ID="{FC251F87-2710-49AE-8E94-A0205D24CB96}" ShortID="492427227">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="gameplay" ID="{56026B64-A38B-42CD-A409-FFBDC1A6C3F6}" WorkUnitID="{D37D3E6D-87EE-48D5-9CFA-BDE16E1B2892}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
