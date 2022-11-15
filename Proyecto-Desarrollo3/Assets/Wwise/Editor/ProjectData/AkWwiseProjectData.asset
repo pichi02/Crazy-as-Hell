@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: a7566320cac6324db08fa10e6957a80f
     GuidInternal: 
-    m_lastTime: -8585330756634795964
+    m_lastTime: -8585330727531361061
     List:
     - name: main
       guid: 2bcead1c92e8514f819cdb8f059ad644
@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: be8a32c2bde39e46ba08ba2dd58fd0b6
     GuidInternal: 
-    m_lastTime: -8585330756634725477
+    m_lastTime: -8585330727531171470
     List:
+    - name: Play_buttons
+      guid: 63cf8015d130c246aa7690f4d5e495b2
+      id: 2461875365
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: be8a32c2bde39e46ba08ba2dd58fd0b6
+      - ElementName: Play_buttons
+        ObjectType: 3
+        guid: 63cf8015d130c246aa7690f4d5e495b2
+      Path: Events\Default Work Unit\Play_buttons
+      maxAttenuation: 0
+      maxDuration: 0.20674
+      minDuration: 0.096354
     - name: Play_gameplay
       guid: 3b517028cf16404bbca96e925b5bd3be
       id: 3737014274
@@ -221,7 +238,7 @@ MonoBehaviour:
     m_lastTime: -8585333264955345042
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000500000006000000070000000c0000000d0000008100000082000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000000c0000000d0000000e00000047000000480000008100000082000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

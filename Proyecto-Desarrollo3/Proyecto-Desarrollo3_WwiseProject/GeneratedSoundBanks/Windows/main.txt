@@ -1,8 +1,15 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1278378707	Play_menu			\Default Work Unit\Play_menu	
 	2245059084	Stop_gameplay			\Default Work Unit\Stop_gameplay	
+	2461875365	Play_buttons			\Default Work Unit\Play_buttons	
 	2914981333	Stop_menu			\Default Work Unit\Stop_menu	
 	3737014274	Play_gameplay			\Default Work Unit\Play_gameplay	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	1465388	button 5	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\button 5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\buttons\button 5		18564
+	639846754	button 4	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\button 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\buttons\button 4		24004
+	942153016	button 2	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\button 2_B33AD23F.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\buttons\button 2		39760
+	966007765	button 3	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\button 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\buttons\button 3		29884
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
 	628797688	music_gameplay	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\music_gameplay_D79FB2B7.wem	628797688.wem	\Interactive Music Hierarchy\Default Work Unit\gameplay\gameplay\music_gameplay	

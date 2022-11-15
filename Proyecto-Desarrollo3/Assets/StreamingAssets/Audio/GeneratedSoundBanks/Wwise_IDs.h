@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_BUTTONS = 2461875365U;
         static const AkUniqueID PLAY_GAMEPLAY = 3737014274U;
         static const AkUniqueID PLAY_MENU = 1278378707U;
         static const AkUniqueID STOP_GAMEPLAY = 2245059084U;

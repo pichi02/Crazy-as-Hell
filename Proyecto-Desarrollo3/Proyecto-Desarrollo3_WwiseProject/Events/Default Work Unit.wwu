@@ -53,6 +53,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_buttons" ID="{1580CF63-30D1-46C2-AA76-90F4D5E495B2}">
+					<ChildrenList>
+						<Action Name="" ID="{FCB989D5-B829-4163-BEF0-05290E28B6ED}" ShortID="266677476">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="buttons" ID="{18B89DE1-4920-495B-AFE1-3D9F458E5C54}" WorkUnitID="{4C29E8DB-F301-46A4-B1C9-D18D5287C0DA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
