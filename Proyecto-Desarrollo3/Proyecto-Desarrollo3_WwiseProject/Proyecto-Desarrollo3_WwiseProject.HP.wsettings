@@ -4,6 +4,7 @@
 		<UserProjectSettings Name="" ID="{BF6A2188-209C-49C4-87B8-A6DD4D86B967}">
 			<PropertyList>
 				<Property Name="Event Action List\{0BCEE8D5-E332-4948-8A1F-D8A334E1C4B5}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{98058B10-87BA-490C-9D98-65A4654E33BF}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{AF999403-3B52-4568-82B1-B91A0E7553BD}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
@@ -37,6 +38,10 @@
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFilterVersion" Type="int32" Value="1"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFiltersEnable" Type="bool" Value="True"/>
 				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value=""/>
+				<Property Name="Music Transition List\{23503301-B70A-42CD-B362-F31DC9907048}\Scroll Position" Type="int32" Value="0"/>
+				<Property Name="Music Transition List\{23503301-B70A-42CD-B362-F31DC9907048}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Music Transition List\{71714E79-CFCE-4FB1-AF83-9320F28BEEC9}\Scroll Position" Type="int32" Value="0"/>
+				<Property Name="Music Transition List\{71714E79-CFCE-4FB1-AF83-9320F28BEEC9}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\FirstVisible_11_1" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>
 				<Property Name="ProjectExplorer\FirstVisible_12_1" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
 				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{27092F88-225A-1154-6725-C8A34F3D4482}"/>

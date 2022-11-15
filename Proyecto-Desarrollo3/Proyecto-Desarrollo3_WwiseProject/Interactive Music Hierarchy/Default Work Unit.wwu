@@ -23,7 +23,7 @@
 								<Property Name="Tempo" Type="Real64" Value="130"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-11</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -37,6 +37,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<MusicTrack Name="music_menu" ID="{71714E79-CFCE-4FB1-AF83-9320F28BEEC9}" ShortID="596286165">
+									<PropertyList>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0852DFB0-4A4C-4A02-B4FF-DEF6C794D1AE}"/>
@@ -127,6 +134,15 @@
 							<PropertyList>
 								<Property Name="LoopCount" Type="int16" Value="0"/>
 							</PropertyList>
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{DAB6626F-531A-467C-9ED2-5450949BC25A}" ShortID="218452140">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="music_menu" ID="{F56FC1EC-0E32-4F73-8F82-5C7388743E89}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
 						</MusicPlaylistItem>
 					</Playlist>
 				</MusicPlaylistContainer>

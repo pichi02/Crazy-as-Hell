@@ -1,7 +1,8 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1278378707	Play_menu			\Default Work Unit\Play_menu	
+	1699343283	Play_music_menu			\Default Work Unit\Play_music_menu	
 	2914981333	Stop_menu			\Default Work Unit\Stop_menu	
 
-In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	878407389	music_menu	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\music_menu_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\menu\music_menu\music_menu		5671452
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	878407389	music_menu	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\music_menu_D79FB2B7.wem	878407389.wem	\Interactive Music Hierarchy\Default Work Unit\menu\music_menu\music_menu	
 

@@ -6,6 +6,7 @@
 				<SoundBank Name="main" ID="{1CADCE2B-E892-4F51-819C-DB8F059AD644}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_menu" ID="{AF999403-3B52-4568-82B1-B91A0E7553BD}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_music_menu" ID="{98058B10-87BA-490C-9D98-65A4654E33BF}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_menu" ID="{0BCEE8D5-E332-4948-8A1F-D8A334E1C4B5}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
