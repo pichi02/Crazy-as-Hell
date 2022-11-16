@@ -198,4 +198,9 @@ public class ObstacleSpawner : MonoBehaviour
     {
         canSpawnObstacle = true;
     }
+    public void DisableIsPrevisualizeInstantiated(int ID)
+    {
+        isPrevisualizeInstantiated = false;
+        Destroy(preVisualize);
+    }
 }

@@ -29,6 +29,8 @@ public class UIGameplayManager : MonoBehaviour
 
     [SerializeField] private CountdownController countdown;
 
+    [SerializeField] private ObstacleSpawner player2;
+
     private CanvasGroup powerUpTypeCanvasGroup;
     private CanvasGroup trackTextCanvasGroup;
 
@@ -50,6 +52,10 @@ public class UIGameplayManager : MonoBehaviour
         PauseScene.OnPause += deck.DisableCards;
         PauseScene.OnResume += deck.EnableCards;
         countdown.OnFinishCountdown += PauseScene.EnableCanPause;
+        for (int i = 0; i < deck.GetDeck().Count; i++)
+        {
+            deck.GetDeck()[i].OnSelectCard += player2.DisableIsPrevisualizeInstantiated;
+        }
     }
     private void OnDestroy()
     {
@@ -62,6 +68,10 @@ public class UIGameplayManager : MonoBehaviour
         countdown.OnFinishCountdown -= deck.EnableCards;
         PauseScene.OnPause -= deck.DisableCards;
         PauseScene.OnResume -= deck.EnableCards;
+        for (int i = 0; i < deck.GetDeck().Count; i++)
+        {
+            deck.GetDeck()[i].OnSelectCard -= player2.DisableIsPrevisualizeInstantiated;
+        }
     }
 
     private void ActiveLosePanel()
