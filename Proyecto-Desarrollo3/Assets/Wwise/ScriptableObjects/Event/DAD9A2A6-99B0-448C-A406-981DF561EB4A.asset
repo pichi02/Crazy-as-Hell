@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54c0a1de1cd6d1641bca43a8d5a939d0, type: 3}
+  m_Name: DAD9A2A6-99B0-448C-A406-981DF561EB4A
+  m_EditorClassIdentifier: 
+  objectName: Play_PU_Uspeed
+  id: 3926664148
+  guid: DAD9A2A6-99B0-448C-A406-981DF561EB4A

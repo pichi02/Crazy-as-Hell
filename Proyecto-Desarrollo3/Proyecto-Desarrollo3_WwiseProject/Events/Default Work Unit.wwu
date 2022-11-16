@@ -64,6 +64,39 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_PU_Uspeed" ID="{DAD9A2A6-99B0-448C-A406-981DF561EB4A}">
+					<ChildrenList>
+						<Action Name="" ID="{9930D835-FD91-41DE-A106-E8FC302FBA94}" ShortID="752588333">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PU_Uspeed" ID="{86BD58DA-B2F7-412D-BD93-4B02C727AA3B}" WorkUnitID="{4C29E8DB-F301-46A4-B1C9-D18D5287C0DA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Checkpoint" ID="{8DEF77FC-B41A-4757-B503-28F1901796DA}">
+					<ChildrenList>
+						<Action Name="" ID="{88AE6109-243F-4F0F-BE98-0FF652981CEF}" ShortID="951872967">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Checkpoint" ID="{754737FC-9AD8-4E31-BD68-055390296353}" WorkUnitID="{4C29E8DB-F301-46A4-B1C9-D18D5287C0DA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_countdown" ID="{4A212040-8BF0-4795-9524-D11E118D5DBD}">
+					<ChildrenList>
+						<Action Name="" ID="{A0753D29-F118-44DB-ABEA-E9AC10C88035}" ShortID="162095285">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="countdown" ID="{393F79D3-BFAC-4BEB-9EB3-E0D883844C86}" WorkUnitID="{4C29E8DB-F301-46A4-B1C9-D18D5287C0DA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

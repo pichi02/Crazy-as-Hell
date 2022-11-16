@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: a7566320cac6324db08fa10e6957a80f
     GuidInternal: 
-    m_lastTime: -8585330727531361061
+    m_lastTime: -8585329678011520799
     List:
     - name: main
       guid: 2bcead1c92e8514f819cdb8f059ad644
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: be8a32c2bde39e46ba08ba2dd58fd0b6
     GuidInternal: 
-    m_lastTime: -8585330727531171470
+    m_lastTime: -8585329657908883996
     List:
     - name: Play_buttons
       guid: 63cf8015d130c246aa7690f4d5e495b2
@@ -111,8 +111,42 @@ MonoBehaviour:
         guid: 63cf8015d130c246aa7690f4d5e495b2
       Path: Events\Default Work Unit\Play_buttons
       maxAttenuation: 0
-      maxDuration: 0.20674
-      minDuration: 0.096354
+      maxDuration: 0.219033
+      minDuration: 0.088357
+    - name: Play_Checkpoint
+      guid: fc77ef8d1ab45747b50328f1901796da
+      id: 2962822744
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: be8a32c2bde39e46ba08ba2dd58fd0b6
+      - ElementName: Play_Checkpoint
+        ObjectType: 3
+        guid: fc77ef8d1ab45747b50328f1901796da
+      Path: Events\Default Work Unit\Play_Checkpoint
+      maxAttenuation: 0
+      maxDuration: 2
+      minDuration: 1.23161
+    - name: Play_countdown
+      guid: 4020214af08b95479524d11e118d5dbd
+      id: 2175797879
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: be8a32c2bde39e46ba08ba2dd58fd0b6
+      - ElementName: Play_countdown
+        ObjectType: 3
+        guid: 4020214af08b95479524d11e118d5dbd
+      Path: Events\Default Work Unit\Play_countdown
+      maxAttenuation: 0
+      maxDuration: 5.921179
+      minDuration: 4
     - name: Play_gameplay
       guid: 3b517028cf16404bbca96e925b5bd3be
       id: 3737014274
@@ -147,6 +181,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_PU_Uspeed
+      guid: a6a2d9dab0998c44a406981df561eb4a
+      id: 3926664148
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: be8a32c2bde39e46ba08ba2dd58fd0b6
+      - ElementName: Play_PU_Uspeed
+        ObjectType: 3
+        guid: a6a2d9dab0998c44a406981df561eb4a
+      Path: Events\Default Work Unit\Play_PU_Uspeed
+      maxAttenuation: 0
+      maxDuration: 2.04301
+      minDuration: 1.362539
     - name: Stop_gameplay
       guid: 9aee32f94a2b63419bd196a179e86982
       id: 2245059084
@@ -238,7 +289,7 @@ MonoBehaviour:
     m_lastTime: -8585333264955345042
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000500000006000000070000000c0000000d0000000e00000047000000480000008100000082000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000000c0000000d0000000e00000047000000480000005d0000005e0000008100000082000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

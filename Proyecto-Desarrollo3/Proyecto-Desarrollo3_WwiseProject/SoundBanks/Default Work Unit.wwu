@@ -5,11 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="main" ID="{1CADCE2B-E892-4F51-819C-DB8F059AD644}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Stop_gameplay" ID="{F932EE9A-2B4A-4163-9BD1-96A179E86982}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_menu" ID="{AF999403-3B52-4568-82B1-B91A0E7553BD}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_buttons" ID="{1580CF63-30D1-46C2-AA76-90F4D5E495B2}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_menu" ID="{0BCEE8D5-E332-4948-8A1F-D8A334E1C4B5}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_gameplay" ID="{2870513B-16CF-4B40-BCA9-6E925B5BD3BE}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Default Work Unit" ID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

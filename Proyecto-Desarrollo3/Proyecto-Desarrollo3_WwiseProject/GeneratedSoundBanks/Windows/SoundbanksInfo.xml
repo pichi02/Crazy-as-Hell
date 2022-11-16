@@ -25,12 +25,12 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1938919792">
+		<SoundBank Id="3161908922" Language="SFX" Hash="102139430">
 			<ObjectPath>\SoundBanks\Default Work Unit\main</ObjectPath>
 			<ShortName>main</ShortName>
 			<Path>main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2461875365" Name="Play_buttons" ObjectPath="\Events\Default Work Unit\Play_buttons" DurationType="OneShot" DurationMin="0.096354" DurationMax="0.20674">
+				<Event Id="2461875365" Name="Play_buttons" ObjectPath="\Events\Default Work Unit\Play_buttons" DurationType="OneShot" DurationMin="0.088357" DurationMax="0.219033">
 					<IncludedMemoryFiles>
 						<File Id="1465388" Language="SFX">
 							<ShortName>button 5.wav</ShortName>
@@ -50,6 +50,82 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2962822744" Name="Play_Checkpoint" ObjectPath="\Events\Default Work Unit\Play_Checkpoint" DurationType="OneShot" DurationMin="1.23161" DurationMax="2.">
+					<IncludedMemoryFiles>
+						<File Id="34347399" Language="SFX">
+							<ShortName>VO_youareademon.wav</ShortName>
+							<Path>SFX\VO_youareademon_10C4C929.wem</Path>
+						</File>
+						<File Id="99925183" Language="SFX">
+							<ShortName>VO_Flawless.wav</ShortName>
+							<Path>SFX\VO_Flawless_10C4C929.wem</Path>
+						</File>
+						<File Id="496321593" Language="SFX">
+							<ShortName>VO_outstanding.wav</ShortName>
+							<Path>SFX\VO_outstanding_10C4C929.wem</Path>
+						</File>
+						<File Id="1004910098" Language="SFX">
+							<ShortName>VO_amazing.wav</ShortName>
+							<Path>SFX\VO_amazing_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2175797879" Name="Play_countdown" ObjectPath="\Events\Default Work Unit\Play_countdown" DurationType="OneShot" DurationMin="4." DurationMax="5.921179">
+					<IncludedMemoryFiles>
+						<File Id="17405160" Language="SFX">
+							<ShortName>countdown5_WD.wav</ShortName>
+							<Path>SFX\countdown5_WD_10C4C929.wem</Path>
+						</File>
+						<File Id="173764481" Language="SFX">
+							<ShortName>countdown5_WoD.wav</ShortName>
+							<Path>SFX\countdown5_WoD_10C4C929.wem</Path>
+						</File>
+						<File Id="174860922" Language="SFX">
+							<ShortName>countdown4_WD.wav</ShortName>
+							<Path>SFX\countdown4_WD_10C4C929.wem</Path>
+						</File>
+						<File Id="404891725" Language="SFX">
+							<ShortName>countdown1_WD.wav</ShortName>
+							<Path>SFX\countdown1_WD_10C4C929.wem</Path>
+						</File>
+						<File Id="449973054" Language="SFX">
+							<ShortName>countdown1_WoD.wav</ShortName>
+							<Path>SFX\countdown1_WoD_10C4C929.wem</Path>
+						</File>
+						<File Id="580196525" Language="SFX">
+							<ShortName>countdown4_WoD.wav</ShortName>
+							<Path>SFX\countdown4_WoD_10C4C929.wem</Path>
+						</File>
+						<File Id="581470961" Language="SFX">
+							<ShortName>countdown6_WD.wav</ShortName>
+							<Path>SFX\countdown6_WD_10C4C929.wem</Path>
+						</File>
+						<File Id="588711168" Language="SFX">
+							<ShortName>countdown2_WoD.wav</ShortName>
+							<Path>SFX\countdown2_WoD_10C4C929.wem</Path>
+						</File>
+						<File Id="593928854" Language="SFX">
+							<ShortName>countdown3_WD.wav</ShortName>
+							<Path>SFX\countdown3_WD_10C4C929.wem</Path>
+						</File>
+						<File Id="749969536" Language="SFX">
+							<ShortName>countdown6_WoD.wav</ShortName>
+							<Path>SFX\countdown6_WoD_10C4C929.wem</Path>
+						</File>
+						<File Id="823828556" Language="SFX">
+							<ShortName>countdown2_WD.wav</ShortName>
+							<Path>SFX\countdown2_WD_10C4C929.wem</Path>
+						</File>
+						<File Id="933333156" Language="SFX">
+							<ShortName>countdown3_WoD.wav</ShortName>
+							<Path>SFX\countdown3_WoD_10C4C929.wem</Path>
+						</File>
+						<File Id="989168715" Language="SFX">
+							<ShortName>VO_321go.wav</ShortName>
+							<Path>SFX\VO_321go_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3737014274" Name="Play_gameplay" ObjectPath="\Events\Default Work Unit\Play_gameplay" DurationType="Infinite">
 					<ReferencedStreamedFiles>
 						<File Id="628797688" Language="SFX">
@@ -65,6 +141,18 @@
 							<Path>SFX\music_menu_D79FB2B7.wem</Path>
 						</File>
 					</ReferencedStreamedFiles>
+				</Event>
+				<Event Id="3926664148" Name="Play_PU_Uspeed" ObjectPath="\Events\Default Work Unit\Play_PU_Uspeed" DurationType="OneShot" DurationMin="1.362539" DurationMax="2.04301">
+					<IncludedMemoryFiles>
+						<File Id="57109167" Language="SFX">
+							<ShortName>PU_OVEJAS.wav</ShortName>
+							<Path>SFX\PU_OVEJAS_10C4C929.wem</Path>
+						</File>
+						<File Id="162511009" Language="SFX">
+							<ShortName>PU_Uspeed.wav</ShortName>
+							<Path>SFX\PU_Uspeed_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2245059084" Name="Stop_gameplay" ObjectPath="\Events\Default Work Unit\Stop_gameplay" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="2914981333" Name="Stop_menu" ObjectPath="\Events\Default Work Unit\Stop_menu" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
