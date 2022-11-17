@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1278378707	Play_menu			\Default Work Unit\Play_menu	
+	2081779185	Play_startRaceButton			\Default Work Unit\Play_startRaceButton	
 	2175797879	Play_countdown			\Default Work Unit\Play_countdown	
 	2245059084	Stop_gameplay			\Default Work Unit\Stop_gameplay	
 	2461875365	Play_buttons			\Default Work Unit\Play_buttons	
@@ -14,7 +15,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	34347399	VO_youareademon	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\VO_youareademon_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\Checkpoint\VO_youareademon		333460
 	57109167	PU_OVEJAS	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\PU_OVEJAS_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PowerUps\PU_Uspeed\PU_OVEJAS		127386
 	99925183	VO_Flawless	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\VO_Flawless_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\Checkpoint\VO_Flawless		261092
-	162511009	PU_Uspeed	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\PU_Uspeed_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PowerUps\PU_Uspeed\PU_Uspeed		340224
 	173764481	countdown5_WoD	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown5_WoD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\countdown\countdown5_WoD		768064
 	174860922	countdown4_WD	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown4_WD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\countdown\countdown4_WD		768064
 	404891725	countdown1_WD	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown1_WD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\countdown\countdown1_WD		768064
@@ -26,6 +26,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	593928854	countdown3_WD	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown3_WD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\countdown\countdown3_WD		768064
 	639846754	button 4	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\button 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\buttons\button 4		24004
 	749969536	countdown6_WoD	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown6_WoD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\countdown\countdown6_WoD		768064
+	806893691	play button	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\play button_2D6C8DDC.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\startRaceButton2\play button		534088
 	823828556	countdown2_WD	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown2_WD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\countdown\countdown2_WD		768064
 	933333156	countdown3_WoD	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown3_WoD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\countdown\countdown3_WoD		768064
 	942153016	button 2	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\button 2_B33AD23F.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\buttons\button 2		39760

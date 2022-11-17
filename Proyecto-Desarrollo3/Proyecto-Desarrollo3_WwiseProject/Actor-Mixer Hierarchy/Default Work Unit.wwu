@@ -187,29 +187,6 @@
 								<ActiveSource Name="exit button" ID="{72B18E48-A068-4370-AC29-147CCFED5B75}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="play button" ID="{14D8A4AB-5B7B-4E7F-856B-6A1FA68EC591}" ShortID="1045280566">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ED82E1AC-64E6-446B-8B90-558FB5FD489A}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0852DFB0-4A4C-4A02-B4FF-DEF6C794D1AE}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="play button" ID="{62BDAFBB-0CA7-4CF2-909D-2BDE4F0D1C5D}">
-									<Language>SFX</Language>
-									<AudioFile>play button.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="806893691"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists/>
-							<ActiveSourceList>
-								<ActiveSource Name="play button" ID="{62BDAFBB-0CA7-4CF2-909D-2BDE4F0D1C5D}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<Sound Name="selector button 2" ID="{AADC4B95-C966-4F95-9117-CD95C76FDCA6}" ShortID="745022012">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -279,6 +256,47 @@
 								<ActiveSource Name="selector button" ID="{84BEFF8F-D1B1-461E-830D-2D79BDCA23B7}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<ActorMixer Name="startRaceButton2" ID="{F6AFB51F-6AD3-47EF-937A-D9EA3B4A152E}" ShortID="796614707">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ED82E1AC-64E6-446B-8B90-558FB5FD489A}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0852DFB0-4A4C-4A02-B4FF-DEF6C794D1AE}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="play button" ID="{14D8A4AB-5B7B-4E7F-856B-6A1FA68EC591}" ShortID="1045280566">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ED82E1AC-64E6-446B-8B90-558FB5FD489A}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0852DFB0-4A4C-4A02-B4FF-DEF6C794D1AE}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="play button" ID="{62BDAFBB-0CA7-4CF2-909D-2BDE4F0D1C5D}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.0893698630137"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0386301369863014"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>play button.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="806893691"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="play button" ID="{62BDAFBB-0CA7-4CF2-909D-2BDE4F0D1C5D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</ActorMixer>
 					</ChildrenList>
 					<ObjectLists/>
 				</ActorMixer>

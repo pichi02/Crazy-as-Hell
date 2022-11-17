@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: be8a32c2bde39e46ba08ba2dd58fd0b6
     GuidInternal: 
-    m_lastTime: -8585329657908883996
+    m_lastTime: -8585329565970449562
     List:
     - name: Play_buttons
       guid: 63cf8015d130c246aa7690f4d5e495b2
@@ -196,8 +196,25 @@ MonoBehaviour:
         guid: a6a2d9dab0998c44a406981df561eb4a
       Path: Events\Default Work Unit\Play_PU_Uspeed
       maxAttenuation: 0
-      maxDuration: 2.04301
+      maxDuration: 1.529399
       minDuration: 1.362539
+    - name: Play_startRaceButton
+      guid: 2673965842a630408756a098fb866c77
+      id: 2081779185
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: be8a32c2bde39e46ba08ba2dd58fd0b6
+      - ElementName: Play_startRaceButton
+        ObjectType: 3
+        guid: 2673965842a630408756a098fb866c77
+      Path: Events\Default Work Unit\Play_startRaceButton
+      maxAttenuation: 0
+      maxDuration: 2.78137
+      minDuration: 2.78137
     - name: Stop_gameplay
       guid: 9aee32f94a2b63419bd196a179e86982
       id: 2245059084

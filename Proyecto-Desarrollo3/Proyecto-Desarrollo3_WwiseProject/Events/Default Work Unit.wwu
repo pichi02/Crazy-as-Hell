@@ -19,6 +19,7 @@
 						<Action Name="" ID="{C1D27B45-2862-42AA-AEC3-5EEE920E4585}" ShortID="615383623">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -44,6 +45,9 @@
 						<Action Name="" ID="{FC251F87-2710-49AE-8E94-A0205D24CB96}" ShortID="492427227">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -92,6 +96,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="countdown" ID="{393F79D3-BFAC-4BEB-9EB3-E0D883844C86}" WorkUnitID="{4C29E8DB-F301-46A4-B1C9-D18D5287C0DA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_startRaceButton" ID="{58967326-A642-4030-8756-A098FB866C77}">
+					<ChildrenList>
+						<Action Name="" ID="{DDB7A64B-8A76-49F9-8B8F-FCF42208578B}" ShortID="1068233645">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="play button" ID="{14D8A4AB-5B7B-4E7F-856B-6A1FA68EC591}" WorkUnitID="{4C29E8DB-F301-46A4-B1C9-D18D5287C0DA}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

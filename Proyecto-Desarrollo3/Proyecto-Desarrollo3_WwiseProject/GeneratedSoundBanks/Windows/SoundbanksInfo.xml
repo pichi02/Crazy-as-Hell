@@ -25,7 +25,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="102139430">
+		<SoundBank Id="3161908922" Language="SFX" Hash="806189633">
 			<ObjectPath>\SoundBanks\Default Work Unit\main</ObjectPath>
 			<ShortName>main</ShortName>
 			<Path>main.bnk</Path>
@@ -142,15 +142,19 @@
 						</File>
 					</ReferencedStreamedFiles>
 				</Event>
-				<Event Id="3926664148" Name="Play_PU_Uspeed" ObjectPath="\Events\Default Work Unit\Play_PU_Uspeed" DurationType="OneShot" DurationMin="1.362539" DurationMax="2.04301">
+				<Event Id="3926664148" Name="Play_PU_Uspeed" ObjectPath="\Events\Default Work Unit\Play_PU_Uspeed" DurationType="OneShot" DurationMin="1.362539" DurationMax="1.529399">
 					<IncludedMemoryFiles>
 						<File Id="57109167" Language="SFX">
 							<ShortName>PU_OVEJAS.wav</ShortName>
 							<Path>SFX\PU_OVEJAS_10C4C929.wem</Path>
 						</File>
-						<File Id="162511009" Language="SFX">
-							<ShortName>PU_Uspeed.wav</ShortName>
-							<Path>SFX\PU_Uspeed_10C4C929.wem</Path>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2081779185" Name="Play_startRaceButton" ObjectPath="\Events\Default Work Unit\Play_startRaceButton" DurationType="OneShot" DurationMin="2.78137" DurationMax="2.78137">
+					<IncludedMemoryFiles>
+						<File Id="806893691" Language="SFX">
+							<ShortName>play button.wav</ShortName>
+							<Path>SFX\play button_2D6C8DDC.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
