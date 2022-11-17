@@ -800,7 +800,7 @@ MonoBehaviour:
   speedInput: 0
   turnInput: 0
   stunTime: 3
-  safeZone: 20
+  safeZone: 23
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
