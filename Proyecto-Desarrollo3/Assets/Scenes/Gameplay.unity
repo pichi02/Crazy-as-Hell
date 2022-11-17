@@ -886,7 +886,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.9580247, y: 1}
+    m_SensorSize: {x: 1.798186, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2801,10 +2801,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 329689804, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
-      propertyPath: preVisualize
-      value: 
-      objectReference: {fileID: 5235343817677356630, guid: f311a3466e4edbb4c8e14c60b0ffaf5a, type: 3}
     - target: {fileID: 336853896, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -2837,14 +2833,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1509457728, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
-      propertyPath: preVisualize
-      value: 
-      objectReference: {fileID: 238514799408635999, guid: 5e906299a6c97e14d827d7e1632e6e24, type: 3}
-    - target: {fileID: 1733713223, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
-      propertyPath: preVisualize
-      value: 
-      objectReference: {fileID: 1656052816200312814, guid: 0a1e15b607ed8e64b9bbd6e4f8f2c69d, type: 3}
     - target: {fileID: 1860526355, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2893,10 +2881,6 @@ PrefabInstance:
       propertyPath: trackCheckpoint
       value: 
       objectReference: {fileID: 919132148834311897}
-    - target: {fileID: 2098184548, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
-      propertyPath: preVisualize
-      value: 
-      objectReference: {fileID: 3813810580490363041, guid: a601b7e3e0aa36746a67c69cf526eca7, type: 3}
     - target: {fileID: 1174940905693619840, guid: 494fe40bd1fe2684bbf1609efb8bd72b, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
