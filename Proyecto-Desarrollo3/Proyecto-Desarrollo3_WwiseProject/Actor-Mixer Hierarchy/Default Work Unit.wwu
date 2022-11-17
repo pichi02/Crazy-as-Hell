@@ -826,29 +826,6 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="PU_Uspeed" ID="{AB397F39-CE5F-4BFE-B69E-7C98EF1BA78C}" ShortID="256869580">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ED82E1AC-64E6-446B-8B90-558FB5FD489A}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0852DFB0-4A4C-4A02-B4FF-DEF6C794D1AE}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="PU_Uspeed" ID="{9E32F4B8-AA54-4547-9D8D-E55DCF116FC8}">
-													<Language>SFX</Language>
-													<AudioFile>PU_Uspeed.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="162511009"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ObjectLists/>
-											<ActiveSourceList>
-												<ActiveSource Name="PU_Uspeed" ID="{9E32F4B8-AA54-4547-9D8D-E55DCF116FC8}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
 										<Sound Name="PU_OVEJAS" ID="{198432CC-6B5F-48D2-8AF9-DC713286912F}" ShortID="39526021">
 											<ReferenceList>
 												<Reference Name="Conversion">
