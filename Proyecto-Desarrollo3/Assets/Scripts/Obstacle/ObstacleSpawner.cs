@@ -46,8 +46,8 @@ public class ObstacleSpawner : MonoBehaviour
             }
             if (preVisualize != null)
             {
-
                 preVisualize.transform.position = hits[0].point;
+                preVisualize.transform.LookAt(player1.transform.position);
 
                 if (!CanSpawnInPoint(hits[0].point) && !isPreVisualizeRed)
                 {
@@ -165,8 +165,8 @@ public class ObstacleSpawner : MonoBehaviour
         CardUI selectedCard = deck.GetSelectedCard();
         CardUI inactiveCard = deck.GetInactiveCard();
 
-        bojeInstance = Instantiate(selectedCard.GetPrefab(), pos, Quaternion.identity);
-
+        bojeInstance = Instantiate(selectedCard.GetPrefab(), pos, Quaternion.LookRotation(player1.transform.position));
+        bojeInstance.transform.LookAt(player1.transform.position);
 
         inactiveCard.gameObject.SetActive(true);
         inactiveCard.transform.SetSiblingIndex(selectedCard.transform.GetSiblingIndex());
