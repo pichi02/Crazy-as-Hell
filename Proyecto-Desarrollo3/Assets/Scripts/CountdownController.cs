@@ -3,6 +3,9 @@ using UnityEngine;
 using TMPro;
 using System;
 
+[RequireComponent(typeof(AkGameObj))] //requiere para que funcione el llamado de la música de gameplay
+
+
 public class CountdownController : MonoBehaviour
 {
     [SerializeField] private float countdownTime;
@@ -12,6 +15,7 @@ public class CountdownController : MonoBehaviour
     [SerializeField] private ObstacleSpawner obstacleSpawner;
     [SerializeField] private RaceTime raceTime;
 
+    
     public event Action OnFinishCountdown;
 
     private void Start()
@@ -32,6 +36,9 @@ public class CountdownController : MonoBehaviour
         }
 
         countdownDisplay.text = "GO!";
+
+        AkSoundEngine.PostEvent("Play_gameplay", gameObject); //Empieza la música.
+        
         OnFinishCountdown?.Invoke();
         carController.CanMove = true;
         obstacleSpawner.EnableCanSpawnObstacle();
