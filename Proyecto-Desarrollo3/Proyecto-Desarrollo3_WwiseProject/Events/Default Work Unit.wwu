@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_menu" ID="{AF999403-3B52-4568-82B1-B91A0E7553BD}">
+					<ChildrenList>
+						<Action Name="" ID="{4051F429-8D66-4344-ABF0-5DBC5A71E2DB}" ShortID="900072515">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="menu" ID="{23503301-B70A-42CD-B362-F31DC9907048}" WorkUnitID="{D37D3E6D-87EE-48D5-9CFA-BDE16E1B2892}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_menu" ID="{0BCEE8D5-E332-4948-8A1F-D8A334E1C4B5}">
+					<ChildrenList>
+						<Action Name="" ID="{C1D27B45-2862-42AA-AEC3-5EEE920E4585}" ShortID="615383623">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="menu" ID="{23503301-B70A-42CD-B362-F31DC9907048}" WorkUnitID="{D37D3E6D-87EE-48D5-9CFA-BDE16E1B2892}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_gameplay" ID="{2870513B-16CF-4B40-BCA9-6E925B5BD3BE}">
+					<ChildrenList>
+						<Action Name="" ID="{936826CC-5943-40AC-B093-B228849DD0AA}" ShortID="647167441">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="gameplay" ID="{56026B64-A38B-42CD-A409-FFBDC1A6C3F6}" WorkUnitID="{D37D3E6D-87EE-48D5-9CFA-BDE16E1B2892}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_gameplay" ID="{F932EE9A-2B4A-4163-9BD1-96A179E86982}">
+					<ChildrenList>
+						<Action Name="" ID="{FC251F87-2710-49AE-8E94-A0205D24CB96}" ShortID="492427227">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="gameplay" ID="{56026B64-A38B-42CD-A409-FFBDC1A6C3F6}" WorkUnitID="{D37D3E6D-87EE-48D5-9CFA-BDE16E1B2892}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_buttons" ID="{1580CF63-30D1-46C2-AA76-90F4D5E495B2}">
+					<ChildrenList>
+						<Action Name="" ID="{FCB989D5-B829-4163-BEF0-05290E28B6ED}" ShortID="266677476">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="buttons" ID="{18B89DE1-4920-495B-AFE1-3D9F458E5C54}" WorkUnitID="{4C29E8DB-F301-46A4-B1C9-D18D5287C0DA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PU_Uspeed" ID="{DAD9A2A6-99B0-448C-A406-981DF561EB4A}">
+					<ChildrenList>
+						<Action Name="" ID="{9930D835-FD91-41DE-A106-E8FC302FBA94}" ShortID="752588333">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PU_Uspeed" ID="{86BD58DA-B2F7-412D-BD93-4B02C727AA3B}" WorkUnitID="{4C29E8DB-F301-46A4-B1C9-D18D5287C0DA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Checkpoint" ID="{8DEF77FC-B41A-4757-B503-28F1901796DA}">
+					<ChildrenList>
+						<Action Name="" ID="{88AE6109-243F-4F0F-BE98-0FF652981CEF}" ShortID="951872967">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Checkpoint" ID="{754737FC-9AD8-4E31-BD68-055390296353}" WorkUnitID="{4C29E8DB-F301-46A4-B1C9-D18D5287C0DA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_countdown" ID="{4A212040-8BF0-4795-9524-D11E118D5DBD}">
+					<ChildrenList>
+						<Action Name="" ID="{A0753D29-F118-44DB-ABEA-E9AC10C88035}" ShortID="162095285">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="countdown" ID="{393F79D3-BFAC-4BEB-9EB3-E0D883844C86}" WorkUnitID="{4C29E8DB-F301-46A4-B1C9-D18D5287C0DA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_startRaceButton" ID="{58967326-A642-4030-8756-A098FB866C77}">
+					<ChildrenList>
+						<Action Name="" ID="{DDB7A64B-8A76-49F9-8B8F-FCF42208578B}" ShortID="1068233645">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="play button" ID="{14D8A4AB-5B7B-4E7F-856B-6A1FA68EC591}" WorkUnitID="{4C29E8DB-F301-46A4-B1C9-D18D5287C0DA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
