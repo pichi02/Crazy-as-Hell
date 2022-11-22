@@ -13,6 +13,5 @@ public class FollowTarget : MonoBehaviour
             transform.position = target.position + offset;
             transform.RotateAround(transform.position, Vector3.up, rotateSpeed * Time.deltaTime);
         }
-
     }
 }
