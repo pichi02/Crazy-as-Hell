@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class SawRotation : MonoBehaviour
 {
-    void Update()
+    [SerializeField] private Vector3 rotation;
+    void FixedUpdate()
     {
-        transform.Rotate(new Vector3(0, 0.3f, 0));
+        transform.Rotate(rotation);
     }
 }
