@@ -938,12 +938,12 @@ MonoBehaviour:
     FieldOfView: 60
     OrthographicSize: 5
     NearClipPlane: 0.3
-    FarClipPlane: 1000
+    FarClipPlane: 2000
     Dutch: 0
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1.6516516, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1168,7 +1168,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 2000
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -3270,11 +3270,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 362b307730e724b42835f7cad1466df7, type: 3}
---- !u!4 &1141124198591314544 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1497025296175761340, guid: 362b307730e724b42835f7cad1466df7, type: 3}
-  m_PrefabInstance: {fileID: 1141124198591314543}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1299731471448882854 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2650104762841322033, guid: a6bf705bf71cc5e4588610f1553644eb, type: 3}
@@ -3788,7 +3783,7 @@ PrefabInstance:
     - target: {fileID: 8415589273600693367, guid: c685b7329352d7d438c63cd66434dba1, type: 3}
       propertyPath: respawnPoint
       value: 
-      objectReference: {fileID: 1141124198591314544}
+      objectReference: {fileID: 0}
     - target: {fileID: 8415589273600693367, guid: c685b7329352d7d438c63cd66434dba1, type: 3}
       propertyPath: carController
       value: 
