@@ -41,7 +41,7 @@ public class TrackCheckpoint : MonoBehaviour
         {
             if (checkpointSingleList.Count - 1 == nextCheckpointSingleIndex)
             {
-                Debug.Log("Vuelta++");
+                Debug.Log(checkpointSingleList.Count + " " + nextCheckpointSingleIndex);
                 AddGoalIndex();
                 OnLapFinish?.Invoke();
             }

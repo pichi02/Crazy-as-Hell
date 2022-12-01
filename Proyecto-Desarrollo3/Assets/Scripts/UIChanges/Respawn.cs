@@ -4,7 +4,6 @@ public class Respawn : MonoBehaviour
 {
     [SerializeField] private Transform sphere;
     [SerializeField] private Transform player;
-    [SerializeField] private Transform respawnPoint;
     [SerializeField] private CarController carController;
     [SerializeField] private TrackCheckpoint trackCheckpoint;
 
