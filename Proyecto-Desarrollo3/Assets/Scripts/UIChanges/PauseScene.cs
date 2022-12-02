@@ -12,6 +12,12 @@ public class PauseScene : MonoBehaviour
     public static event Action OnPause;
     public static event Action OnResume;
     private static bool canPause = false;
+
+    private void Awake()
+    {
+        canPause = false;
+    }
+
     private void Update()
     {
         if (canPause)
