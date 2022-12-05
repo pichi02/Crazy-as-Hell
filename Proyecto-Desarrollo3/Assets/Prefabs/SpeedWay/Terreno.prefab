@@ -113,6 +113,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sphere: {fileID: 0}
   player: {fileID: 0}
-  respawnPoint: {fileID: 0}
   carController: {fileID: 0}
   trackCheckpoint: {fileID: 0}

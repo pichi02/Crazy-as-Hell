@@ -395,11 +395,11 @@ PrefabInstance:
     - target: {fileID: -2419943530643844000, guid: be50d3b71f358f245a349234cb1ef58f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: f9b62908fca6f7440bbf2025a3cb3413, type: 2}
+      objectReference: {fileID: 2100000, guid: 7b99c4b75851d7e469da2fb75507db98, type: 2}
     - target: {fileID: 353784450231559496, guid: be50d3b71f358f245a349234cb1ef58f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: bffb30ea2045c024cb89f6cd8d53808f, type: 2}
+      objectReference: {fileID: 2100000, guid: 9d319168916c7204b8ab1198055230ee, type: 2}
     - target: {fileID: 634144548915767359, guid: be50d3b71f358f245a349234cb1ef58f, type: 3}
       propertyPath: m_Layer
       value: 3
