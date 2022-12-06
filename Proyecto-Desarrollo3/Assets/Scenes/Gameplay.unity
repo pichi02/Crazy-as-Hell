@@ -752,6 +752,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8802663723126361042, guid: 5d4c12fb33f868647912a5f7fa04ed4d, type: 3}
   m_PrefabInstance: {fileID: 519737851}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &526725850 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8415589273600693367, guid: c685b7329352d7d438c63cd66434dba1, type: 3}
+  m_PrefabInstance: {fileID: 5425041451347610968}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93819dff8abbacf44b753a539891de83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &538589064
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1411,7 +1422,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.5850145, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -4684,6 +4695,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 239706428, guid: 362b307730e724b42835f7cad1466df7, type: 3}
+      propertyPath: respawn
+      value: 
+      objectReference: {fileID: 526725850}
+    - target: {fileID: 572579269, guid: 362b307730e724b42835f7cad1466df7, type: 3}
+      propertyPath: respawn
+      value: 
+      objectReference: {fileID: 526725850}
     - target: {fileID: 222787136796632248, guid: 362b307730e724b42835f7cad1466df7, type: 3}
       propertyPath: m_Name
       value: pista (1)
