@@ -14,15 +14,24 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_BUTTONS = 2461875365U;
+        static const AkUniqueID PLAY_CAR_DRIFT = 4041934908U;
+        static const AkUniqueID PLAY_CAR_ENGINE = 2832155465U;
         static const AkUniqueID PLAY_CHECKPOINT = 2962822744U;
         static const AkUniqueID PLAY_COUNTDOWN = 2175797879U;
         static const AkUniqueID PLAY_GAMEPLAY = 3737014274U;
         static const AkUniqueID PLAY_MENU = 1278378707U;
         static const AkUniqueID PLAY_PU_USPEED = 3926664148U;
         static const AkUniqueID PLAY_STARTRACEBUTTON = 2081779185U;
+        static const AkUniqueID STOP_CAR_DRIFT = 543384842U;
+        static const AkUniqueID STOP_CAR_ENGINE = 1691000743U;
         static const AkUniqueID STOP_GAMEPLAY = 2245059084U;
         static const AkUniqueID STOP_MENU = 2914981333U;
     } // namespace EVENTS
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID RTPC_CARSPEED = 3593253588U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {

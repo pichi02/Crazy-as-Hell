@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 8dcc641924f4e847a0eb49517a737fb4
     GuidInternal: 
-    m_lastTime: -8585325457520550091
+    m_lastTime: -8585333264955068411
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: b0df52084c4a024ab4ffdef6c794d1ae
     GuidInternal: 
-    m_lastTime: -8585325457525431199
+    m_lastTime: -8585333264955628186
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: a7566320cac6324db08fa10e6957a80f
     GuidInternal: 
-    m_lastTime: -8585325457520590107
+    m_lastTime: -8585311693043508302
     List:
     - name: main
       guid: 2bcead1c92e8514f819cdb8f059ad644
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: be8a32c2bde39e46ba08ba2dd58fd0b6
     GuidInternal: 
-    m_lastTime: -8585325457526131357
+    m_lastTime: -8585311693043450677
     List:
     - name: Play_buttons
       guid: 63cf8015d130c246aa7690f4d5e495b2
@@ -113,6 +113,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.219033
       minDuration: 0.088357
+    - name: Play_car_drift
+      guid: bd08a120ef1c264e83664d890fa9df75
+      id: 4041934908
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: be8a32c2bde39e46ba08ba2dd58fd0b6
+      - ElementName: Play_car_drift
+        ObjectType: 3
+        guid: bd08a120ef1c264e83664d890fa9df75
+      Path: Events\Default Work Unit\Play_car_drift
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_car_engine
+      guid: 4643d3d84aaafb42b825d4e452a99c8b
+      id: 2832155465
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: be8a32c2bde39e46ba08ba2dd58fd0b6
+      - ElementName: Play_car_engine
+        ObjectType: 3
+        guid: 4643d3d84aaafb42b825d4e452a99c8b
+      Path: Events\Default Work Unit\Play_car_engine
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Checkpoint
       guid: fc77ef8d1ab45747b50328f1901796da
       id: 2962822744
@@ -215,6 +249,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.78137
       minDuration: 2.78137
+    - name: Stop_car_drift
+      guid: 013f1be82e46cb4782e349d249298b39
+      id: 543384842
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: be8a32c2bde39e46ba08ba2dd58fd0b6
+      - ElementName: Stop_car_drift
+        ObjectType: 3
+        guid: 013f1be82e46cb4782e349d249298b39
+      Path: Events\Default Work Unit\Stop_car_drift
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_car_engine
+      guid: 44d6015591becf4d919600d425b6bccc
+      id: 1691000743
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: be8a32c2bde39e46ba08ba2dd58fd0b6
+      - ElementName: Stop_car_engine
+        ObjectType: 3
+        guid: 44d6015591becf4d919600d425b6bccc
+      Path: Events\Default Work Unit\Stop_car_engine
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_gameplay
       guid: 9aee32f94a2b63419bd196a179e86982
       id: 2245059084
@@ -261,8 +329,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: bd1b7521a347ab46985e12b1da1d597b
     GuidInternal: 
-    m_lastTime: -8585325457527481590
-    List: []
+    m_lastTime: -8585311736880446024
+    List:
+    - name: RTPC_CarSpeed
+      guid: 73294993f92cf248aef916297c6b467d
+      id: 3593253588
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bd1b7521a347ab46985e12b1da1d597b
+      - ElementName: RTPC_CarSpeed
+        ObjectType: 13
+        guid: 73294993f92cf248aef916297c6b467d
+      Path: Game Parameters\Default Work Unit\RTPC_CarSpeed
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -275,7 +357,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: b2025e5001729441bf59f82ed47ca371
     GuidInternal: 
-    m_lastTime: -8585325457520580104
+    m_lastTime: -8585333264955250930
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -289,7 +371,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: e6db13ed30e4954eb68e371bf37617fb
     GuidInternal: 
-    m_lastTime: -8585325457520580104
+    m_lastTime: -8585333264955511410
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -303,10 +385,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 61b5271f44e8f747b0f734856337c2e9
     GuidInternal: 
-    m_lastTime: -8585325457520570100
+    m_lastTime: -8585333264955345042
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0500000006000000070000006a0000006b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

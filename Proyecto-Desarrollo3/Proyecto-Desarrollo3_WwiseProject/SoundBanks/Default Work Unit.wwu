@@ -5,7 +5,20 @@
 			<ChildrenList>
 				<SoundBank Name="main" ID="{1CADCE2B-E892-4F51-819C-DB8F059AD644}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_startRaceButton" ID="{58967326-A642-4030-8756-A098FB866C77}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_gameplay" ID="{F932EE9A-2B4A-4163-9BD1-96A179E86982}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_car_engine" ID="{D8D34346-AA4A-42FB-B825-D4E452A99C8B}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_PU_Uspeed" ID="{DAD9A2A6-99B0-448C-A406-981DF561EB4A}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_menu" ID="{AF999403-3B52-4568-82B1-B91A0E7553BD}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Default Work Unit" ID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_buttons" ID="{1580CF63-30D1-46C2-AA76-90F4D5E495B2}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Checkpoint" ID="{8DEF77FC-B41A-4757-B503-28F1901796DA}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_countdown" ID="{4A212040-8BF0-4795-9524-D11E118D5DBD}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_car_drift" ID="{E81B3F01-462E-47CB-82E3-49D249298B39}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_menu" ID="{0BCEE8D5-E332-4948-8A1F-D8A334E1C4B5}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_gameplay" ID="{2870513B-16CF-4B40-BCA9-6E925B5BD3BE}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_car_engine" ID="{5501D644-BE91-4DCF-9196-00D425B6BCCC}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_car_drift" ID="{20A108BD-1CEF-4E26-8366-4D890FA9DF75}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

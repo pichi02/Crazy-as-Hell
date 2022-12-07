@@ -112,6 +112,58 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_car_engine" ID="{D8D34346-AA4A-42FB-B825-D4E452A99C8B}">
+					<ChildrenList>
+						<Action Name="" ID="{CB4A57C9-7205-496D-B154-8F0771264A11}" ShortID="702640124">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="car_engine" ID="{3F4F298D-761A-4423-806B-C75F49B06305}" WorkUnitID="{4C29E8DB-F301-46A4-B1C9-D18D5287C0DA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_car_engine" ID="{5501D644-BE91-4DCF-9196-00D425B6BCCC}">
+					<ChildrenList>
+						<Action Name="" ID="{D2DB9F81-C84B-4CBE-B381-CDF6266EB9BB}" ShortID="736733272">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="car_engine" ID="{3F4F298D-761A-4423-806B-C75F49B06305}" WorkUnitID="{4C29E8DB-F301-46A4-B1C9-D18D5287C0DA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_car_drift" ID="{20A108BD-1CEF-4E26-8366-4D890FA9DF75}">
+					<ChildrenList>
+						<Action Name="" ID="{DEEDF648-1540-4CBE-861B-41B124B0A893}" ShortID="595881205">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="car_drift" ID="{BE8C5004-035A-4BE4-88C6-757F7BDE1432}" WorkUnitID="{4C29E8DB-F301-46A4-B1C9-D18D5287C0DA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_car_drift" ID="{E81B3F01-462E-47CB-82E3-49D249298B39}">
+					<ChildrenList>
+						<Action Name="" ID="{B5AEDFAA-A5F2-477B-81AF-DAB8A87F1893}" ShortID="698761756">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="car_drift" ID="{BE8C5004-035A-4BE4-88C6-757F7BDE1432}" WorkUnitID="{4C29E8DB-F301-46A4-B1C9-D18D5287C0DA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
