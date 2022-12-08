@@ -18,9 +18,14 @@ public class Respawn : MonoBehaviour
     {
         if (collision.transform.CompareTag("Chasis"))
         {
-            sphere.transform.position = new Vector3(trackCheckpoint.vectorPoint.x, trackCheckpoint.vectorPoint.y - 3f, trackCheckpoint.vectorPoint.z);
-            player.transform.forward = trackCheckpoint.directionPoint;
-            carController.ResetSpeed();
+            ResetPosRot();
         }
+    }
+
+    public void ResetPosRot()
+    {
+        sphere.transform.position = new Vector3(trackCheckpoint.vectorPoint.x, trackCheckpoint.vectorPoint.y - 3f, trackCheckpoint.vectorPoint.z);
+        player.transform.forward = trackCheckpoint.directionPoint;
+        carController.ResetSpeed();
     }
 }

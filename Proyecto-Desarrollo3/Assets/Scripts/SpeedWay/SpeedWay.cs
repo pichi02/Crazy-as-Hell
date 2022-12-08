@@ -11,7 +11,6 @@ public class SpeedWay : MonoBehaviour
         if (maxLaps <= currentLaps)
         {
             OnWin?.Invoke();
-            Debug.Log("Gano");
         }
     }
 }
