@@ -23,7 +23,7 @@ public class UIGameplayManager : MonoBehaviour
 
     [SerializeField] private CardsDeck deck;
 
-    [SerializeField] private CooldownBar cooldownBar;
+    [SerializeField] private CooldownManager cooldownBar;
 
     [SerializeField] private TextMeshProUGUI finalTimeTextWin;
 

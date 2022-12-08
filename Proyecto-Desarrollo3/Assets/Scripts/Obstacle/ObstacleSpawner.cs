@@ -17,6 +17,8 @@ public class ObstacleSpawner : MonoBehaviour
 
     public event Action<float> OnSetCooldown;
     public event Action OnCantSpawnObstacle;
+    public event Action OnBeginCooldown;
+    public event Action OnFinishCooldown;
     public event Action OnCanSpawnObstacle;
     bool inCooldown;
 
@@ -87,6 +89,7 @@ public class ObstacleSpawner : MonoBehaviour
 
                                 if (isObstacleSpawned)
                                 {
+                                    OnBeginCooldown?.Invoke();
                                     Debug.Log(hits[0].transform.gameObject.layer);
                                     StartCoroutine(DisableCooldown());
                                 }
@@ -104,6 +107,7 @@ public class ObstacleSpawner : MonoBehaviour
 
             if (cooldown <= 0)
             {
+                OnFinishCooldown?.Invoke();
                 cooldown = 5;
             }
         }

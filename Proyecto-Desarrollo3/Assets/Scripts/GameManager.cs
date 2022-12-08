@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private ObstacleSpawner player2;
     private RaceTime raceTime;
     [SerializeField] private List<ObstaclePreVisualize> preVisualizes;
+    [SerializeField] private List<CardCooldown> cardsCooldown;
     [SerializeField] private FollowTarget rangeIndicator;
 
     private void Awake()
@@ -41,6 +42,11 @@ public class GameManager : MonoBehaviour
             player2.OnCantSpawnObstacle += preVisualizes[i].ChangeColorToRed;
             player2.OnCanSpawnObstacle += preVisualizes[i].ChangeColorToGreen;
         }
+        for (int i = 0; i < cardsCooldown.Count; i++)
+        {
+            player2.OnBeginCooldown += cardsCooldown[i].EnableCooldown;
+            player2.OnFinishCooldown += cardsCooldown[i].DisableCooldown;
+        }
     }
 
 
@@ -67,6 +73,11 @@ public class GameManager : MonoBehaviour
         {
             player2.OnCantSpawnObstacle -= preVisualizes[i].ChangeColorToRed;
             player2.OnCanSpawnObstacle -= preVisualizes[i].ChangeColorToGreen;
+        }
+        for (int i = 0; i < cardsCooldown.Count; i++)
+        {
+            player2.OnBeginCooldown -= cardsCooldown[i].EnableCooldown;
+            player2.OnFinishCooldown -= cardsCooldown[i].DisableCooldown;
         }
     }
 
