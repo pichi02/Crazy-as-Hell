@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private ObstacleSpawner player2;
     private RaceTime raceTime;
     [SerializeField] private List<ObstaclePreVisualize> preVisualizes;
+    [SerializeField] private FollowTarget rangeIndicator;
 
     private void Awake()
     {
@@ -33,6 +34,8 @@ public class GameManager : MonoBehaviour
         raceTime.OnTimeFinish += player2.DisableCanSpawnObstacle;
         carLife.OnDead += player2.DisableCanSpawnObstacle;
         raceTime.OnTimeFinish += player1.ResetSpeed;
+        player2.OnCanSpawnObstacle += rangeIndicator.DisableIndicator;
+        player2.OnCantSpawnObstacle += rangeIndicator.EnableIndicator;
         for (int i = 0; i < preVisualizes.Count; i++)
         {
             player2.OnCantSpawnObstacle += preVisualizes[i].ChangeColorToRed;
@@ -58,6 +61,8 @@ public class GameManager : MonoBehaviour
         raceTime.OnTimeFinish -= player2.DisableCanSpawnObstacle;
         carLife.OnDead -= player2.DisableCanSpawnObstacle;
         raceTime.OnTimeFinish -= player1.ResetSpeed;
+        player2.OnCanSpawnObstacle -= rangeIndicator.DisableIndicator;
+        player2.OnCantSpawnObstacle -= rangeIndicator.EnableIndicator;
         for (int i = 0; i < preVisualizes.Count; i++)
         {
             player2.OnCantSpawnObstacle -= preVisualizes[i].ChangeColorToRed;

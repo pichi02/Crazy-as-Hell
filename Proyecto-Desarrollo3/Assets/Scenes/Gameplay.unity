@@ -2511,6 +2511,7 @@ MonoBehaviour:
   - {fileID: 7945400880464668299, guid: a601b7e3e0aa36746a67c69cf526eca7, type: 3}
   - {fileID: 1736459380, guid: f311a3466e4edbb4c8e14c60b0ffaf5a, type: 3}
   - {fileID: 316931090, guid: 5e906299a6c97e14d827d7e1632e6e24, type: 3}
+  rangeIndicator: {fileID: 1858310030}
 --- !u!4 &1320937491
 Transform:
   m_ObjectHideFlags: 0
@@ -3851,7 +3852,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1858310030
 MonoBehaviour:
   m_ObjectHideFlags: 0
