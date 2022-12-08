@@ -28,7 +28,7 @@ public class CarController : MonoBehaviour
     [SerializeField] private float safeZone = 20f;
 
     [SerializeField] private LayerMask whatIsGround;
-    [SerializeField] private float groundRayLength = 0.5f;
+    [SerializeField] private float groundRayLength = 1f;
     [SerializeField] private Transform groundRayPoint;
 
     [SerializeField] private Transform leftFrontWheel, rightFrontWheel;
@@ -121,6 +121,7 @@ public class CarController : MonoBehaviour
             grounded = true;
 
             transform.rotation = Quaternion.FromToRotation(transform.up, hit.normal) * transform.rotation;
+
         }
 
         if (grounded)

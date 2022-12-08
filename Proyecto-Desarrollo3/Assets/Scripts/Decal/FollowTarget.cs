@@ -14,4 +14,12 @@ public class FollowTarget : MonoBehaviour
             transform.RotateAround(transform.position, Vector3.up, rotateSpeed * Time.deltaTime);
         }
     }
+    public void EnableIndicator()
+    {
+        gameObject.SetActive(true);
+    }
+    public void DisableIndicator()
+    {
+        gameObject.SetActive(false);
+    }
 }
