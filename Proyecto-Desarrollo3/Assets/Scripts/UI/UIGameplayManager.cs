@@ -23,8 +23,6 @@ public class UIGameplayManager : MonoBehaviour
 
     [SerializeField] private CardsDeck deck;
 
-    [SerializeField] private CooldownManager cooldownBar;
-
     [SerializeField] private TextMeshProUGUI finalTimeTextWin;
 
     [SerializeField] private CountdownController countdown;
@@ -158,7 +156,6 @@ public class UIGameplayManager : MonoBehaviour
         {
             deck.GetDeck()[i].gameObject.SetActive(false);
         }
-        cooldownBar.gameObject.SetActive(false);
-
+ 
     }
 }
