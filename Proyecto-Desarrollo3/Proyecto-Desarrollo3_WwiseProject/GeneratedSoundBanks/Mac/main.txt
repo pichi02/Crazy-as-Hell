@@ -9,7 +9,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	2832155465	Play_car_engine			\Default Work Unit\Play_car_engine	
 	2914981333	Stop_menu			\Default Work Unit\Stop_menu	
 	2962822744	Play_Checkpoint			\Default Work Unit\Play_Checkpoint	
+	3314365364	Resume_car_engine			\Default Work Unit\Resume_car_engine	
 	3737014274	Play_gameplay			\Default Work Unit\Play_gameplay	
+	3821341455	Pause_car_engine			\Default Work Unit\Pause_car_engine	
 	3926664148	Play_PU_Uspeed			\Default Work Unit\Play_PU_Uspeed	
 	4041934908	Play_car_drift			\Default Work Unit\Play_car_drift	
 

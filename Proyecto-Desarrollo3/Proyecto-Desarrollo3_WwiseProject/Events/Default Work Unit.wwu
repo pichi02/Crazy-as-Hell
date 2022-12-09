@@ -129,7 +129,8 @@
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
 								<Property Name="FadeOutCurve" Type="int16" Value="1"/>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -155,10 +156,45 @@
 						<Action Name="" ID="{B5AEDFAA-A5F2-477B-81AF-DAB8A87F1893}" ShortID="698761756">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="car_drift" ID="{BE8C5004-035A-4BE4-88C6-757F7BDE1432}" WorkUnitID="{4C29E8DB-F301-46A4-B1C9-D18D5287C0DA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Pause_car_engine" ID="{E33AEA40-57B0-4BB1-B8E6-546269376FED}">
+					<ChildrenList>
+						<Action Name="" ID="{4AF44583-9341-4080-8B44-EDFD736709B2}" ShortID="485409401">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="car_engine" ID="{3F4F298D-761A-4423-806B-C75F49B06305}" WorkUnitID="{4C29E8DB-F301-46A4-B1C9-D18D5287C0DA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Resume_car_engine" ID="{1C908603-A85A-4B4C-B01A-FA183E0CD267}">
+					<ChildrenList>
+						<Action Name="" ID="{E2061944-665C-4227-9BF0-BA312C3E2994}" ShortID="218629502">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="9"/>
+								<Property Name="FadeInCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="car_engine" ID="{3F4F298D-761A-4423-806B-C75F49B06305}" WorkUnitID="{4C29E8DB-F301-46A4-B1C9-D18D5287C0DA}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

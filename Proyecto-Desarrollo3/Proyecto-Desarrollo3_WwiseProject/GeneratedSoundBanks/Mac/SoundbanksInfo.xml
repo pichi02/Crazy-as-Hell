@@ -29,11 +29,12 @@
 				<GameParameter Id="1564184899" Name="SFX_Volume" ObjectPath="\Game Parameters\Default Work Unit\SFX_Volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3377705240">
+		<SoundBank Id="3161908922" Language="SFX" Hash="4281718123">
 			<ObjectPath>\SoundBanks\Default Work Unit\main</ObjectPath>
 			<ShortName>main</ShortName>
 			<Path>main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3821341455" Name="Pause_car_engine" ObjectPath="\Events\Default Work Unit\Pause_car_engine" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="2461875365" Name="Play_buttons" ObjectPath="\Events\Default Work Unit\Play_buttons" DurationType="OneShot" DurationMin="0.088357" DurationMax="0.219033">
 					<IncludedMemoryFiles>
 						<File Id="1465388" Language="SFX">
@@ -218,6 +219,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3314365364" Name="Resume_car_engine" ObjectPath="\Events\Default Work Unit\Resume_car_engine" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="543384842" Name="Stop_car_drift" ObjectPath="\Events\Default Work Unit\Stop_car_drift" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="1691000743" Name="Stop_car_engine" ObjectPath="\Events\Default Work Unit\Stop_car_engine" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="2245059084" Name="Stop_gameplay" ObjectPath="\Events\Default Work Unit\Stop_gameplay" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>

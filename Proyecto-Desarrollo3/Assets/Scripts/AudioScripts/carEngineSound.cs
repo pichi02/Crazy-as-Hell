@@ -17,6 +17,11 @@ public class carEngineSound : MonoBehaviour
 
     }
 
+    public void Awake()
+    {
+        AkSoundEngine.PostEvent("Resume_car_engine", gameObject);
+    }
+
     // Update is called once per frame
     void Update()
     {

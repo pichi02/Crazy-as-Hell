@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using AK.Wwise;
 
 public class PauseScene : MonoBehaviour
 {
@@ -38,6 +39,7 @@ public class PauseScene : MonoBehaviour
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
+        AkSoundEngine.PostEvent("Resume_car_engine", gameObject);
     }
 
     public void Pause()
@@ -46,6 +48,7 @@ public class PauseScene : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+        AkSoundEngine.PostEvent("Pause_car_engine", gameObject);
     }
 
     public void Retry()

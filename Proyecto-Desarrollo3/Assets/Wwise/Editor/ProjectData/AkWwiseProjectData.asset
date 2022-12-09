@@ -128,8 +128,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: be8a32c2bde39e46ba08ba2dd58fd0b6
     GuidInternal: 
-    m_lastTime: -8585310631317025906
+    m_lastTime: -8585310477011067785
     List:
+    - name: Pause_car_engine
+      guid: 40ea3ae3b057b14bb8e6546269376fed
+      id: 3821341455
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: be8a32c2bde39e46ba08ba2dd58fd0b6
+      - ElementName: Pause_car_engine
+        ObjectType: 3
+        guid: 40ea3ae3b057b14bb8e6546269376fed
+      Path: Events\Default Work Unit\Pause_car_engine
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Play_buttons
       guid: 63cf8015d130c246aa7690f4d5e495b2
       id: 2461875365
@@ -283,6 +300,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.78137
       minDuration: 2.78137
+    - name: Resume_car_engine
+      guid: 0386901c5aa84c4bb01afa183e0cd267
+      id: 3314365364
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: be8a32c2bde39e46ba08ba2dd58fd0b6
+      - ElementName: Resume_car_engine
+        ObjectType: 3
+        guid: 0386901c5aa84c4bb01afa183e0cd267
+      Path: Events\Default Work Unit\Resume_car_engine
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_car_drift
       guid: 013f1be82e46cb4782e349d249298b39
       id: 543384842
@@ -450,7 +484,7 @@ MonoBehaviour:
     m_lastTime: -8585333264955345042
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0600000007000000
+  ExpandedWaapiItemIds: 0500000006000000070000001400000015000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

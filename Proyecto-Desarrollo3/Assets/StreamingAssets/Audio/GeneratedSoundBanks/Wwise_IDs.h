@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PAUSE_CAR_ENGINE = 3821341455U;
         static const AkUniqueID PLAY_BUTTONS = 2461875365U;
         static const AkUniqueID PLAY_CAR_DRIFT = 4041934908U;
         static const AkUniqueID PLAY_CAR_ENGINE = 2832155465U;
@@ -22,6 +23,7 @@ namespace AK
         static const AkUniqueID PLAY_MENU = 1278378707U;
         static const AkUniqueID PLAY_PU_USPEED = 3926664148U;
         static const AkUniqueID PLAY_STARTRACEBUTTON = 2081779185U;
+        static const AkUniqueID RESUME_CAR_ENGINE = 3314365364U;
         static const AkUniqueID STOP_CAR_DRIFT = 543384842U;
         static const AkUniqueID STOP_CAR_ENGINE = 1691000743U;
         static const AkUniqueID STOP_GAMEPLAY = 2245059084U;
