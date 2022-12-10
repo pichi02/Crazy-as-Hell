@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
@@ -20,16 +20,21 @@
 	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
+		<SoundBank Id="1355168291" Language="SFX" Hash="4042582835">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<GameParameters>
+				<GameParameter Id="1006694123" Name="MUSIC_Volume" ObjectPath="\Game Parameters\Default Work Unit\MUSIC_Volume"/>
+				<GameParameter Id="1564184899" Name="SFX_Volume" ObjectPath="\Game Parameters\Default Work Unit\SFX_Volume"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="421681825">
+		<SoundBank Id="3161908922" Language="SFX" Hash="4281718123">
 			<ObjectPath>\SoundBanks\Default Work Unit\main</ObjectPath>
 			<ShortName>main</ShortName>
 			<Path>main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3821341455" Name="Pause_car_engine" ObjectPath="\Events\Default Work Unit\Pause_car_engine" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="2461875365" Name="Play_buttons" ObjectPath="\Events\Default Work Unit\Play_buttons" DurationType="OneShot" DurationMin="0.088357" DurationMax="0.219033">
 					<IncludedMemoryFiles>
 						<File Id="1465388" Language="SFX">
@@ -47,6 +52,62 @@
 						<File Id="966007765" Language="SFX">
 							<ShortName>button 3.wav</ShortName>
 							<Path>SFX\button 3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4041934908" Name="Play_car_drift" ObjectPath="\Events\Default Work Unit\Play_car_drift" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="755807495" Language="SFX">
+							<ShortName>drift03.wav</ShortName>
+							<Path>SFX\drift03_BA4E38FD.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2832155465" Name="Play_car_engine" ObjectPath="\Events\Default Work Unit\Play_car_engine" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="59681897" Language="SFX">
+							<ShortName>engine10_2.wav</ShortName>
+							<Path>SFX\engine10_2_041508D2.wem</Path>
+						</File>
+						<File Id="94932138" Language="SFX">
+							<ShortName>engine01_2.wav</ShortName>
+							<Path>SFX\engine01_2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="258107534" Language="SFX">
+							<ShortName>engine08_2.wav</ShortName>
+							<Path>SFX\engine08_2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="289396876" Language="SFX">
+							<ShortName>engine03_2.wav</ShortName>
+							<Path>SFX\engine03_2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="318662952" Language="SFX">
+							<ShortName>engine05_2.wav</ShortName>
+							<Path>SFX\engine05_2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="483658701" Language="SFX">
+							<ShortName>engine06_2.wav</ShortName>
+							<Path>SFX\engine06_2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="735400355" Language="SFX">
+							<ShortName>engine_idle03.wav</ShortName>
+							<Path>SFX\engine_idle03_D79FB2B7.wem</Path>
+						</File>
+						<File Id="742334844" Language="SFX">
+							<ShortName>engine04_2.wav</ShortName>
+							<Path>SFX\engine04_2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="913758539" Language="SFX">
+							<ShortName>engine02_2.wav</ShortName>
+							<Path>SFX\engine02_2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="965932713" Language="SFX">
+							<ShortName>engine09_2.wav</ShortName>
+							<Path>SFX\engine09_2_D79FB2B7.wem</Path>
+						</File>
+						<File Id="970008701" Language="SFX">
+							<ShortName>engine07_2.wav</ShortName>
+							<Path>SFX\engine07_2_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -158,9 +219,15 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3314365364" Name="Resume_car_engine" ObjectPath="\Events\Default Work Unit\Resume_car_engine" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="543384842" Name="Stop_car_drift" ObjectPath="\Events\Default Work Unit\Stop_car_drift" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="1691000743" Name="Stop_car_engine" ObjectPath="\Events\Default Work Unit\Stop_car_engine" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="2245059084" Name="Stop_gameplay" ObjectPath="\Events\Default Work Unit\Stop_gameplay" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 				<Event Id="2914981333" Name="Stop_menu" ObjectPath="\Events\Default Work Unit\Stop_menu" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="3593253588" Name="RTPC_CarSpeed" ObjectPath="\Game Parameters\Default Work Unit\RTPC_CarSpeed"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

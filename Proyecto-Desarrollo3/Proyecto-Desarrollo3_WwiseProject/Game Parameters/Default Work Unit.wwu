@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{21751BBD-47A3-46AB-985E-12B1DA1D597B}" SchemaVersion="103">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{21751BBD-47A3-46AB-985E-12B1DA1D597B}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{21751BBD-47A3-46AB-985E-12B1DA1D597B}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="RTPC_CarSpeed" ID="{93492973-2CF9-48F2-AEF9-16297C6B467D}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="86"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="SFX_Volume" ID="{F4BF7DF5-4C4C-4D14-8274-15B3AD0379E6}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="MUSIC_Volume" ID="{CCCC025B-A358-4A70-96F2-93259DF25546}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

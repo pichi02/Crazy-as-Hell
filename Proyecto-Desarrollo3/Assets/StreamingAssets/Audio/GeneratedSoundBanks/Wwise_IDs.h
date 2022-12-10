@@ -13,16 +13,29 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PAUSE_CAR_ENGINE = 3821341455U;
         static const AkUniqueID PLAY_BUTTONS = 2461875365U;
+        static const AkUniqueID PLAY_CAR_DRIFT = 4041934908U;
+        static const AkUniqueID PLAY_CAR_ENGINE = 2832155465U;
         static const AkUniqueID PLAY_CHECKPOINT = 2962822744U;
         static const AkUniqueID PLAY_COUNTDOWN = 2175797879U;
         static const AkUniqueID PLAY_GAMEPLAY = 3737014274U;
         static const AkUniqueID PLAY_MENU = 1278378707U;
         static const AkUniqueID PLAY_PU_USPEED = 3926664148U;
         static const AkUniqueID PLAY_STARTRACEBUTTON = 2081779185U;
+        static const AkUniqueID RESUME_CAR_ENGINE = 3314365364U;
+        static const AkUniqueID STOP_CAR_DRIFT = 543384842U;
+        static const AkUniqueID STOP_CAR_ENGINE = 1691000743U;
         static const AkUniqueID STOP_GAMEPLAY = 2245059084U;
         static const AkUniqueID STOP_MENU = 2914981333U;
     } // namespace EVENTS
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID MUSIC_VOLUME = 1006694123U;
+        static const AkUniqueID RTPC_CARSPEED = 3593253588U;
+        static const AkUniqueID SFX_VOLUME = 1564184899U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {
@@ -33,6 +46,8 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID SFX = 393239870U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

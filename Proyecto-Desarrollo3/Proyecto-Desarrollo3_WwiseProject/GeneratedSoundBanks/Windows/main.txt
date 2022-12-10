@@ -1,40 +1,61 @@
 Event	ID	Name			Wwise Object Path	Notes
+	543384842	Stop_car_drift			\Default Work Unit\Stop_car_drift	
 	1278378707	Play_menu			\Default Work Unit\Play_menu	
+	1691000743	Stop_car_engine			\Default Work Unit\Stop_car_engine	
 	2081779185	Play_startRaceButton			\Default Work Unit\Play_startRaceButton	
 	2175797879	Play_countdown			\Default Work Unit\Play_countdown	
 	2245059084	Stop_gameplay			\Default Work Unit\Stop_gameplay	
 	2461875365	Play_buttons			\Default Work Unit\Play_buttons	
+	2832155465	Play_car_engine			\Default Work Unit\Play_car_engine	
 	2914981333	Stop_menu			\Default Work Unit\Stop_menu	
 	2962822744	Play_Checkpoint			\Default Work Unit\Play_Checkpoint	
+	3314365364	Resume_car_engine			\Default Work Unit\Resume_car_engine	
 	3737014274	Play_gameplay			\Default Work Unit\Play_gameplay	
+	3821341455	Pause_car_engine			\Default Work Unit\Pause_car_engine	
 	3926664148	Play_PU_Uspeed			\Default Work Unit\Play_PU_Uspeed	
+	4041934908	Play_car_drift			\Default Work Unit\Play_car_drift	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3593253588	RTPC_CarSpeed			\Default Work Unit\RTPC_CarSpeed	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	1465388	button 5	C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\button 5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\buttons\button 5		18564
-	17405160	countdown5_WD	C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown5_WD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\countdown\countdown5_WD		768064
-	34347399	VO_youareademon	C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\VO_youareademon_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\Checkpoint\VO_youareademon		333460
-	57109167	PU_OVEJAS	C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\PU_OVEJAS_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PowerUps\PU_Uspeed\PU_OVEJAS		127386
-	99925183	VO_Flawless	C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\VO_Flawless_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\Checkpoint\VO_Flawless		261092
-	173764481	countdown5_WoD	C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown5_WoD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\countdown\countdown5_WoD		768064
-	174860922	countdown4_WD	C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown4_WD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\countdown\countdown4_WD		768064
-	404891725	countdown1_WD	C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown1_WD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\countdown\countdown1_WD		768064
-	449973054	countdown1_WoD	C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown1_WoD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\countdown\countdown1_WoD		768064
-	496321593	VO_outstanding	C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\VO_outstanding_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\Checkpoint\VO_outstanding		352864
-	580196525	countdown4_WoD	C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown4_WoD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\countdown\countdown4_WoD		768064
-	581470961	countdown6_WD	C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown6_WD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\countdown\countdown6_WD		768064
-	588711168	countdown2_WoD	C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown2_WoD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\countdown\countdown2_WoD		768064
-	593928854	countdown3_WD	C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown3_WD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\countdown\countdown3_WD		768064
-	639846754	button 4	C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\button 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\buttons\button 4		24004
-	749969536	countdown6_WoD	C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown6_WoD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\countdown\countdown6_WoD		768064
-	806893691	play button	C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\play button_2D6C8DDC.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\startRaceButton2\play button		534088
-	823828556	countdown2_WD	C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown2_WD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\countdown\countdown2_WD		768064
-	933333156	countdown3_WoD	C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown3_WoD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\countdown\countdown3_WoD		768064
-	942153016	button 2	C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\button 2_B33AD23F.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\buttons\button 2		39760
-	966007765	button 3	C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\button 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\buttons\button 3		29884
-	989168715	VO_321go	C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\VO_321go_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\countdown\VO_321go		1044560
-	1004910098	VO_amazing	C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\VO_amazing_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\Checkpoint\VO_amazing		217320
+	1465388	button 5	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\button 5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\UI\buttons\button 5		18564
+	17405160	countdown5_WD	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown5_WD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\VO\countdown\countdown5_WD		768064
+	34347399	VO_youareademon	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\VO_youareademon_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\VO\Checkpoint\VO_youareademon		333460
+	57109167	PU_OVEJAS	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\PU_OVEJAS_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\SFX\PowerUps\PU_Uspeed\PU_OVEJAS		127386
+	59681897	engine10_2	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\engine10_2_041508D2.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\Car\car_engine\engine10_2		73980
+	94932138	engine01_2	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\engine01_2_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\Car\car_engine\engine01_2		161152
+	99925183	VO_Flawless	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\VO_Flawless_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\VO\Checkpoint\VO_Flawless		261092
+	173764481	countdown5_WoD	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown5_WoD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\VO\countdown\countdown5_WoD		768064
+	174860922	countdown4_WD	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown4_WD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\VO\countdown\countdown4_WD		768064
+	258107534	engine08_2	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\engine08_2_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\Car\car_engine\engine08_2		186440
+	289396876	engine03_2	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\engine03_2_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\Car\car_engine\engine03_2		177900
+	318662952	engine05_2	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\engine05_2_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\Car\car_engine\engine05_2		246168
+	404891725	countdown1_WD	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown1_WD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\VO\countdown\countdown1_WD		768064
+	449973054	countdown1_WoD	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown1_WoD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\VO\countdown\countdown1_WoD		768064
+	483658701	engine06_2	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\engine06_2_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\Car\car_engine\engine06_2		187424
+	496321593	VO_outstanding	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\VO_outstanding_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\VO\Checkpoint\VO_outstanding		352864
+	580196525	countdown4_WoD	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown4_WoD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\VO\countdown\countdown4_WoD		768064
+	581470961	countdown6_WD	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown6_WD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\VO\countdown\countdown6_WD		768064
+	588711168	countdown2_WoD	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown2_WoD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\VO\countdown\countdown2_WoD		768064
+	593928854	countdown3_WD	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown3_WD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\VO\countdown\countdown3_WD		768064
+	639846754	button 4	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\button 4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\UI\buttons\button 4		24004
+	735400355	engine_idle03	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\engine_idle03_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\Car\car_engine\engine_idle03		495480
+	742334844	engine04_2	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\engine04_2_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\Car\car_engine\engine04_2		210268
+	749969536	countdown6_WoD	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown6_WoD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\VO\countdown\countdown6_WoD		768064
+	755807495	drift03	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\drift03_BA4E38FD.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\Car\car_drift\drift03		128744
+	806893691	play button	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\play button_2D6C8DDC.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\UI\startRaceButton2\play button		534088
+	823828556	countdown2_WD	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown2_WD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\VO\countdown\countdown2_WD		768064
+	913758539	engine02_2	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\engine02_2_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\Car\car_engine\engine02_2		195336
+	933333156	countdown3_WoD	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown3_WoD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\VO\countdown\countdown3_WoD		768064
+	942153016	button 2	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\button 2_B33AD23F.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\UI\buttons\button 2		39760
+	965932713	engine09_2	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\engine09_2_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\Car\car_engine\engine09_2		182608
+	966007765	button 3	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\button 3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\UI\buttons\button 3		29884
+	970008701	engine07_2	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\engine07_2_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\Car\car_engine\engine07_2		188992
+	989168715	VO_321go	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\VO_321go_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\VO\countdown\VO_321go		1044560
+	1004910098	VO_amazing	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\VO_amazing_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\VO\Checkpoint\VO_amazing		217320
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	628797688	music_gameplay	C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\music_gameplay_D79FB2B7.wem	628797688.wem	\Interactive Music Hierarchy\Default Work Unit\gameplay\gameplay\music_gameplay	
-	878407389	music_menu	C:\Users\matia\Desktop\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\music_menu_D79FB2B7.wem	878407389.wem	\Interactive Music Hierarchy\Default Work Unit\menu\music_menu\music_menu	
+	628797688	music_gameplay	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\music_gameplay_D79FB2B7.wem	628797688.wem	\Interactive Music Hierarchy\Default Work Unit\gameplay\gameplay\music_gameplay	
+	878407389	music_menu	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\music_menu_D79FB2B7.wem	878407389.wem	\Interactive Music Hierarchy\Default Work Unit\menu\music_menu\music_menu	
 
