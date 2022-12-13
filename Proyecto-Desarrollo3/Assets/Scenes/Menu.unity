@@ -3703,17 +3703,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Programmers:\n\nMonti Matias\nMatiasmonti2011@hotmail.com\nPich Lucas\nlucas.pich02@gmail.com\n\nArtists:\n\nAngelico
-    Engelhardt Martina\nmartina.angelico03@gmail.com\nFainberg Rocchi Olivia\nOliviafainberg@gmail.com\n\nAudio
-    & SFX: \n\nCarri\xF3n Agust\xEDn\naguchocarrion@gmail.com\nSaenz Manuel\nmanusaenz27@gmail.com\nShimizukawa
-    Ryosho\nryoshoshimizukawa@gmail.com\n\nTesters: \nLemos Silvina (Chuch\xFA) 
-    - P.O.C - silvinalemoshoffmann@gmail.com\nGallardo Leonardo Jos\xE9 - Reviewer
-    - Leonardo.gallardocr@gmail.com\nVicente Laguzzi Juan Cruz - Reporter - juan.vicente122@gmail.com\nMena
-    Evelin - Reporter - Evemena@gmail.com\nCaroprese Giancarlo - Reporter - gcaroprese9@gmail.com\nAlvarez
-    Rivadeneyra Joaquin - Reporter\ndashlet8888@gmail.com"
+  m_text: "Programmers:\n\nMonti Matias\nPich Lucas\n\nArtists:\n\nAngelico Engelhardt
+    Martina\nFainberg Rocchi Olivia\n\nAudio & SFX: \n\nCarri\xF3n Agust\xEDn\nSaenz
+    Manuel\nShimizukawa Ryosho\n\nTesters: \nLemos Silvina (Chuch\xFA)  - P.O.C -\nGallardo
+    Leonardo Jos\xE9 - Reviewer -\nVicente Laguzzi Juan Cruz - Reporter -\nMena Evelin
+    - Reporter -\nCaroprese Giancarlo - Reporter -\nAlvarez Rivadeneyra Joaquin -
+    Reporter"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 07db1f800579aee4bb93ae379eb67e1c, type: 2}
+  m_sharedMaterial: {fileID: -2080988876028711050, guid: 07db1f800579aee4bb93ae379eb67e1c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3737,7 +3735,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46.2
+  m_fontSize: 70.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
