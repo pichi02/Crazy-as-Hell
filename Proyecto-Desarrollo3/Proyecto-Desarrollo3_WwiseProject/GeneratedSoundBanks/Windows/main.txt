@@ -11,6 +11,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2914981333	Stop_menu			\Default Work Unit\Stop_menu	
 	2962822744	Play_Checkpoint			\Default Work Unit\Play_Checkpoint	
 	3314365364	Resume_car_engine			\Default Work Unit\Resume_car_engine	
+	3559424791	Play_Trap			\Default Work Unit\Play_Trap	
 	3637653594	Set_Bus_Volume_Master_Audio_Bus_ON			\Default Work Unit\Set_Bus_Volume_Master_Audio_Bus_ON	
 	3737014274	Play_gameplay			\Default Work Unit\Play_gameplay	
 	3821341455	Pause_car_engine			\Default Work Unit\Pause_car_engine	
@@ -37,6 +38,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	449973054	countdown1_WoD	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown1_WoD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\VO\countdown\countdown1_WoD		768064
 	483658701	engine06_2	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\engine06_2_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\Car\car_engine\engine06_2		187424
 	496321593	VO_outstanding	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\VO_outstanding_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\VO\Checkpoint\VO_outstanding		352864
+	557370266	PU_Item2	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\PU_Item2_43AA3C5B.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\SFX\PowerUps\PU_Item2\PU_Item2		91716
 	580196525	countdown4_WoD	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown4_WoD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\VO\countdown\countdown4_WoD		768064
 	581470961	countdown6_WD	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown6_WD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\VO\countdown\countdown6_WD		768064
 	588711168	countdown2_WoD	C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\SFX\countdown2_WoD_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\MasterSFX\VO\countdown\countdown2_WoD		768064

@@ -855,6 +855,29 @@
 											<ObjectLists/>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="PU_Item2" ID="{933CC334-09E4-49F7-9A41-BD83F99E2E50}" ShortID="517463170">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>38</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-500</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{7BF2FA93-827C-446C-A82A-8AB4BEEE3372}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{ED82E1AC-64E6-446B-8B90-558FB5FD489A}"/>
@@ -875,6 +898,12 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="PU_Item2" ID="{983BDED0-6F79-44F0-9219-B5781FE52F93}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0324188177554127"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.294397912589694"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.519577268350262"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>PU_Item2.wav</AudioFile>
 															<MediaIDList>

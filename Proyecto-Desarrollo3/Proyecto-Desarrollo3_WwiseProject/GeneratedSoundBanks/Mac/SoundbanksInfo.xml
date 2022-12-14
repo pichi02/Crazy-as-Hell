@@ -29,7 +29,7 @@
 				<GameParameter Id="1564184899" Name="SFX_Volume" ObjectPath="\Game Parameters\Default Work Unit\SFX_Volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3565594500">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1831462681">
 			<ObjectPath>\SoundBanks\Default Work Unit\main</ObjectPath>
 			<ShortName>main</ShortName>
 			<Path>main.bnk</Path>
@@ -216,6 +216,14 @@
 						<File Id="806893691" Language="SFX">
 							<ShortName>play button.wav</ShortName>
 							<Path>SFX\play button_2D6C8DDC.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3559424791" Name="Play_Trap" ObjectPath="\Events\Default Work Unit\Play_Trap" DurationType="OneShot" DurationMin="0.654626" DurationMax="0.734793">
+					<IncludedMemoryFiles>
+						<File Id="557370266" Language="SFX">
+							<ShortName>PU_Item2.wav</ShortName>
+							<Path>SFX\PU_Item2_43AA3C5B.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

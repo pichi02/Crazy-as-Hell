@@ -232,6 +232,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Trap" ID="{B388DA8C-B2CC-4CA3-A495-D8B7722DB02C}">
+					<ChildrenList>
+						<Action Name="" ID="{721DDC07-F169-4C96-B8C6-F2953AC28D04}" ShortID="1043506952">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PU_Item2" ID="{933CC334-09E4-49F7-9A41-BD83F99E2E50}" WorkUnitID="{4C29E8DB-F301-46A4-B1C9-D18D5287C0DA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

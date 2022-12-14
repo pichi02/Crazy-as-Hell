@@ -21,6 +21,7 @@
 						<ObjectRef Name="Play_gameplay" ID="{2870513B-16CF-4B40-BCA9-6E925B5BD3BE}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Resume_car_engine" ID="{1C908603-A85A-4B4C-B01A-FA183E0CD267}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Pause_car_engine" ID="{E33AEA40-57B0-4BB1-B8E6-546269376FED}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Trap" ID="{B388DA8C-B2CC-4CA3-A495-D8B7722DB02C}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_car_engine" ID="{5501D644-BE91-4DCF-9196-00D425B6BCCC}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_car_drift" ID="{20A108BD-1CEF-4E26-8366-4D890FA9DF75}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

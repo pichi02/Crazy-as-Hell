@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+using AK.Wwise;
 
 public class CarLife : MonoBehaviour
 {
@@ -44,6 +45,7 @@ public class CarLife : MonoBehaviour
     {
         OnDead?.Invoke();
         Debug.Log("Muerto");
+        AkSoundEngine.PostEvent("Stop_gameplay", gameObject);
         explosion.Play();
         Destroy(gameObject);
     }

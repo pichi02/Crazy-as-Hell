@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: a7566320cac6324db08fa10e6957a80f
     GuidInternal: 
-    m_lastTime: -8585305729816415408
+    m_lastTime: -8585305709101903689
     List:
     - name: main
       guid: 2bcead1c92e8514f819cdb8f059ad644
@@ -128,7 +128,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: be8a32c2bde39e46ba08ba2dd58fd0b6
     GuidInternal: 
-    m_lastTime: -8585305730566047964
+    m_lastTime: -8585305721230236819
     List:
     - name: Pause_car_engine
       guid: 40ea3ae3b057b14bb8e6546269376fed
@@ -300,6 +300,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 2.78137
       minDuration: 2.78137
+    - name: Play_Trap
+      guid: 8cda88b3ccb2a34ca495d8b7722db02c
+      id: 3559424791
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: be8a32c2bde39e46ba08ba2dd58fd0b6
+      - ElementName: Play_Trap
+        ObjectType: 3
+        guid: 8cda88b3ccb2a34ca495d8b7722db02c
+      Path: Events\Default Work Unit\Play_Trap
+      maxAttenuation: 0
+      maxDuration: 0.734793
+      minDuration: 0.654626
     - name: Resume_car_engine
       guid: 0386901c5aa84c4bb01afa183e0cd267
       id: 3314365364

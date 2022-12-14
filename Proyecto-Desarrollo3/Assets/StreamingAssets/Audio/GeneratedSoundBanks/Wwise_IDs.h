@@ -23,6 +23,7 @@ namespace AK
         static const AkUniqueID PLAY_MENU = 1278378707U;
         static const AkUniqueID PLAY_PU_USPEED = 3926664148U;
         static const AkUniqueID PLAY_STARTRACEBUTTON = 2081779185U;
+        static const AkUniqueID PLAY_TRAP = 3559424791U;
         static const AkUniqueID RESUME_CAR_ENGINE = 3314365364U;
         static const AkUniqueID SET_BUS_VOLUME_MASTER_AUDIO_BUS = 456364650U;
         static const AkUniqueID SET_BUS_VOLUME_MASTER_AUDIO_BUS_ON = 3637653594U;

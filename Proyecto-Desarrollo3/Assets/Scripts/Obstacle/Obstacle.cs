@@ -1,4 +1,5 @@
 using UnityEngine;
+using AK.Wwise;
 
 public class Obstacle : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class Obstacle : MonoBehaviour
     private void Start()
     {
         particle.Play();
+        AkSoundEngine.PostEvent("Play_Trap", gameObject);
         Destroy(gameObject, maxTime);
     }
     private void OnCollisionEnter(Collision collision)
