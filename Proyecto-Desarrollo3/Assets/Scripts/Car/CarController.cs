@@ -28,7 +28,7 @@ public class CarController : MonoBehaviour
     [SerializeField] private float safeZone = 20f;
 
     [SerializeField] private LayerMask whatIsGround;
-    [SerializeField] private float groundRayLength = 1f;
+    [SerializeField] private float groundRayLength;
     [SerializeField] private Transform groundRayPoint;
 
     [SerializeField] private Transform leftFrontWheel, rightFrontWheel;

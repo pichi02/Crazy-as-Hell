@@ -3618,7 +3618,6 @@ MonoBehaviour:
   raceTime: {fileID: 0}
   healthBar: {fileID: 3639942756049636625}
   deck: {fileID: 2102257448}
-  cooldownBar: {fileID: 0}
   finalTimeTextWin: {fileID: 2612438578631538650}
   countdown: {fileID: 0}
   player2: {fileID: 0}
@@ -5051,7 +5050,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7654945066837227208, guid: 7997835561673e54580c630313de260d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 16.279404
       objectReference: {fileID: 0}
     - target: {fileID: 7654945066837227209, guid: 7997835561673e54580c630313de260d, type: 3}
       propertyPath: m_Name
