@@ -22,4 +22,13 @@ public class HealthBar : MonoBehaviour
         carLife.OnTakeDamage -= SetHeath;
         carLife.OnIncreaseLife -= SetHeath;
     }
+
+    public void DisableHealthBar() 
+    {
+        gameObject.SetActive(false);
+    }
+    public void EnableHealthBar()
+    {
+        gameObject.SetActive(true);
+    }
 }

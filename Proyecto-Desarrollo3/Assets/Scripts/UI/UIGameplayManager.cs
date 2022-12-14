@@ -47,8 +47,12 @@ public class UIGameplayManager : MonoBehaviour
         raceTime.OnTimeChange += ChangeRaceTimeText;
         raceTime.OnTimeFinish += ActiveLosePanel;
         countdown.OnFinishCountdown += deck.EnableCards;
-        PauseScene.OnPause += deck.DisableCards;
-        PauseScene.OnResume += deck.EnableCards;
+        PauseScene.OnPause += DisableUI;
+        PauseScene.OnResume += EnableUI;
+        //    deck.DisableCards;
+        //PauseScene.OnResume += deck.EnableCards;
+        //PauseScene.OnPause += healthBar.DisableHealthBar;
+        //PauseScene.OnResume += healthBar.EnableHealthBar;
         countdown.OnFinishCountdown += PauseScene.EnableCanPause;
         for (int i = 0; i < deck.GetDeck().Count; i++)
         {
@@ -64,8 +68,9 @@ public class UIGameplayManager : MonoBehaviour
         raceTime.OnTimeChange -= ChangeRaceTimeText;
         raceTime.OnTimeFinish -= ActiveLosePanel;
         countdown.OnFinishCountdown -= deck.EnableCards;
-        PauseScene.OnPause -= deck.DisableCards;
-        PauseScene.OnResume -= deck.EnableCards;
+        PauseScene.OnPause -= DisableUI;
+        PauseScene.OnResume -= EnableUI;
+        countdown.OnFinishCountdown -= PauseScene.EnableCanPause;
         for (int i = 0; i < deck.GetDeck().Count; i++)
         {
             deck.GetDeck()[i].OnSelectCard -= player2.DisableIsPrevisualizeInstantiated;
@@ -157,5 +162,16 @@ public class UIGameplayManager : MonoBehaviour
             deck.GetDeck()[i].gameObject.SetActive(false);
         }
  
+    }
+
+    private void EnableUI()
+    {
+        healthBar.gameObject.SetActive(true);
+        raceTimeText.gameObject.SetActive(true);
+        for (int i = 0; i < deck.GetDeck().Count; i++)
+        {
+            deck.GetDeck()[i].gameObject.SetActive(true);
+        }
+
     }
 }

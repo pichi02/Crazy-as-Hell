@@ -56,4 +56,5 @@ public class RaceTime : MonoBehaviour
     {
         return finalTime = totalTime - currentTime;
     }
+
 }
