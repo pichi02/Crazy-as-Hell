@@ -8,6 +8,8 @@
 						<ObjectRef Name="Play_startRaceButton" ID="{58967326-A642-4030-8756-A098FB866C77}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_gameplay" ID="{F932EE9A-2B4A-4163-9BD1-96A179E86982}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_car_engine" ID="{D8D34346-AA4A-42FB-B825-D4E452A99C8B}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Set_Bus_Volume_Master_Audio_Bus_ON" ID="{74FD834B-78A3-42FE-B450-3CCFC1EC3F19}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Set_Bus_Volume_Master_Audio_Bus" ID="{FA472956-9681-43CA-BE4D-3A532CC247A4}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_PU_Uspeed" ID="{DAD9A2A6-99B0-448C-A406-981DF561EB4A}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_menu" ID="{AF999403-3B52-4568-82B1-B91A0E7553BD}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Default Work Unit" ID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" WorkUnitID="{C2328ABE-E3BD-469E-BA08-BA2DD58FD0B6}" Origin="Manual" Filter="7"/>

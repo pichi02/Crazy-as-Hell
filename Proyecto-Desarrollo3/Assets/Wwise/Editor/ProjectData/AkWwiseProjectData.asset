@@ -100,7 +100,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: a7566320cac6324db08fa10e6957a80f
     GuidInternal: 
-    m_lastTime: -8585310459034415271
+    m_lastTime: -8585305729816415408
     List:
     - name: main
       guid: 2bcead1c92e8514f819cdb8f059ad644
@@ -128,7 +128,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: be8a32c2bde39e46ba08ba2dd58fd0b6
     GuidInternal: 
-    m_lastTime: -8585310477011067785
+    m_lastTime: -8585305730566047964
     List:
     - name: Pause_car_engine
       guid: 40ea3ae3b057b14bb8e6546269376fed
@@ -317,6 +317,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Set_Bus_Volume_Master_Audio_Bus
+      guid: 562947fa8196ca43be4d3a532cc247a4
+      id: 456364650
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: be8a32c2bde39e46ba08ba2dd58fd0b6
+      - ElementName: Set_Bus_Volume_Master_Audio_Bus
+        ObjectType: 3
+        guid: 562947fa8196ca43be4d3a532cc247a4
+      Path: Events\Default Work Unit\Set_Bus_Volume_Master_Audio_Bus
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Set_Bus_Volume_Master_Audio_Bus_ON
+      guid: 4b83fd74a378fe42b4503ccfc1ec3f19
+      id: 3637653594
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: be8a32c2bde39e46ba08ba2dd58fd0b6
+      - ElementName: Set_Bus_Volume_Master_Audio_Bus_ON
+        ObjectType: 3
+        guid: 4b83fd74a378fe42b4503ccfc1ec3f19
+      Path: Events\Default Work Unit\Set_Bus_Volume_Master_Audio_Bus_ON
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_car_drift
       guid: 013f1be82e46cb4782e349d249298b39
       id: 543384842
@@ -453,8 +487,42 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: b2025e5001729441bf59f82ed47ca371
     GuidInternal: 
-    m_lastTime: -8585333264955250930
-    List: []
+    m_lastTime: -8585305738915540084
+    List:
+    - name: mute_sound
+      guid: d5742bf6512eb644a8f308fbb206ebe2
+      id: 1414283806
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: b2025e5001729441bf59f82ed47ca371
+      - ElementName: mute_sound
+        ObjectType: 9
+        guid: d5742bf6512eb644a8f308fbb206ebe2
+      Path: States\Default Work Unit\mute_sound
+      values:
+      - name: None
+        guid: ae64fc07bd4f1d458b207304adf5579a
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: b2025e5001729441bf59f82ed47ca371
+        - ElementName: mute_sound
+          ObjectType: 9
+          guid: d5742bf6512eb644a8f308fbb206ebe2
+        - ElementName: None
+          ObjectType: 8
+          guid: ae64fc07bd4f1d458b207304adf5579a
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:

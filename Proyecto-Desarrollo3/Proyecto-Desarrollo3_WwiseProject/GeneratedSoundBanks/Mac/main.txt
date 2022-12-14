@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	456364650	Set_Bus_Volume_Master_Audio_Bus			\Default Work Unit\Set_Bus_Volume_Master_Audio_Bus	
 	543384842	Stop_car_drift			\Default Work Unit\Stop_car_drift	
 	1278378707	Play_menu			\Default Work Unit\Play_menu	
 	1691000743	Stop_car_engine			\Default Work Unit\Stop_car_engine	
@@ -10,6 +11,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2914981333	Stop_menu			\Default Work Unit\Stop_menu	
 	2962822744	Play_Checkpoint			\Default Work Unit\Play_Checkpoint	
 	3314365364	Resume_car_engine			\Default Work Unit\Resume_car_engine	
+	3637653594	Set_Bus_Volume_Master_Audio_Bus_ON			\Default Work Unit\Set_Bus_Volume_Master_Audio_Bus_ON	
 	3737014274	Play_gameplay			\Default Work Unit\Play_gameplay	
 	3821341455	Pause_car_engine			\Default Work Unit\Pause_car_engine	
 	3926664148	Play_PU_Uspeed			\Default Work Unit\Play_PU_Uspeed	

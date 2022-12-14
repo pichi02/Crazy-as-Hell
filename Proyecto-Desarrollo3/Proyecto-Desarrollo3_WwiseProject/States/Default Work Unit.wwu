@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{505E02B2-7201-4194-BF59-F82ED47CA371}" SchemaVersion="103">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{505E02B2-7201-4194-BF59-F82ED47CA371}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{505E02B2-7201-4194-BF59-F82ED47CA371}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="mute_sound" ID="{F62B74D5-2E51-44B6-A8F3-08FBB206EBE2}">
+					<ChildrenList>
+						<State Name="None" ID="{07FC64AE-4FBD-451D-8B20-7304ADF5579A}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

@@ -24,11 +24,27 @@ namespace AK
         static const AkUniqueID PLAY_PU_USPEED = 3926664148U;
         static const AkUniqueID PLAY_STARTRACEBUTTON = 2081779185U;
         static const AkUniqueID RESUME_CAR_ENGINE = 3314365364U;
+        static const AkUniqueID SET_BUS_VOLUME_MASTER_AUDIO_BUS = 456364650U;
+        static const AkUniqueID SET_BUS_VOLUME_MASTER_AUDIO_BUS_ON = 3637653594U;
         static const AkUniqueID STOP_CAR_DRIFT = 543384842U;
         static const AkUniqueID STOP_CAR_ENGINE = 1691000743U;
         static const AkUniqueID STOP_GAMEPLAY = 2245059084U;
         static const AkUniqueID STOP_MENU = 2914981333U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace MUTE_SOUND
+        {
+            static const AkUniqueID GROUP = 1414283806U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace MUTE_SOUND
+
+    } // namespace STATES
 
     namespace GAME_PARAMETERS
     {

@@ -200,6 +200,38 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Set_Bus_Volume_Master_Audio_Bus" ID="{FA472956-9681-43CA-BE4D-3A532CC247A4}">
+					<ChildrenList>
+						<Action Name="" ID="{2CEF543E-45DA-4942-8BA3-791FB5F19C9B}" ShortID="666715233">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="11"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64" Value="-96"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0852DFB0-4A4C-4A02-B4FF-DEF6C794D1AE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_Bus_Volume_Master_Audio_Bus_ON" ID="{74FD834B-78A3-42FE-B450-3CCFC1EC3F19}">
+					<ChildrenList>
+						<Action Name="" ID="{DFA9538E-B478-4916-AAC3-0E8BAB56ED55}" ShortID="124414137">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="11"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{0852DFB0-4A4C-4A02-B4FF-DEF6C794D1AE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
