@@ -101,7 +101,14 @@ public class UIGameplayManager : MonoBehaviour
         while (timer < maxTime)
         {
             timer += Time.deltaTime;
-            panel.alpha = timer / maxTime;
+            if (panel.transform.CompareTag("PowerUpText"))
+            {
+                panel.alpha = 1;
+            }
+            else
+            {
+                panel.alpha = timer / maxTime;
+            }
             yield return null;
         }
         if (panel.transform.CompareTag("PowerUpText"))
@@ -161,7 +168,7 @@ public class UIGameplayManager : MonoBehaviour
         {
             deck.GetDeck()[i].gameObject.SetActive(false);
         }
- 
+
     }
 
     private void EnableUI()
