@@ -41,6 +41,10 @@ public class GameManager : MonoBehaviour
         {
             player2.OnCantSpawnObstacle += preVisualizes[i].ChangeColorToRed;
             player2.OnCanSpawnObstacle += preVisualizes[i].ChangeColorToGreen;
+            player2.OnBeginCooldown += preVisualizes[i].ChangeColorToRed;
+            player2.OnFinishCooldown += preVisualizes[i].ChangeColorToGreen;
+            player2.OnFinishCooldownBool += preVisualizes[i].SetInCooldown;
+            player2.OnBeginCooldownBool += preVisualizes[i].SetInCooldown;
         }
         for (int i = 0; i < cardsCooldown.Count; i++)
         {
@@ -73,6 +77,10 @@ public class GameManager : MonoBehaviour
         {
             player2.OnCantSpawnObstacle -= preVisualizes[i].ChangeColorToRed;
             player2.OnCanSpawnObstacle -= preVisualizes[i].ChangeColorToGreen;
+            player2.OnBeginCooldown -= preVisualizes[i].ChangeColorToRed;
+            player2.OnFinishCooldown -= preVisualizes[i].ChangeColorToGreen;
+            player2.OnFinishCooldownBool -= preVisualizes[i].SetInCooldown;
+            player2.OnBeginCooldownBool -= preVisualizes[i].SetInCooldown;
         }
         for (int i = 0; i < cardsCooldown.Count; i++)
         {
