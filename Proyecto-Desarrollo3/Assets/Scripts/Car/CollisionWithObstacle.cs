@@ -20,6 +20,7 @@ public class CollisionWithObstacle : MonoBehaviour
         if (other.transform.CompareTag("PowerUp"))
         {
             particleCollisionPowerup.Play();
+            Debug.Log("sangre");
         }
     }
 }

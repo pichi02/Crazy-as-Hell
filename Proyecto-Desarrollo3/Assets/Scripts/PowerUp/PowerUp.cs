@@ -7,9 +7,8 @@ public class PowerUp : MonoBehaviour
     private System.Random randGen = new System.Random();
     private int random;
     private float timer = 0;
-    [SerializeField] private float speed = 5f;
-    [SerializeField] private float changeDirectionTime = 5f;
-
+    [SerializeField] private float speed;
+    [SerializeField] private float changeDirectionTime;
     public static event Action OnIncreaseLifePowerUpPick;
     public static event Action<int> OnDecreaseLifePowerUpPick;
     public static event Action OnIncreaseSpeedPowerUpPick;
@@ -32,7 +31,7 @@ public class PowerUp : MonoBehaviour
             speed *= -1;
             timer = 0f;
         }
-        transform.Translate(new Vector3(speed, 0, 0) * Time.deltaTime);
+        transform.Translate(new Vector3(0, speed, 0) * Time.deltaTime);
     }
     private void OnTriggerEnter(Collider other)
     {
