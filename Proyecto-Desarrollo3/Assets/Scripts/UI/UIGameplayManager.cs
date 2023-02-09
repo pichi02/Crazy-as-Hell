@@ -47,6 +47,7 @@ public class UIGameplayManager : MonoBehaviour
         raceTime.OnTimeChange += ChangeRaceTimeText;
         raceTime.OnTimeFinish += ActiveLosePanel;
         countdown.OnFinishCountdown += deck.EnableCards;
+        countdown.OnFinishCountdown += healthBar.EnableHealthBar;
         PauseScene.OnPause += DisableUI;
         PauseScene.OnResume += EnableUI;
         //    deck.DisableCards;
@@ -68,6 +69,7 @@ public class UIGameplayManager : MonoBehaviour
         raceTime.OnTimeChange -= ChangeRaceTimeText;
         raceTime.OnTimeFinish -= ActiveLosePanel;
         countdown.OnFinishCountdown -= deck.EnableCards;
+        countdown.OnFinishCountdown -= healthBar.EnableHealthBar;
         PauseScene.OnPause -= DisableUI;
         PauseScene.OnResume -= EnableUI;
         countdown.OnFinishCountdown -= PauseScene.EnableCanPause;
