@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -7052497874740618868}
   - component: {fileID: 250624245151987277}
   m_Layer: 0
-  m_Name: Powerup Prototipo_01
+  m_Name: PowerUp
   m_TagString: PowerUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 577744289838971621}
   - component: {fileID: 316931090}
   m_Layer: 0
-  m_Name: hacha_trampa 1
+  m_Name: Axe Previsualize
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
