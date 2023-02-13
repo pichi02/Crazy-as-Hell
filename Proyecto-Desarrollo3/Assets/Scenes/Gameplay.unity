@@ -1472,7 +1472,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.2112904, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1488,15 +1488,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842519496}
-  m_LocalRotation: {x: 0.4482268, y: 0.043701757, z: -0.021945674, w: 0.8925813}
-  m_LocalPosition: {x: -342.5, y: 153.5, z: -66.100006}
+  m_LocalRotation: {x: 0.4484484, y: 0.04048511, z: -0.020338638, w: 0.8926597}
+  m_LocalPosition: {x: -341.7, y: 153.5, z: -66.100006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1487897091}
   m_Father: {fileID: 0}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 51.131, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 53.329, y: 6.7, z: 0}
 --- !u!114 &842519499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1506,11 +1506,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 842519496}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58026bc8db25b204288206b49d227e32, type: 3}
+  m_Script: {fileID: 11500000, guid: 71d84e5d4262e7840a676533e9a042bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  magnitude: 1.5
-  time: 1.5
 --- !u!4 &848656053 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8802663723126361042, guid: 5d4c12fb33f868647912a5f7fa04ed4d, type: 3}
@@ -1798,6 +1796,7 @@ GameObject:
   - component: {fileID: 963194230}
   - component: {fileID: 963194232}
   - component: {fileID: 963194231}
+  - component: {fileID: 963194233}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1855,8 +1854,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.4482268, y: 0.043701757, z: -0.021945674, w: 0.8925813}
-  m_LocalPosition: {x: -342.5, y: 153.5, z: -66.100006}
+  m_LocalRotation: {x: 0.4484484, y: 0.04048511, z: -0.020338638, w: 0.8926597}
+  m_LocalPosition: {x: -341.7, y: 153.5, z: -66.100006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1966,6 +1965,26 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!95 &963194233
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: db3f523d2b2426643a24265549a2b87e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1035168034 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8802663723126361042, guid: 5d4c12fb33f868647912a5f7fa04ed4d, type: 3}
@@ -3325,6 +3344,7 @@ GameObject:
   - component: {fileID: 1487897094}
   - component: {fileID: 1487897092}
   - component: {fileID: 1487897095}
+  - component: {fileID: 1487897096}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -3360,7 +3380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 0
-  m_FollowOffset: {x: 5.9114027, y: 148.62, z: -75.26882}
+  m_FollowOffset: {x: 6.702253, y: 148.62, z: -75.148254}
   m_XDamping: 3.4
   m_YDamping: 1
   m_ZDamping: 1
@@ -3420,6 +3440,23 @@ MonoBehaviour:
   m_MaximumFOV: 60
   m_MinimumOrthoSize: 1
   m_MaximumOrthoSize: 5000
+--- !u!114 &1487897096
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487897090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
+  m_PivotOffset: {x: 0, y: 0, z: 0}
+  m_AmplitudeGain: 0
+  m_FrequencyGain: 0
+  mNoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &1496346116
 GameObject:
   m_ObjectHideFlags: 3

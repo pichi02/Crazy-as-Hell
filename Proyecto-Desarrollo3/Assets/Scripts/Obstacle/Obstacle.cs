@@ -8,8 +8,6 @@ public class Obstacle : MonoBehaviour
     public static CarCollided OnCarCollision;
     public static event System.Action OnStun;
 
-    private float timer = 0;
-
     [SerializeField] private float maxTime = 3;
     [SerializeField] private int damage;
     [SerializeField] private ParticleSystem particle;
@@ -33,6 +31,4 @@ public class Obstacle : MonoBehaviour
             OnStun?.Invoke();
         }
     }
-
-
 }
