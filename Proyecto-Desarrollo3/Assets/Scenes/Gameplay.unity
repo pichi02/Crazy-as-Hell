@@ -1307,11 +1307,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93819dff8abbacf44b753a539891de83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!198 &813617018 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 3949237817099143130, guid: a6bf705bf71cc5e4588610f1553644eb, type: 3}
-  m_PrefabInstance: {fileID: 3949237816426327191}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &837027526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1440,6 +1435,7 @@ GameObject:
   m_Component:
   - component: {fileID: 842519498}
   - component: {fileID: 842519497}
+  - component: {fileID: 842519499}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -1476,7 +1472,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.1048387, y: 1}
+    m_SensorSize: {x: 1.2112904, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1501,6 +1497,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 51.131, y: 0, z: 0}
+--- !u!114 &842519499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 842519496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58026bc8db25b204288206b49d227e32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magnitude: 1.5
+  time: 1.5
 --- !u!4 &848656053 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8802663723126361042, guid: 5d4c12fb33f868647912a5f7fa04ed4d, type: 3}
@@ -5621,18 +5631,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 599378969, guid: a6bf705bf71cc5e4588610f1553644eb, type: 3}
-      propertyPath: particleCollisionPowerup
-      value: 
-      objectReference: {fileID: 813617018}
-    - target: {fileID: 874346081142959422, guid: a6bf705bf71cc5e4588610f1553644eb, type: 3}
-      propertyPath: particleCollisionPowerup
-      value: 
-      objectReference: {fileID: 813617018}
-    - target: {fileID: 1820090108790662174, guid: a6bf705bf71cc5e4588610f1553644eb, type: 3}
-      propertyPath: speed
-      value: 1200
-      objectReference: {fileID: 0}
     - target: {fileID: 2650104762841322033, guid: a6bf705bf71cc5e4588610f1553644eb, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -5681,20 +5679,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Auto
       objectReference: {fileID: 0}
-    - target: {fileID: 3949237817099143128, guid: a6bf705bf71cc5e4588610f1553644eb, type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3949237817099143130, guid: a6bf705bf71cc5e4588610f1553644eb, type: 3}
-      propertyPath: looping
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3949237817099143130, guid: a6bf705bf71cc5e4588610f1553644eb, type: 3}
-      propertyPath: playOnAwake
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 599378969, guid: a6bf705bf71cc5e4588610f1553644eb, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6bf705bf71cc5e4588610f1553644eb, type: 3}
 --- !u!1001 &5425041451347610968
 PrefabInstance:

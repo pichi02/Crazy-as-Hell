@@ -9,8 +9,8 @@ public class CarLife : MonoBehaviour
 
     [SerializeField] private ParticleSystem explosion;
 
-    public event Action<int, int> OnTakeDamage;
-    public event Action<int, int> OnIncreaseLife;
+    public event Action<int, int, bool> OnTakeDamage;
+    public event Action<int, int, bool> OnIncreaseLife;
     public event Action OnDead;
 
     private void Start()
@@ -27,7 +27,7 @@ public class CarLife : MonoBehaviour
         Debug.Log("decrease life");
 
         currentHealth -= damage;
-        OnTakeDamage?.Invoke(currentHealth, maxHealth);
+        OnTakeDamage?.Invoke(currentHealth, maxHealth, true);
 
         if (currentHealth <= 0)
         {
@@ -39,7 +39,7 @@ public class CarLife : MonoBehaviour
     {
         Debug.Log("increase life");
         currentHealth += 5;
-        OnIncreaseLife?.Invoke(currentHealth, maxHealth);
+        OnIncreaseLife?.Invoke(currentHealth, maxHealth, false);
     }
     public void Dead()
     {

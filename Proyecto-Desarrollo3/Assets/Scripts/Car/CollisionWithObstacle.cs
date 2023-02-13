@@ -11,6 +11,7 @@ public class CollisionWithObstacle : MonoBehaviour
         if (collision.transform.CompareTag("Obstacle") || collision.transform.CompareTag("BearTrap"))
         {
             particleCollision.Play();
+            CameraShake.instance.ShakeCamera(.5f, .70f, 20f);
         }
 
     }
