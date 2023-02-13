@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
         trackCheckpoint.OnLapFinish += CheckLapsToWin;
         speedWay.OnWin += player1.DisableCarMovement;
         raceTime.OnTimeFinish += DisableCanMove;
-        Obstacle.OnStun += player1.StartStun;
+        CollisionWithObstacle.OnStun += player1.StartStun;
         speedWay.OnWin += raceTime.DisableUpdatingTime;
         speedWay.OnWin += player2.DisableCanSpawnObstacle;
         raceTime.OnTimeFinish += player2.DisableCanSpawnObstacle;
@@ -64,7 +64,7 @@ public class GameManager : MonoBehaviour
         PowerUp.OnIncreaseSpeedPowerUpPick -= player1.IncreaseSpeed;
         PowerUp.OnDecreaseSpeedPowerUpPick -= player1.DecreaseSpeed;
         PowerUp.OnInvertInputPowerUpPick -= player1.StartInvertInput;
-        Obstacle.OnStun -= player1.StartStun;
+        CollisionWithObstacle.OnStun -= player1.StartStun;
         raceTime.OnTimeFinish -= DisableCanMove;
         speedWay.OnWin -= raceTime.DisableUpdatingTime;
         speedWay.OnWin -= player2.DisableCanSpawnObstacle;

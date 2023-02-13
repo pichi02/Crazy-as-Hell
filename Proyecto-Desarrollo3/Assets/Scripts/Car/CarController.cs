@@ -33,6 +33,7 @@ public class CarController : MonoBehaviour
 
     [SerializeField] private Transform leftFrontWheel, rightFrontWheel;
     [SerializeField] private float maxWheelTurn = 25f;
+    [SerializeField] private ParticleSystem stunParticle;
 
     private bool _canMove = true;
 
@@ -82,10 +83,6 @@ public class CarController : MonoBehaviour
         {
             speedInput = Input.GetAxis("Vertical") * forwardAccel * speed;
         }
-        //else if (Input.GetAxis("Vertical") < 0)
-        //{
-        //    //speedInput = Input.GetAxis("Vertical") * reverseAccel * 1000f;
-        //}
         if (isInputInverted)
         {
             turnInput = Input.GetAxis("Horizontal") * -1;
@@ -216,8 +213,11 @@ public class CarController : MonoBehaviour
     public IEnumerator Stun()
     {
         ResetSpeed();
+        stunParticle.Play();
+        Debug.Log("play");
         CanMove = false;
         yield return new WaitForSeconds(stunTime);
+        stunParticle.Stop();
         CanMove = true;
 
     }
