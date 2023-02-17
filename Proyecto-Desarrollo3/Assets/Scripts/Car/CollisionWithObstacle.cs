@@ -18,7 +18,6 @@ public class CollisionWithObstacle : MonoBehaviour
             OnStun?.Invoke();
             cinemachineShake.Instance.ShakeCamera(5f, .1f);
         }
-
     }
 
     private void OnTriggerEnter(Collider other)
@@ -26,9 +25,6 @@ public class CollisionWithObstacle : MonoBehaviour
         if (other.transform.CompareTag("PowerUp"))
         {
             particleCollisionPowerup.Play();
-            Debug.Log("sangre");
         }
     }
-
-
 }

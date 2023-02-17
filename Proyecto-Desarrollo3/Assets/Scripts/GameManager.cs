@@ -8,10 +8,12 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TrackCheckpoint trackCheckpoint;
     [SerializeField] private SpeedWay speedWay;
     [SerializeField] private ObstacleSpawner player2;
-    private RaceTime raceTime;
     [SerializeField] private List<ObstaclePreVisualize> preVisualizes;
     [SerializeField] private List<CardCooldown> cardsCooldown;
     [SerializeField] private FollowTarget rangeIndicator;
+    [SerializeField] private Particles particles;
+
+    private RaceTime raceTime;
 
     private void Awake()
     {
@@ -37,6 +39,7 @@ public class GameManager : MonoBehaviour
         raceTime.OnTimeFinish += player1.ResetSpeed;
         player2.OnCanSpawnObstacle += rangeIndicator.DisableIndicator;
         player2.OnCantSpawnObstacle += rangeIndicator.EnableIndicator;
+        Obstacle.OnObstacleTimeFinish += particles.InstatiateParticles;
         for (int i = 0; i < preVisualizes.Count; i++)
         {
             player2.OnCantSpawnObstacle += preVisualizes[i].ChangeColorToRed;
@@ -73,6 +76,7 @@ public class GameManager : MonoBehaviour
         raceTime.OnTimeFinish -= player1.ResetSpeed;
         player2.OnCanSpawnObstacle -= rangeIndicator.DisableIndicator;
         player2.OnCantSpawnObstacle -= rangeIndicator.EnableIndicator;
+        Obstacle.OnObstacleTimeFinish -= particles.InstatiateParticles;
         for (int i = 0; i < preVisualizes.Count; i++)
         {
             player2.OnCantSpawnObstacle -= preVisualizes[i].ChangeColorToRed;

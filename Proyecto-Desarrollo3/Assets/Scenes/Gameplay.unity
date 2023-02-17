@@ -1608,7 +1608,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.4834983, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2831,6 +2831,7 @@ MonoBehaviour:
   - {fileID: 1360088192}
   - {fileID: 1654677589}
   rangeIndicator: {fileID: 1858310030}
+  particles: {fileID: -8875732632655419121, guid: f01c1eba69de19e44b04d8d651aaac37, type: 3}
 --- !u!4 &1320937491
 Transform:
   m_ObjectHideFlags: 0
