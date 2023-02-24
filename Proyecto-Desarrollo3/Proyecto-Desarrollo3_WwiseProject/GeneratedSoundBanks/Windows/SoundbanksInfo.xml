@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
 	<RootPaths>
-		<ProjectRoot>C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\lucas\OneDrive\Documentos\GitHub\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\lucas\OneDrive\Documentos\GitHub\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\lucas\OneDrive\Documentos\GitHub\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Repositorios\CrazyAsHell\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\lucas\OneDrive\Documentos\GitHub\Crazy-as-Hell\Proyecto-Desarrollo3\Proyecto-Desarrollo3_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles>
@@ -29,7 +29,7 @@
 				<GameParameter Id="1564184899" Name="SFX_Volume" ObjectPath="\Game Parameters\Default Work Unit\SFX_Volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1831462681">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1990398533">
 			<ObjectPath>\SoundBanks\Default Work Unit\main</ObjectPath>
 			<ShortName>main</ShortName>
 			<Path>main.bnk</Path>
