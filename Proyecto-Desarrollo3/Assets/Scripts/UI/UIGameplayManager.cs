@@ -49,7 +49,10 @@ public class UIGameplayManager : MonoBehaviour
         countdown.OnFinishCountdown += deck.EnableCards;
         countdown.OnFinishCountdown += healthBar.EnableHealthBar;
         PauseScene.OnPause += DisableUI;
+        PauseScene.OnPause += SetAuxCard;
         PauseScene.OnResume += EnableUI;
+        PauseScene.OnResume += SetInactiveCard;
+        PauseScene.OnResume += deck.DisableInactiveCard;
         //    deck.DisableCards;
         //PauseScene.OnResume += deck.EnableCards;
         //PauseScene.OnPause += healthBar.DisableHealthBar;
@@ -71,7 +74,10 @@ public class UIGameplayManager : MonoBehaviour
         countdown.OnFinishCountdown -= deck.EnableCards;
         countdown.OnFinishCountdown -= healthBar.EnableHealthBar;
         PauseScene.OnPause -= DisableUI;
+        PauseScene.OnPause -= SetAuxCard;
         PauseScene.OnResume -= EnableUI;
+        PauseScene.OnResume -= SetInactiveCard;
+        PauseScene.OnResume -= deck.DisableInactiveCard;
         countdown.OnFinishCountdown -= PauseScene.EnableCanPause;
         for (int i = 0; i < deck.GetDeck().Count; i++)
         {
@@ -183,4 +189,13 @@ public class UIGameplayManager : MonoBehaviour
         }
 
     }
+    private void SetAuxCard()
+    {
+        deck.SetAuxCard(deck.GetInactiveCard());
+    }
+    private void SetInactiveCard()
+    {
+        deck.SetInactiveCard(deck.GetAuxCard());
+    }
+
 }
