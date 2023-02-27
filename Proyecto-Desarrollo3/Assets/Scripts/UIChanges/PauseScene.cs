@@ -88,4 +88,9 @@ public class PauseScene : MonoBehaviour
     {
         canPause = true;
     }
+
+    public static void DisableCanPause()
+    {
+        canPause = false;
+    }
 }

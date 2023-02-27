@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.Profiling;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -12,6 +13,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private List<CardCooldown> cardsCooldown;
     [SerializeField] private FollowTarget rangeIndicator;
     [SerializeField] private Particles particles;
+    [SerializeField] private CountdownController countdown;
 
     private RaceTime raceTime;
 
@@ -22,6 +24,9 @@ public class GameManager : MonoBehaviour
     }
     private void Start()
     {
+        countdown.OnFinishCountdown += PauseScene.DisableCanPause;
+        carLife.OnDead += PauseScene.DisableCanPause;
+        speedWay.OnWin += PauseScene.DisableCanPause;
         PowerUp.OnIncreaseLifePowerUpPick += carLife.IncreaseLife;
         PowerUp.OnDecreaseLifePowerUpPick += carLife.TakeDamage;
         PowerUp.OnIncreaseSpeedPowerUpPick += player1.IncreaseSpeed;
@@ -59,6 +64,9 @@ public class GameManager : MonoBehaviour
 
     private void OnDestroy()
     {
+        countdown.OnFinishCountdown -= PauseScene.DisableCanPause;
+        carLife.OnDead -= PauseScene.DisableCanPause;
+        speedWay.OnWin -= PauseScene.DisableCanPause;
         Obstacle.OnCarCollision -= carLife.TakeDamage;
         trackCheckpoint.OnLapFinish -= CheckLapsToWin;
         speedWay.OnWin -= player1.DisableCarMovement;
