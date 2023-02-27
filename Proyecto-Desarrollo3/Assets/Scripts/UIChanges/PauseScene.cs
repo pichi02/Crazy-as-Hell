@@ -14,6 +14,10 @@ public class PauseScene : MonoBehaviour
     public static event Action OnResume;
     private static bool canPause = false;
 
+    [SerializeField] private GameObject settingsPanel;
+
+    private bool isSettingsOn = false;
+
     private void Awake()
     {
         canPause = false;
@@ -24,12 +28,25 @@ public class PauseScene : MonoBehaviour
     {
         if (canPause)
         {
+            if (settingsPanel.activeSelf)
+            {
+                isSettingsOn = true;
+            }
+
             if (Input.GetKeyDown(KeyCode.Escape))
             {
-                if (GameIsPaused)
-                    Resume();
+                if (isSettingsOn)
+                {
+                    settingsPanel.SetActive(false);
+                    isSettingsOn = false;
+                }
                 else
-                    Pause();
+                {
+                    if (GameIsPaused)
+                        Resume();
+                    else
+                        Pause();
+                }
             }
         }
     }
