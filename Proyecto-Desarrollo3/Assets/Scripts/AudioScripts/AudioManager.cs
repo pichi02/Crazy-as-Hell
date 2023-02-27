@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,10 +6,12 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
-    [SerializeField] static musicSlide musicSlider;
-    [SerializeField] static sfxSlide sfxSlider;
+    private static musicSlide musicSlider;
+    private static sfxSlide sfxSlider;
+    private static muteAudio mute;
     private static float musicVolume;
     private static float sfxVolume;
+
 
     public static float MusicVolume
     {
@@ -23,6 +26,14 @@ public class AudioManager : MonoBehaviour
     private void Awake()
     {
 
+    }
+    private void Start()
+    {
+        sfxSlider.VolumeSlider(PlayerPrefs.GetFloat("sfxVolume", 100));
+        musicSlider.VolumeSlider(PlayerPrefs.GetFloat("musicVolume", 100));
+        mute.MuteToggle(Convert.ToBoolean(PlayerPrefs.GetInt("mute")));
+        
+
         if (instance == null)
         {
             instance = this;
@@ -32,6 +43,12 @@ public class AudioManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+    public static void SetSettings(musicSlide musicSlide, sfxSlide sfxSlide, muteAudio muteAudio)
+    {
+        musicSlider = musicSlide;
+        sfxSlider = sfxSlide;
+        mute = muteAudio;
     }
 
 }

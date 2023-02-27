@@ -6,7 +6,7 @@ using AK.Wwise;
 public class PauseScene : MonoBehaviour
 {
 
-    public static bool GameIsPaused = false;
+    public static bool GameIsPaused;
 
     [SerializeField] private GameObject pauseMenuUI;
 
@@ -17,6 +17,7 @@ public class PauseScene : MonoBehaviour
     private void Awake()
     {
         canPause = false;
+        GameIsPaused = false;
     }
 
     private void Update()

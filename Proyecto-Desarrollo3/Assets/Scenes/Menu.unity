@@ -3448,6 +3448,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547872109}
   m_CullTransparentMesh: 1
+--- !u!1 &564313473
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 564313475}
+  - component: {fileID: 564313474}
+  m_Layer: 0
+  m_Name: AudioAux
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &564313474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564313473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 774234c680331f7409e12a772543b688, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSlider: {fileID: 1253813072}
+  sfxSlider: {fileID: 2123727253}
+  mute: {fileID: 1676076105}
+--- !u!4 &564313475
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564313473}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.0687795, y: 0.7943347, z: -0.024618205}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &570602717
 GameObject:
   m_ObjectHideFlags: 0
@@ -6553,7 +6600,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -48.90674, y: -49.52539}
+  m_AnchoredPosition: {x: -48.90625, y: -49.52539}
   m_SizeDelta: {x: 315, y: 60}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1341861829
@@ -8566,6 +8613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07ba5d3c9a95a134bbf62df542ee6c87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  muteToggle: {fileID: 990469181}
 --- !u!1 &1683379392
 GameObject:
   m_ObjectHideFlags: 0
@@ -8601,7 +8649,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 124.95, y: -27}
+  m_AnchoredPosition: {x: 124.950195, y: -27}
   m_SizeDelta: {x: 760.1057, y: 307.11}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1683379394

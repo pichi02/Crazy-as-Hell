@@ -9,11 +9,13 @@ public class sfxSlide : MonoBehaviour
 {
     [SerializeField] private Slider volumeSlider = null;
     private float volume;
+
     public void VolumeSlider(float volume)
     {
         AkSoundEngine.SetRTPCValue("SFX_Volume", volume);
         volumeSlider.value = volume;
         AudioManager.SfxVolume = volume;
+        PlayerPrefs.SetFloat("sfxVolume", volume);
     }
     public void UpdateVolume()
     {
