@@ -7,17 +7,8 @@ using UnityEngine;
 public class ClickSounds : MonoBehaviour
 {
     [SerializeField] private string eventoWwise;
-
-    void Update()
+    public void PlayButtonSFX()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            AkSoundEngine.PostEvent(eventoWwise, gameObject);
-        }
-
-
-
-
-
+        AkSoundEngine.PostEvent(eventoWwise, gameObject);
     }
 }
